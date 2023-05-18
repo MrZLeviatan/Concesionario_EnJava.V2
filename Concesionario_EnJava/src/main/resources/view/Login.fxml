@@ -4,43 +4,55 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="717.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="view.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
    <children>
-      <Pane layoutX="374.0" prefHeight="477.0" prefWidth="343.0" style="-fx-background-color: #B20A0A;">
+      <Pane fx:id="PanelRojo" layoutX="374.0" prefHeight="477.0" prefWidth="343.0" style="-fx-background-color: #B20A0A;">
          <children>
-            <ImageView fitHeight="335.0" fitWidth="314.0" layoutX="22.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="Logo" fitHeight="335.0" fitWidth="314.0" layoutX="22.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/ImagenLogo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="126.0" fitWidth="126.0" layoutX="116.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImagenLoco" fitHeight="126.0" fitWidth="126.0" layoutX="116.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/LogoDeLaEmpresa.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Pane prefHeight="477.0" prefWidth="382.0">
+      <Pane fx:id="PanelBlanco" prefHeight="477.0" prefWidth="382.0">
          <children>
-            <Label layoutX="14.0" layoutY="198.0" text="INGRESE CONTRASEÑA:" textFill="#b20a0a">
+            <Label fx:id="TextContraseña" layoutX="14.0" layoutY="231.0" text="INGRESE CONTRASEÑA:" textFill="#b20a0a">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <PasswordField layoutX="191.0" layoutY="194.0" prefHeight="25.0" prefWidth="170.0" promptText="CONTRASEÑA" />
-            <Separator layoutX="369.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="11.0" style="-fx-background-color: black;" />
-            <Button layoutX="205.0" layoutY="254.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #B20A0A;" text="INGRESE" textFill="WHITE">
+            <PasswordField fx:id="BloqueContraseña" layoutX="191.0" layoutY="226.0" prefHeight="25.0" prefWidth="170.0" promptText="CONTRASEÑA" />
+            <Separator fx:id="Separador" layoutX="369.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="11.0" style="-fx-background-color: black;" />
+            <Button fx:id="BotonIngrese" layoutX="205.0" layoutY="289.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #B20A0A;" text="INGRESE" textFill="WHITE">
                <font>
-                  <Font name="Arial Bold Italic" size="17.0" />
+                  <Font name="Arial Bold Italic" size="16.0" />
                </font>
             </Button>
+            <Button fx:id="BotonRecuperar" layoutX="14.0" layoutY="289.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #B20A0A;" text="RECUPERAR" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="TextoUsuario" layoutX="14.0" layoutY="194.0" text="INGRESE USUARIO:" textFill="#b20a0a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="BloqueUsuario" layoutX="191.0" layoutY="190.0" prefHeight="25.0" prefWidth="170.0" promptText="USUARIO" />
+            
          </children>
       </Pane>
    </children>
