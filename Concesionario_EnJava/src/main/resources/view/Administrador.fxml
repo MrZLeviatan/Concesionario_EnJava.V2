@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="717.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="view.AdministradorController">
+   <children>
+      <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="486.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="359.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.4360189573459715" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.03921568766236305" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6980392336845398" green="0.03921568766236305" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6980392336845398" green="0.03921568766236305" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="ImagenPerfil" fitHeight="175.0" fitWidth="170.0" layoutX="90.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/ImagenPerfil.png" />
+         </image>
+      </ImageView>
+      <Separator fx:id="Separador" layoutX="343.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="11.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>
