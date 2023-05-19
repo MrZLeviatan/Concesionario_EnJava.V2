@@ -1,0 +1,40 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19/05/2023, 1:34:21 a. m.
+    Author     : Mr. Nicolas
+*/
+
+.botonRegistro{
+    -fx-background-color:  #B20A0A;
+    
+}
+.botonRegistro:hover{
+    
+    -fx-background-color:  #EA1B07;
+    
+}
+
+.botonRegistro:pressed {
+    
+    -fx-background-color: #810000;
+    
+}
+
+.botonIngrese{
+    -fx-background-color:   #B20A0A;
+    
+}
+.botonIngrese:hover{
+    
+    -fx-background-color:  #EA1B07;
+    
+}
+
+.botonIngrese:pressed {
+    
+    -fx-background-color: #810000;
+    
+}
