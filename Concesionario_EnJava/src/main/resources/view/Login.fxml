@@ -9,33 +9,23 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
    <children>
-      <Pane fx:id="PanelRojo" layoutX="374.0" prefHeight="477.0" prefWidth="343.0" style="-fx-background-color: #B20A0A;">
-         <children>
-            <ImageView fx:id="Logo" fitHeight="335.0" fitWidth="314.0" layoutX="22.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../imagenes/ImagenLogo.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="ImagenLoco" fitHeight="126.0" fitWidth="126.0" layoutX="116.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../imagenes/LogoDeLaEmpresa.png" />
-               </image>
-            </ImageView>
-         </children>
-      </Pane>
       <Pane fx:id="PanelBlanco" prefHeight="477.0" prefWidth="382.0">
          <children>
+            <Separator fx:id="Separador" layoutX="369.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="11.0" style="-fx-background-color: black;" />
             <Label fx:id="TextContraseña" layoutX="14.0" layoutY="231.0" text="INGRESE CONTRASEÑA:" textFill="#b20a0a">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
             <PasswordField fx:id="BloqueContraseña" layoutX="191.0" layoutY="226.0" prefHeight="25.0" prefWidth="170.0" promptText="CONTRASEÑA" />
-            <Separator fx:id="Separador" layoutX="369.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="11.0" style="-fx-background-color: black;" />
             <Button fx:id="BotonIngrese" layoutX="205.0" layoutY="289.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #B20A0A;" text="INGRESE" textFill="WHITE">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
@@ -51,9 +41,36 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="BloqueUsuario" layoutX="191.0" layoutY="190.0" prefHeight="25.0" prefWidth="170.0" promptText="USUARIO" />
-            
+            <TextField fx:id="BloqueUsuario" layoutX="191.0" layoutY="189.0" prefHeight="25.0" prefWidth="170.0" promptText="USUARIO" />
          </children>
       </Pane>
+      <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="477.0" layoutX="380.0" stroke="BLACK" strokeType="INSIDE" width="342.0">
+         <fill>
+            <LinearGradient endX="0.3175355450236967" endY="0.4075829383886256" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6980392336845398" green="0.03921568766236305" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="Logo" fitHeight="335.0" fitWidth="314.0" layoutX="392.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/ImagenLogo2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImagenLoco" fitHeight="126.0" fitWidth="126.0" layoutX="486.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/LogoDeLaEmpresa.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
