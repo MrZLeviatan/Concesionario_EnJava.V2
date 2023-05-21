@@ -7,15 +7,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : Mr. Nicolas
 */
 
+/*
+    COLOR PRETERMINADO
+*/
 .botonRegistro{
     -fx-background-color:  #B20A0A;
     
 }
+
+/*
+    COLOR CUANDO PASA POR ENCIMA EL MOUSE
+*/
 .botonRegistro:hover{
     
     -fx-background-color:  #EA1B07;
     
 }
+
+/*
+    COLOR CUANDO ES PRESIONADO
+*/
 
 .botonRegistro:pressed {
     
@@ -37,4 +48,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     
     -fx-background-color: #810000;
     
+}
+
+.X{
+    -fx-backgound-color: #FFFFFF
+    
+}
+
+.X:hover{
+    
+    -fx-background-color: #450000
+}
+
+.x:pressed{
+    
+    -fx-background-color: #B20A0A
 }

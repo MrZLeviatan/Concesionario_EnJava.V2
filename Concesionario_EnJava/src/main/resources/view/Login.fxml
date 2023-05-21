@@ -25,13 +25,13 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <PasswordField fx:id="BloqueContraseña" layoutX="191.0" layoutY="226.0" prefHeight="25.0" prefWidth="170.0" promptText="CONTRASEÑA" />
-            <Button fx:id="BotonIngrese" layoutX="198.0" layoutY="289.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" styleClass="botonRegistro" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="INGRESE" textFill="WHITE">
+            <PasswordField fx:id="BloqueContraseña" layoutX="191.0" layoutY="226.0" onKeyTyped="#eventKey" prefHeight="25.0" prefWidth="170.0" promptText="CONTRASEÑA" />
+            <Button fx:id="BotonIngrese" layoutX="198.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#EventoValidacion" prefHeight="44.0" prefWidth="156.0" style="-fx-background-radius: 12px;" styleClass="botonRegistro" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="INGRESE" textFill="WHITE">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="BotonRecuperar" layoutX="14.0" layoutY="289.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="RECUPERAR" textFill="WHITE">
+            <Button fx:id="BotonRecuperar" layoutX="14.0" layoutY="289.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="RECUPERAR" textFill="WHITE">
                <font>
                   <Font name="Arial Bold Italic" size="14.0" />
                </font>
@@ -41,7 +41,7 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="BloqueUsuario" layoutX="191.0" layoutY="189.0" prefHeight="25.0" prefWidth="170.0" promptText="USUARIO" />
+            <TextField fx:id="BloqueUsuario" layoutX="191.0" layoutY="189.0" onKeyReleased="#eventKey" onKeyTyped="#eventKey" prefHeight="25.0" prefWidth="170.0" promptText="USUARIO" />
          </children>
       </Pane>
       <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="477.0" layoutX="380.0" stroke="BLACK" strokeType="INSIDE" width="342.0">
@@ -72,5 +72,10 @@
             <Image url="@../imagenes/LogoDeLaEmpresa.png" />
          </image>
       </ImageView>
+      <Label fx:id="X" layoutX="697.0" layoutY="-11.0" onMouseClicked="#labCerrar" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="x" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
