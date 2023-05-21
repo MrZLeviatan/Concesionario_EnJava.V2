@@ -3,18 +3,29 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
 package view;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
-import javafx.scene.shape.Rectangle;
+
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 
 /**
  * FXML Controller class
@@ -22,47 +33,116 @@ import javafx.fxml.Initializable;
  * @author Mr. Nicolas
  */
 public class LoginController implements Initializable {
-    @FXML
-    private PasswordField BloqueContraseña;
-
-    @FXML
+    
+   @FXML
     private TextField BloqueUsuario;
-
-    @FXML
+    
+   @FXML
+    private PasswordField BloqueContraseña;
+    
+   @FXML
     private Button BotonIngrese;
-
-    @FXML
+    
+   @FXML 
     private Button BotonRecuperar;
-
-    @FXML
-    private Rectangle FondoRojo;
-
-    @FXML
-    private ImageView ImagenLoco;
-
-    @FXML
-    private ImageView Logo;
-
-    @FXML
-    private Pane PanelBlanco;
-
-    @FXML
-    private Separator Separador;
-
-    @FXML
-    private Label TextContraseña;
-
-    @FXML
-    private Label TextoUsuario;
-
-
-    /**
-     * Initializes the controller class.
-     */
-    @Override
+   
+   
+   @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+    } 
+    
+    
+    @FXML
+    private void labCerrar(MouseEvent event){
+        System.exit(0);
     }
+    
+    @FXML
+    private void eventEspaciosBlancos (KeyEvent event) throws IOException{
+        
+       Object evt =event.getSource();
+        
+        if(evt.equals(BloqueUsuario)){
+            if (event.getCharacter().equals(" ")){ 
+               Alert alert= new Alert(Alert.AlertType.NONE);
+                alert.setTitle("ERROR");
+                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert.showAndWait();
+                BloqueUsuario.setText("");
+            }
+                
+        }else if(evt.equals(BloqueContraseña)){
+            if (event.getCharacter().equals(" ")){  
+                Alert alert= new Alert(Alert.AlertType.NONE);
+                alert.setTitle("ERROR");
+                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert.showAndWait();
+                BloqueContraseña.setText("");
+                
+               
+              
 
-
+            }
+        }
+       
+    }
+    @FXML 
+    
+     private void EventoRecuperar (ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader (getClass().getResource("/view/RecuperarContraseña.fxml"));
+        Parent root= loader.load();
+        RecuperarContraseñaController controller= loader.getController();
+        Scene scene= new Scene(root);
+        
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(scene);
+        stage.showAndWait();
+        
+        
+        
+        
+    }
+    @FXML
+    private void EventoValidacion (ActionEvent event){
+        
+       Object evt =event.getSource();
+       
+              
+       if(evt.equals(BotonIngrese)){
+           
+           if(!BloqueUsuario.getText().isEmpty() && !BloqueContraseña.getText().isEmpty()){
+               
+               String user= BloqueUsuario.getText();
+               String pass= BloqueContraseña.getText();
+               
+           }else{
+                Alert alert= new Alert(Alert.AlertType.NONE);
+                alert.setTitle("ERROR");
+                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert.showAndWait();
+               
+                
+                
+           }  
+           
+       }       
+       
+      
+}
+    
+   
+    
+ 
 }
