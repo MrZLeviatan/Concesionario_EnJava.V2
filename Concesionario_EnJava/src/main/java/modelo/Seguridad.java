@@ -18,8 +18,9 @@ public class Seguridad extends Persona{
         }
     }
 
-    public static boolean validarContraseña(String contraseña, Empleado empleado){
-        return contraseña.contains(empleado.getClave());
+    public static boolean validarContraseña(String contraseña, String correo){
+        Empleado empleado= (Empleado) Consesionario.getListaEmpleado().stream().filter(Empleado->Empleado.getCorreo()==correo);
+        return empleado.getClave().contains(contraseña);
     }
 
 
