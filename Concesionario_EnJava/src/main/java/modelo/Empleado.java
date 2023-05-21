@@ -21,5 +21,11 @@ public class Empleado extends Persona{
         return nivel;
     }
 
+    //metodo para obtener contraseña
+    public  static  String sacarContraseña(String correo){
+        Empleado empleado= (Empleado) Consesionario.getListaEmpleado().stream().filter(Empleado->Empleado.getCorreo()==correo;
+        return empleado.getClave();
+    }
+
 
 }
