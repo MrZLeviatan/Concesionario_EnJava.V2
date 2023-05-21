@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="metodo para sacar la contraseña del empleado">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jms_javax_jms_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_5_0_b01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/RecuperarCorreo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/HojasEstilo/HojaEstiloBotones.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/ImagenError.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/ImagenLogo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/ImagenPerfil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Q4lpFZwkEhul5MR4q8aDd9IyoB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\java\modelo" />
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\HojasEstilo" />
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\view" />
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\imagenes" />
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\HojasEstilo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="modelo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SendMail">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.App" />
+      <module name="Concesionario_EnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="modelo.SendMail" />
+      <module name="Concesionario_EnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="modelo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SendMail" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="" />
+      <created>1684620917867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684620917867</updated>
+      <workItem from="1684620919298" duration="6179000" />
+      <workItem from="1684650029816" duration="123000" />
+      <workItem from="1684651584981" duration="88000" />
+      <workItem from="1684681275867" duration="18000" />
+      <workItem from="1684681321878" duration="47000" />
+      <workItem from="1684682323392" duration="9246000" />
+    </task>
+    <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
+      <created>1684646014443</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684646014443</updated>
+    </task>
+    <task id="LOCAL-00002" summary="agrege el metodo verificar contraseña para el login">
+      <created>1684646040300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684646040300</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cambie su extencion de persona a seguridad">
+      <created>1684646069622</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684646069622</updated>
+    </task>
+    <task id="LOCAL-00004" summary="agrege estas librerias que me pidio maven para que todo funcionara bien">
+      <created>1684646107575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684646107575</updated>
+    </task>
+    <task id="LOCAL-00005" summary="agrege la extension Seguridad que en el cambio anterior no lo hice jajaja">
+      <created>1684647426274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684647426274</updated>
+    </task>
+    <task id="LOCAL-00006" summary="en este metodo agrege los objetos de la interfas, para poder crear la logica de los botones">
+      <created>1684647504363</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684647504363</updated>
+    </task>
+    <task id="LOCAL-00007" summary="en este metodo agrege los objetos de la interfas, para poder crear la logica de los botones">
+      <created>1684647669899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684647669899</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Agrege los eventos y puse un ejemplo de como seria la verificación">
+      <created>1684648717291</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684648717291</updated>
+    </task>
+    <task id="LOCAL-00009" summary="metodo para sacar la contraseña del empleado">
+      <created>1684650102620</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684650102620</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes" />
+    <MESSAGE value="agrege el metodo verificar contraseña para el login" />
+    <MESSAGE value="cambie su extencion de persona a seguridad" />
+    <MESSAGE value="agrege estas librerias que me pidio maven para que todo funcionara bien" />
+    <MESSAGE value="agrege la extension Seguridad que en el cambio anterior no lo hice jajaja" />
+    <MESSAGE value="en este metodo agrege los objetos de la interfas, para poder crear la logica de los botones" />
+    <MESSAGE value="Agrege los eventos y puse un ejemplo de como seria la verificación" />
+    <MESSAGE value="metodo para sacar la contraseña del empleado" />
+    <option name="LAST_COMMIT_MESSAGE" value="metodo para sacar la contraseña del empleado" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="javax.net.ssl.SSLHandshakeException" package="javax.net.ssl" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

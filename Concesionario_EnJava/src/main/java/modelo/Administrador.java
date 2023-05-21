@@ -3,10 +3,6 @@
 package modelo;
 
 import java.util.ArrayList;
-import modelo.Empleado;
-import modelo.Genero;
-import modelo.Nivel;
-import modelo.Persona;
 
 public class Administrador extends Seguridad
 {
@@ -37,4 +33,5 @@ public class Administrador extends Seguridad
     public Nivel getNivel() {
         return this.nivel;
     }
+
 }

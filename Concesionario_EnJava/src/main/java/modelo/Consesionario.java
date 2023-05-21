@@ -3,11 +3,27 @@ package modelo;
 import java.util.ArrayList;
 
 public class Consesionario {
+    private static ArrayList<Administrador> administradores = new ArrayList<>();
+    final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,25693,Genero.MASCULINO,"admin123","admintotal");
+
     private static ArrayList<Empleado> listaEmpleado= new ArrayList<>();
     private ArrayList <Vehiculo> ListaVehiculos= new ArrayList<>();
 
     private ArrayList <Cliente> ListaCliente= new ArrayList<>();
 
+    public Consesionario() throws Exception {
+    }
+
+    public static boolean verficarClaveAdm(String user, String pass) {
+        Administrador adm= (Administrador) administradores.stream().filter(Administrador->Administrador.getCorreo()==user);
+        return adm.getClave().contains(pass);
+
+    }
+
+
+    public ArrayList<Administrador> getListaAdministradores() {
+        return administradores;
+    }
 
     public static ArrayList<Empleado> getListaEmpleado() {
         return listaEmpleado;
@@ -49,6 +65,25 @@ public class Consesionario {
         listaEmpleado.add(empleado);
         return listaEmpleado;
     }
+
+    public ArrayList<Administrador>añadirAdministrador(){
+       administradores.add(adm);
+       return administradores;
+
+    }
+
+
+    public static boolean verificarAdm(String correo){
+        boolean x=false;
+        for(int i=0; i<administradores.size(); i++){
+            if (administradores.get(i).getCorreo()==correo){
+                x=true;
+                return  x;
+            }
+        }
+        return x;
+    }
+
 
 
 }
