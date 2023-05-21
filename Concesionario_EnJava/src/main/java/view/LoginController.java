@@ -20,6 +20,7 @@ public class LoginController {
         //TODO
     }
 
+
     @FXML
     private PasswordField BloqueContraseña;
 
