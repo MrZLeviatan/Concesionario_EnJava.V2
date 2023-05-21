@@ -22,6 +22,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 
 /**
  * FXML Controller class
@@ -55,7 +59,7 @@ public class LoginController implements Initializable {
     }
     
     @FXML
-    private void eventKey (KeyEvent event) throws IOException{
+    private void eventEspaciosBlancos (KeyEvent event) throws IOException{
         
        Object evt =event.getSource();
         
@@ -63,7 +67,7 @@ public class LoginController implements Initializable {
             if (event.getCharacter().equals(" ")){ 
                Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
+                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
                 alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
                 alert.setHeaderText("AH OCURRIDO UN ERROR!!");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
@@ -75,7 +79,7 @@ public class LoginController implements Initializable {
             if (event.getCharacter().equals(" ")){  
                 Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
+                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
                 alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
                 alert.setHeaderText("AH OCURRIDO UN ERROR!!");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
@@ -89,7 +93,24 @@ public class LoginController implements Initializable {
         }
        
     }
+    @FXML 
     
+     private void EventoRecuperar (ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader (getClass().getResource("/view/RecuperarContraseña.fxml"));
+        Parent root= loader.load();
+        RecuperarContraseñaController controller= loader.getController();
+        Scene scene= new Scene(root);
+        
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(scene);
+        stage.showAndWait();
+        
+        
+        
+        
+    }
     @FXML
     private void EventoValidacion (ActionEvent event){
         
@@ -104,10 +125,10 @@ public class LoginController implements Initializable {
                String pass= BloqueContraseña.getText();
                
            }else{
-              Alert alert= new Alert(Alert.AlertType.NONE);
+                Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
                 alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("ImagenError.png").toString()));
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
                 alert.setHeaderText("AH OCURRIDO UN ERROR!!");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();

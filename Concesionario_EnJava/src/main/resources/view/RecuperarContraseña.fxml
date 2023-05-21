@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="273.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RecuperarContraseñaController">
+   <children>
+      <Rectangle fx:id="RectanguloRojo" arcHeight="5.0" arcWidth="5.0" height="277.0" stroke="BLACK" strokeType="INSIDE" width="168.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6980392336845398" green="0.03921568766236305" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="TextoIngrese" layoutX="184.0" layoutY="109.0" prefHeight="17.0" prefWidth="144.0" text="INGRESE CORREO:" textFill="#b20a0a" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BloqueContraseña" layoutX="325.0" layoutY="105.0" onKeyTyped="#eventEspaciosBlancos" prefHeight="25.0" prefWidth="159.0" promptText="CORREO" />
+      <Button fx:id="BotonRecuperar" layoutX="328.0" layoutY="188.0" mnemonicParsing="false" onAction="#eventoValidacion" onMouseClicked="#eventoValidacion" prefHeight="48.0" prefWidth="144.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="RECUPERAR" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Separator fx:id="Separador" layoutX="167.0" layoutY="-6.0" orientation="VERTICAL" prefHeight="283.0" prefWidth="9.0" style="-fx-background-color: BLACK;" />
+      <Button fx:id="X" layoutX="466.0" mnemonicParsing="false" onAction="#cerrarventa" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: transparente;" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" textFill="#b20a0a">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
