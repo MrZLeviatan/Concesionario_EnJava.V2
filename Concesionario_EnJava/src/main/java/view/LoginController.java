@@ -64,7 +64,7 @@ public class LoginController implements Initializable {
                Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
                 alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("ImagenError.png").toString()));
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
                 alert.setHeaderText("AH OCURRIDO UN ERROR!!");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
@@ -76,7 +76,7 @@ public class LoginController implements Initializable {
                 Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
                 alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("ImagenError.png").toString()));
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
                 alert.setHeaderText("AH OCURRIDO UN ERROR!!");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
@@ -104,14 +104,15 @@ public class LoginController implements Initializable {
                String pass= BloqueContraseña.getText();
                
            }else{
-               /* Alert alert= new Alert(Alert.AlertType.NONE);
+              Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACION BLANCOS");
-                alert.setHeaderText("Warning Alert");
+                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
+                alert.setGraphic(new ImageView(this.getClass().getResource("ImagenError.png").toString()));
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-               */
-                Alert alert= new Alert(Alert.AlertType.ERROR,"No se admiten espacions en blanco");
-                alert.showAndWait();
+               
+                
                 
            }  
            
