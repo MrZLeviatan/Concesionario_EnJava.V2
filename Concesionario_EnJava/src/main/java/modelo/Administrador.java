@@ -8,17 +8,17 @@ import modelo.Genero;
 import modelo.Nivel;
 import modelo.Persona;
 
-public class Administrador extends Persona
+public class Administrador extends Seguridad
 {
     private Nivel nivel;
     
     public void setNivel(final Nivel nivel) {
         this.nivel = nivel;
     }
-    
-    public Administrador(final String nombre, final String correo, final int edad, final int cc, final Genero genero) throws Exception {
-        super(nombre, correo, edad, cc, genero);
-        this.nivel = Nivel.SUPERIOR;
+
+    public Administrador(String nombre, String correo, int edad, int cc, Genero genero, String clave, String palabraSecreta) throws Exception {
+        super(nombre, correo, edad, cc, genero, clave, palabraSecreta);
+        this.nivel= Nivel.SUPERIOR;
     }
     
     public static ArrayList<Empleado> addEmpleado(final Empleado empleado, final ArrayList<Empleado> listaEmpleados) {
