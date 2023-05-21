@@ -53,7 +53,7 @@ public class Consesionario {
 
     //metodo para verificar la contraseña
 
-    public  boolean verificarContraseña(String correo, String contraseña){
+    public static boolean verificarContraseña(String correo, String contraseña){
         boolean contraseñaValida=false;
         for(int i=0;i<getListaEmpleado().size();i++){
             if(getListaEmpleado().get(i).getCorreo()==correo){
