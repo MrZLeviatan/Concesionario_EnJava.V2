@@ -66,10 +66,10 @@ public class LoginController implements Initializable {
         if(evt.equals(BloqueUsuario)){
             if (event.getCharacter().equals(" ")){ 
                Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
+                alert.setTitle("ERROR!!");
                 alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
                 alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
                 BloqueUsuario.setText("");
@@ -78,10 +78,10 @@ public class LoginController implements Initializable {
         }else if(evt.equals(BloqueContraseña)){
             if (event.getCharacter().equals(" ")){  
                 Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
+                alert.setTitle("ERROR!!");
                 alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
                 alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
                 BloqueContraseña.setText("");
@@ -126,10 +126,10 @@ public class LoginController implements Initializable {
                
            }else{
                 Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.setTitle("ERROR!!");
+                alert.setContentText("PORFAVOR LLENAR LOS DATOS NECESARIOS");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenLlenarEspacios.png").toString()));
+                alert.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
                
