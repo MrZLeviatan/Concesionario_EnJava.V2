@@ -10,7 +10,8 @@ public class Conexion {
         String url="jdbc:sqlserver://localhost:1433;"
                 +"database=Concesionario;"
                 +"user=usersql;"
-                +"password=n.b1001330212;";
+                +"password=n.b1001330212;"
+                +"loginTimeout=30;";
          
         try {
             Connection con = DriverManager.getConnection(url);

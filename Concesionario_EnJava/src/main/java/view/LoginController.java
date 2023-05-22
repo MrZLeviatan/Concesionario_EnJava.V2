@@ -4,6 +4,8 @@
  */
 package view;
 
+
+import Controlador.Conexion;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -25,7 +27,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * FXML Controller class
@@ -121,8 +125,58 @@ public class LoginController implements Initializable {
            
            if(!BloqueUsuario.getText().isEmpty() && !BloqueContraseña.getText().isEmpty()){
                
-               String user= BloqueUsuario.getText();
-               String pass= BloqueContraseña.getText();
+              
+                   String user= BloqueUsuario.getText();
+                   String pass= BloqueContraseña.getText();
+                   
+                   // select username, password, privilegio from Usuarios where activo= 1 and username = 'Nicolas' ;
+                   String url= "select username, password, privilegio +"
+                           + "from Usuarios where activo= 1 and username ='"+user+"'";
+                   
+                try {    
+                   
+                   Connection con= Conexion.obtenerConexion();
+                   PreparedStatement ps= con.prepareStatement(url);
+                   ResultSet rs = ps.executeQuery();
+                   
+                   if(rs.next()){
+                       //SI EXISTE EL USUARIO GUAPETON
+                       String U=rs.getString("usarname");
+                       String p=rs.getString("password");
+                       String priv=rs.getString("privilegio");
+                       
+                       
+                       if(pass.equals(p)){
+                           //VAMOS A JFRAME ADMINISTRADOR O EMPLEADO
+                           
+                       }else{
+                           //EL USUARIO NO EXISTE
+                             Alert alert= new Alert(Alert.AlertType.NONE);
+                            alert.setTitle("ERROR!!");
+                            alert.setContentText("LA CONTRASEÑA ES INCORRECTA");
+                            alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/UsuarioNoEncontrado.png").toString()));
+                            alert.setHeaderText("UPS! PARECE QUE HAY PROBLEMAS EN LA BASE DE DATOS...");
+                            alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                            alert.showAndWait();
+                       }
+                 
+                   }else{
+                       //EL USUARIO NO EXISTE unu
+                       Alert alert= new Alert(Alert.AlertType.NONE);
+                        alert.setTitle("ERROR!!");
+                        alert.setContentText("EL USUARIO NO EXISTE EN LA BASE DE DATOS");
+                        alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/UsuarioNoEncontrado.png").toString()));
+                        alert.setHeaderText("UPS! PARECE QUE HAY PROBLEMAS EN LA BASE DE DATOS...");
+                        alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                        alert.showAndWait();
+                       
+                   }
+                   
+                   
+                   
+               } catch (SQLException ex) {
+                   System.out.print(ex.toString());
+               }
                
            }else{
                 Alert alert= new Alert(Alert.AlertType.NONE);
