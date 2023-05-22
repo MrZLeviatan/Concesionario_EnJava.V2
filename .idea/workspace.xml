@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="metodo para sacar la contraseña del empleado">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jms_javax_jms_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_5_0_b01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/RecuperarCorreo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/HojasEstilo/HojaEstiloBotones.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/ImagenError.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/ImagenLogo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/ImagenPerfil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" afterDir="false" />
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="load">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +116,7 @@
       <workItem from="1684651584981" duration="88000" />
       <workItem from="1684681275867" duration="18000" />
       <workItem from="1684681321878" duration="47000" />
-      <workItem from="1684682323392" duration="9246000" />
+      <workItem from="1684682323392" duration="10300000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -195,7 +181,56 @@
       <option name="project" value="LOCAL" />
       <updated>1684650102620</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="acomode el metoodo verificar contraseña en seguridad (para la verificación de los empleados)">
+      <created>1684711642203</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711642203</updated>
+    </task>
+    <task id="LOCAL-00011" summary="agrege las librerias necesarias para usar el metodo mail">
+      <created>1684711696457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711696457</updated>
+    </task>
+    <task id="LOCAL-00012" summary="se agregaron las dependencias al pom">
+      <created>1684711712554</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711712554</updated>
+    </task>
+    <task id="LOCAL-00013" summary="load">
+      <created>1684711719890</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711719890</updated>
+    </task>
+    <task id="LOCAL-00014" summary="load to rama de nico">
+      <created>1684711747107</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711747107</updated>
+    </task>
+    <task id="LOCAL-00015" summary="agrege la clase para enviar correos(&quot;todavia no esta terminada tengo problemas con la cuenta que no me da &quot;la clave para aplicaciones&quot;)">
+      <created>1684711814506</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711814506</updated>
+    </task>
+    <task id="LOCAL-00016" summary="load">
+      <created>1684711837934</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684711837934</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +256,13 @@
     <MESSAGE value="en este metodo agrege los objetos de la interfas, para poder crear la logica de los botones" />
     <MESSAGE value="Agrege los eventos y puse un ejemplo de como seria la verificación" />
     <MESSAGE value="metodo para sacar la contraseña del empleado" />
-    <option name="LAST_COMMIT_MESSAGE" value="metodo para sacar la contraseña del empleado" />
+    <MESSAGE value="acomode el metoodo verificar contraseña en seguridad (para la verificación de los empleados)" />
+    <MESSAGE value="agrege las librerias necesarias para usar el metodo mail" />
+    <MESSAGE value="se agregaron las dependencias al pom" />
+    <MESSAGE value="load to rama de nico" />
+    <MESSAGE value="agrege la clase para enviar correos(&quot;todavia no esta terminada tengo problemas con la cuenta que no me da &quot;la clave para aplicaciones&quot;)" />
+    <MESSAGE value="load" />
+    <option name="LAST_COMMIT_MESSAGE" value="load" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

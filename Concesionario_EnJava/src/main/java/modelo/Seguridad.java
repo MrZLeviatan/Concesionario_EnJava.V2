@@ -18,9 +18,19 @@ public class Seguridad extends Persona{
         }
     }
 
+
     public static boolean validarContraseña(String contraseña, String correo){
-        Empleado empleado= (Empleado) Consesionario.getListaEmpleado().stream().filter(Empleado->Empleado.getCorreo()==correo);
-        return empleado.getClave().contains(contraseña);
+
+        if(Consesionario.verificarAdm(correo)==true){
+            Administrador adm= (Administrador) Consesionario.getAdministradores().stream().filter(Administrador->Administrador.getCorreo()==correo);
+            return adm.getClave().contains(contraseña);
+
+        }
+        else{
+            Empleado empleado= (Empleado) Consesionario.getListaEmpleado().stream().filter(Empleado->Empleado.getCorreo()==correo);
+            return empleado.getClave().contains(contraseña);
+        }
+
     }
 
 

@@ -14,12 +14,9 @@ public class Consesionario {
     public Consesionario() throws Exception {
     }
 
-    public static boolean verficarClaveAdm(String user, String pass) {
-        Administrador adm= (Administrador) administradores.stream().filter(Administrador->Administrador.getCorreo()==user);
-        return adm.getClave().contains(pass);
-
+    public static ArrayList<Administrador> getAdministradores() {
+        return administradores;
     }
-
 
     public ArrayList<Administrador> getListaAdministradores() {
         return administradores;

@@ -17,7 +17,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import modelo.Consesionario;
 import modelo.Seguridad;
 
 import java.io.IOException;
@@ -121,18 +120,8 @@ public class LoginController implements Initializable {
                
                String user= BloqueUsuario.getText();
                String pass= BloqueContraseña.getText();
-
-               //se valida que los datos ingresados no sean de un administrador para verificar la contraseña
-               if(Consesionario.verificarAdm(user)==true){
-                  if( Consesionario.verficarClaveAdm(user,pass)==true){
-                      //aca iria la siguiente interfas donde aparescan los vehiculos y demas
-
-                  }
-                  else {
-                      //aca va el panel de error
-                  }
-               }
                if(Seguridad.validarContraseña(pass,user)==true){
+                   //aca va si la contraseña sirve
 
                }
                else {
