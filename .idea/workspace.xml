@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaPersonas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaVehiculos.java" afterDir="false" />
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
     </list>
@@ -57,7 +48,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
     "last_opened_file_path": "C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/resources/imagenes",
@@ -87,7 +77,7 @@
       <recent name="modelo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PruebaList">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.App" />
       <module name="Concesionario_EnJava" />
@@ -145,10 +135,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.PruebaList" />
         <item itemvalue="JUnit.PruebaList.test02" />
         <item itemvalue="JUnit.PruebaList.test01" />
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.SendMail" />
       </list>
     </recent_temporary>
@@ -167,7 +157,7 @@
       <workItem from="1684681275867" duration="18000" />
       <workItem from="1684681321878" duration="47000" />
       <workItem from="1684682323392" duration="10300000" />
-      <workItem from="1684817227202" duration="8859000" />
+      <workItem from="1684817227202" duration="12526000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -295,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684854745680</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="load">
+      <created>1684873307032</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684873307032</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,10 +323,10 @@
     <MESSAGE value="se agregaron las dependencias al pom" />
     <MESSAGE value="load to rama de nico" />
     <MESSAGE value="agrege la clase para enviar correos(&quot;todavia no esta terminada tengo problemas con la cuenta que no me da &quot;la clave para aplicaciones&quot;)" />
-    <MESSAGE value="load" />
     <MESSAGE value="loader" />
     <MESSAGE value="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas" />
+    <MESSAGE value="load" />
+    <option name="LAST_COMMIT_MESSAGE" value="load" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

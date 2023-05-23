@@ -15,7 +15,7 @@ public class SendMail {
         String to = "destinatario@dominio.com";
         String subject = "Asunto del correo";
         String body = "Contenido del correo electrónico.";
-
+        .
         // Configuración de la conexión SMTP
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");

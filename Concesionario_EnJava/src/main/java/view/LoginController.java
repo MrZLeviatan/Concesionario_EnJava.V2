@@ -19,7 +19,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import modelo.Administrador;
 import modelo.Empleado;
-import modelo.Seguridad;
 
 import java.io.IOException;
 import java.net.URL;
@@ -136,8 +135,7 @@ public class LoginController implements Initializable {
         correoUsuario = BloqueUsuario.getText();
         contraseñaUsuario = BloqueContraseña.getText();
 
-        if (Seguridad.validarContraseña(contraseñaUsuario,correoUsuario,empleadoListLogin,administradorListLogin)==true) {
-
+        //if (
 
             FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
             Parent root = carros.load();
@@ -150,10 +148,10 @@ public class LoginController implements Initializable {
             controller.init(stage, empleadoListLogin, administradorListLogin, correoUsuario);
 
 
-        }
-        else{
+       // }
+       // else{
 
-        }
+        //}
 
     }
 }
