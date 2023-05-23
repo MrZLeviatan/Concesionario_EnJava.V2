@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="load">
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" afterDir="false" />
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="loader">
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/wallpaperbetter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/aceptarCerrar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
+    "last_opened_file_path": "C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/resources/imagenes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\imagenes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\java\modelo" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\HojasEstilo" />
@@ -75,7 +80,7 @@
       <recent name="modelo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SendMail">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.App" />
       <module name="Concesionario_EnJava" />
@@ -104,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SendMail" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.SendMail" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +128,7 @@
       <workItem from="1684681275867" duration="18000" />
       <workItem from="1684681321878" duration="47000" />
       <workItem from="1684682323392" duration="10300000" />
-      <workItem from="1684817227202" duration="1569000" />
+      <workItem from="1684817227202" duration="5517000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -237,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684711837934</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="loader">
+      <created>1684819456167</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684819456167</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +281,8 @@
     <MESSAGE value="load to rama de nico" />
     <MESSAGE value="agrege la clase para enviar correos(&quot;todavia no esta terminada tengo problemas con la cuenta que no me da &quot;la clave para aplicaciones&quot;)" />
     <MESSAGE value="load" />
-    <option name="LAST_COMMIT_MESSAGE" value="load" />
+    <MESSAGE value="loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -44,6 +44,9 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField BloqueContraseña;
 
+    private String correoUsuario;
+    private String contraseñaUsuario;
+
     @FXML
     private Button BotonIngrese;
 
@@ -122,15 +125,33 @@ public class LoginController implements Initializable {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.showAndWait();
-
     }
 
     //valida que los datos esten correctos
     @FXML
-    private void EventoValidacion(ActionEvent event) {
+    private void EventoValidacion(ActionEvent event) throws IOException {
+
+
+        correoUsuario=BloqueUsuario.getText();
+        contraseñaUsuario=BloqueContraseña.getText();
+
+
+
+        FXMLLoader carros= new FXMLLoader(getClass().getResource("Carros.fxml"));
+        Parent root = carros.load();
+        CarrosController controller= carros.getController();
+        Scene scene= new Scene(root);
+        Stage stage= new Stage();
+        stage.setScene(scene);
+        stage.show();
+        this.stageLogin.close();
+        controller.init(stage,empleadoListLogin,administradorListLogin,correoUsuario);
+
+
+        }
 
     }
-}
+
 
        
       
