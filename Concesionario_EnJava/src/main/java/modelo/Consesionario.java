@@ -1,6 +1,7 @@
 package modelo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Consesionario {
     private static ArrayList<Administrador> administradores = new ArrayList<>();
@@ -58,24 +59,28 @@ public class Consesionario {
         return listaVehiculos;
     }
 
+
+    //añade un empleado a una lista de empleados
+
     public ArrayList<Empleado> añadirEmpleado(Empleado empleado, ArrayList<Empleado> listaEmpleado){
         listaEmpleado.add(empleado);
         return listaEmpleado;
     }
 
-    public ArrayList<Administrador>añadirAdministrador(){
-       administradores.add(adm);
-       return administradores;
+
+    //metodo para agregar un administrador a una lista de administradores
+    public  static ArrayList<Administrador>añadirAdministrador(Administrador administrador,List<Administrador> administradorList ){
+       administradorList.add(administrador);
+       return (ArrayList<Administrador>) administradorList;
 
     }
 
-
-    public static boolean verificarAdm(String correo){
+    //verifica que el correo que fue enviado sea de un administrador
+    public static boolean verificarAdm(String correo, List<Administrador> administradorList){
         boolean x=false;
-        for(int i=0; i<administradores.size(); i++){
-            if (administradores.get(i).getCorreo()==correo){
+        for(int i=0; i<administradorList.size(); i++){
+            if (administradorList.get(i).getCorreo()==correo){
                 x=true;
-                return  x;
             }
         }
         return x;

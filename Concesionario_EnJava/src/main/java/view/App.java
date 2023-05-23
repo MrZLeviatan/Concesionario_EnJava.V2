@@ -26,7 +26,6 @@ public class App extends Application {
         List<Empleado>empleadoList= new ArrayList<>();
         List<Administrador>administradorList= new ArrayList<>();
         administradorList.add(adm);
-        final Administrador admin= new Administrador("JEFE","admintucarro@gmail.com",19,25693, Genero.MASCULINO,"admin123","admintotal");
         FXMLLoader login= new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root=login.load();
         LoginController controller= login.getController();

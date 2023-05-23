@@ -1,6 +1,7 @@
 package modelo;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Seguridad extends Persona{
@@ -18,22 +19,34 @@ public class Seguridad extends Persona{
         }
     }
 
+    //metodo que utiliza el metodo para verificar que sea administrador y compara su contraseña de serlo y
+    //de no serlo valida en la lista de empleados
+    public static boolean validarContraseña(String contraseña, String correo,List<Empleado> empleadoList, List<Administrador> administradorList){
 
-    public static boolean validarContraseña(String contraseña, String correo){
-
-        if(Consesionario.verificarAdm(correo)==true){
-            Administrador adm= (Administrador) Consesionario.getAdministradores().stream().filter(Administrador->Administrador.getCorreo()==correo);
+        if(Consesionario.verificarAdm(correo,administradorList)==true){
+            Administrador adm= (Administrador) administradorList.stream().filter(Administrador->Administrador.getCorreo()==correo);
             return adm.getClave().contains(contraseña);
 
         }
         else{
-            Empleado empleado= (Empleado) Consesionario.getListaEmpleado().stream().filter(Empleado->Empleado.getCorreo()==correo);
+            Empleado empleado= (Empleado) empleadoList.stream().filter(Empleado->Empleado.getCorreo()==correo);
             return empleado.getClave().contains(contraseña);
         }
 
     }
 
+    //metodo para verificar la palabra secreta
+    public static boolean validarPalabraSecreta(String palabraSecreta ,String correo,List<Empleado> empleadoList, List<Administrador> administradorList){
+        boolean x=false;
+        if(Consesionario.verificarAdm(correo,administradorList)==true){
+            Administrador adm= (Administrador) administradorList.stream().filter(Administrador->Administrador.getCorreo()==correo);
+            return adm.getPalabraSecreta().contains(palabraSecreta);
+        }
+        return x;
+    }
 
+
+    //metodo para sacar un empleado de la lista de empleado
     public static Empleado buscarEmpleado(String correo, ArrayList<Empleado>listaEmpleados){
         Empleado empleado= (Empleado) listaEmpleados.stream().filter(Empleado->Empleado.getCorreo()==correo);
         return  empleado;

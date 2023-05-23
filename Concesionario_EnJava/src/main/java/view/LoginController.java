@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import modelo.Administrador;
 import modelo.Empleado;
+import modelo.Seguridad;
 
 import java.io.IOException;
 import java.net.URL;
@@ -127,30 +128,35 @@ public class LoginController implements Initializable {
         stage.showAndWait();
     }
 
-    //valida que los datos esten correctos
+    //valida que los datos esten correctos y genera la siguiente interfaz
     @FXML
     private void EventoValidacion(ActionEvent event) throws IOException {
 
 
-        correoUsuario=BloqueUsuario.getText();
-        contraseñaUsuario=BloqueContraseña.getText();
+        correoUsuario = BloqueUsuario.getText();
+        contraseñaUsuario = BloqueContraseña.getText();
+
+        if (Seguridad.validarContraseña(contraseñaUsuario,correoUsuario,empleadoListLogin,administradorListLogin)==true) {
 
 
+            FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
+            Parent root = carros.load();
+            CarrosController controller = carros.getController();
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+            this.stageLogin.close();
+            controller.init(stage, empleadoListLogin, administradorListLogin, correoUsuario);
 
-        FXMLLoader carros= new FXMLLoader(getClass().getResource("Carros.fxml"));
-        Parent root = carros.load();
-        CarrosController controller= carros.getController();
-        Scene scene= new Scene(root);
-        Stage stage= new Stage();
-        stage.setScene(scene);
-        stage.show();
-        this.stageLogin.close();
-        controller.init(stage,empleadoListLogin,administradorListLogin,correoUsuario);
 
+        }
+        else{
 
         }
 
     }
+}
 
 
        

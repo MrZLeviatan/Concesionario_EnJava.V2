@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="loader">
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/imagenes/wallpaperbetter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/aceptarCerrar.fxml" afterDir="false" />
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaPersonas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaVehiculos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
     "last_opened_file_path": "C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/resources/imagenes",
@@ -67,11 +74,11 @@
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\imagenes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\java\modelo" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\HojasEstilo" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\view" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\imagenes" />
-      <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\HojasEstilo" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="view" />
@@ -80,7 +87,7 @@
       <recent name="modelo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.PruebaList">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.App" />
       <module name="Concesionario_EnJava" />
@@ -107,8 +114,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PruebaList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Concesionario_EnJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaList" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaList.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Concesionario_EnJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaList" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaList.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Concesionario_EnJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaList" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PruebaList" />
+        <item itemvalue="JUnit.PruebaList.test02" />
+        <item itemvalue="JUnit.PruebaList.test01" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.SendMail" />
       </list>
@@ -128,7 +167,7 @@
       <workItem from="1684681275867" duration="18000" />
       <workItem from="1684681321878" duration="47000" />
       <workItem from="1684682323392" duration="10300000" />
-      <workItem from="1684817227202" duration="5517000" />
+      <workItem from="1684817227202" duration="8859000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -249,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684819456167</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas">
+      <created>1684854745680</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684854745680</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +328,8 @@
     <MESSAGE value="agrege la clase para enviar correos(&quot;todavia no esta terminada tengo problemas con la cuenta que no me da &quot;la clave para aplicaciones&quot;)" />
     <MESSAGE value="load" />
     <MESSAGE value="loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="loader" />
+    <MESSAGE value="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,6 +338,15 @@
           <properties class="javax.net.ssl.SSLHandshakeException" package="javax.net.ssl" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java</url>
+          <line>11</line>
+          <properties class="PruebaList" method="test01">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
