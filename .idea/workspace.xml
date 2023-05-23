@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="load">
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -43,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\java\modelo" />
@@ -64,6 +67,9 @@
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\view" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\imagenes" />
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\HojasEstilo" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="modelo" />
@@ -117,6 +123,7 @@
       <workItem from="1684681275867" duration="18000" />
       <workItem from="1684681321878" duration="47000" />
       <workItem from="1684682323392" duration="10300000" />
+      <workItem from="1684817227202" duration="1569000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
