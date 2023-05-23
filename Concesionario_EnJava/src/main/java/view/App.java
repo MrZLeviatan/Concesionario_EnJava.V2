@@ -1,4 +1,5 @@
-package view;
+ package view;
+
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +9,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import javafx.stage.StageStyle;
+import modelo.Administrador;
+import modelo.Genero;
 
 
 public class App extends Application {
@@ -16,11 +19,10 @@ public class App extends Application {
 
   
     @Override
-    public  void start(Stage primaryStage) throws IOException{
-     
-        Parent root =FXMLLoader.load(getClass().getResource("Login.fxml"));
-        
+    public  void start(Stage primaryStage) throws IOException, Exception{
        
+       
+       Parent root =FXMLLoader.load(getClass().getResource("Login.fxml"));
        Scene escena= new Scene (root);
        primaryStage.setScene(escena);
        primaryStage.initStyle(StageStyle.UNDECORATED);

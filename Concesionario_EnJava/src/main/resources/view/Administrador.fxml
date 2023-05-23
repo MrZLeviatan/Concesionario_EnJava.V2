@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,9 +11,10 @@
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="717.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="view.AdministradorController">
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdministradorController">
    <children>
       <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="486.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="359.0">
          <fill>
@@ -46,5 +50,38 @@
          </image>
       </ImageView>
       <Separator fx:id="Separador" layoutX="343.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="11.0" style="-fx-background-color: black;" />
+      <Text fx:id="administrador" layoutX="367.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMINISTRADOR:">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="683.0" prefHeight="34.0" prefWidth="20.0" styleClass="X2" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="BotonReportes" layoutX="367.0" layoutY="154.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="AGREGRAR EMPLEADO" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="textoNombre" layoutX="14.0" layoutY="255.0" text="NOMBRE:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="textoDocumento" layoutX="14.0" layoutY="292.0" prefHeight="29.0" prefWidth="106.0" text="DOCUMENTO:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="textoCorreo" layoutX="15.0" layoutY="339.0" text="CORREO:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BarraNombre" disable="true" layoutX="130.0" layoutY="251.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="BarraCC" disable="true" layoutX="130.0" layoutY="294.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="BarraCorreo" disable="true" layoutX="130.0" layoutY="335.0" prefHeight="25.0" prefWidth="197.0" />
    </children>
 </AnchorPane>

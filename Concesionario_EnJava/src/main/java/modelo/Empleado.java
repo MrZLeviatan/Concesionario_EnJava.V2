@@ -7,8 +7,8 @@ public class Empleado extends Persona{
     private Estado estado;
     private Nivel nivel;
 
-    public Empleado(String nombre, String correo, int edad, int cc, Genero genero,Estado estado, Nivel nivel) throws Exception {
-        super(nombre, correo, edad, cc, genero);
+    public Empleado(String nombre, String correo, String contraseña, int edad, int cc, Genero genero,Estado estado, Nivel nivel) throws Exception {
+        super(nombre,contraseña, correo, edad, cc, genero);
         this.estado=estado;
         this.nivel=Nivel.INFERIOR;
     }

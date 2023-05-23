@@ -5,10 +5,22 @@ import java.util.ArrayList;
 public class Consesionario {
     private static ArrayList<Empleado> listaEmpleado= new ArrayList<>();
     private ArrayList <Vehiculo> ListaVehiculos= new ArrayList<>();
-
+    private ArrayList <Administrador> listaAdministrador = new ArrayList<>();
     private ArrayList <Cliente> ListaCliente= new ArrayList<>();
 
+    
+    
+    
+    public ArrayList<Administrador> getListaAdministrador() {
+        return listaAdministrador;
+    }
 
+    public void setListaAdministrador(ArrayList<Administrador> listaAdministrador) {
+        this.listaAdministrador = listaAdministrador;
+    }
+
+    
+    
     public static ArrayList<Empleado> getListaEmpleado() {
         return listaEmpleado;
     }
@@ -33,7 +45,11 @@ public class Consesionario {
         ListaCliente = listaCliente;
     }
 
-
+     public ArrayList<Administrador>añadirAdministrador(Administrador administrador, ArrayList<Administrador>listaAdministrador){
+        listaAdministrador.add(administrador);
+        return listaAdministrador
+                ;
+    }
 
     public ArrayList<Cliente>añadirCliente(Cliente cliente, ArrayList<Cliente>listaCliente){
         listaCliente.add(cliente);

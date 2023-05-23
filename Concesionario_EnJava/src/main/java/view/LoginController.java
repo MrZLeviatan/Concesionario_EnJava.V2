@@ -1,11 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package view;
 
 
-import Controlador.Conexion;
+
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,14 +26,15 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.ArrayList;
+import modelo.Administrador;
 
 /**
  * FXML Controller class
  *
  * @author Mr. Nicolas
  */
+
 public class LoginController implements Initializable {
     
    @FXML
@@ -49,19 +48,18 @@ public class LoginController implements Initializable {
     
    @FXML 
     private Button BotonRecuperar;
-   
-   
+
    @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     } 
     
-    
-    @FXML
+     private ArrayList<Administrador>ListaAdministrador;
+ 
+     @FXML
     private void labCerrar(MouseEvent event){
         System.exit(0);
     }
-    
     @FXML
     private void eventEspaciosBlancos (KeyEvent event) throws IOException{
         
@@ -89,9 +87,6 @@ public class LoginController implements Initializable {
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
                 BloqueContraseña.setText("");
-                
-               
-              
 
             }
         }
@@ -110,28 +105,31 @@ public class LoginController implements Initializable {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.showAndWait();
-        
-        
-        
-        
+   
     }
     @FXML
-    private void EventoValidacion (ActionEvent event){
+    private void EventoValidacion (ActionEvent event) throws IOException{
         
        Object evt =event.getSource();
-       
-              
+
        if(evt.equals(BotonIngrese)){
            
            if(!BloqueUsuario.getText().isEmpty() && !BloqueContraseña.getText().isEmpty()){
                
-              
+                    
                    String user= BloqueUsuario.getText();
                    String pass= BloqueContraseña.getText();
                    
-                   // select username, password, privilegio from Usuarios where activo= 1 and username = 'Nicolas' ;
-                   String url= "select username, password, privilegio +"
-                           + "from Usuarios where activo= 1 and username ='"+user+"'";
+                   
+                
+                   
+                   for (int i = 0; i < 10; i++) {
+                      
+               }
+                   
+                   /* select nombre,contraseña,correo,privilegio from Usuarios where nombre = 'nicolas';
+                   String url= "select nombre, contraseña,correo,privilegio +"
+                           + "from Usuarios username ='"+user+"'";
                    
                 try {    
                    
@@ -141,14 +139,32 @@ public class LoginController implements Initializable {
                    
                    if(rs.next()){
                        //SI EXISTE EL USUARIO GUAPETON
-                       String U=rs.getString("usarname");
-                       String p=rs.getString("password");
+                       String U=rs.getString("nombre");
+                       String p=rs.getString("contraseña");
                        String priv=rs.getString("privilegio");
                        
                        
                        if(pass.equals(p)){
                            //VAMOS A JFRAME ADMINISTRADOR O EMPLEADO
-                           
+                           if(priv.equals("administrador")){
+                               FXMLLoader loader= new FXMLLoader(getClass().getResource("Administrador.fxml"));
+                               
+                               Parent root = loader.load();
+                               AdministradorController controlador = loader.getController();
+                               
+                               Scene scene = new Scene(root);
+                               Stage stage = new Stage();
+                               
+                               stage.setScene(scene);
+                               stage.show();
+                               
+                               stage.setOnCloseRequest(e-> controlador.closeWindows());
+                               
+                               Stage myStage = (Stage) this.BotonIngrese.getScene().getWindow();
+                               myStage.close();
+                               
+                           }
+
                        }else{
                            //EL USUARIO NO EXISTE
                              Alert alert= new Alert(Alert.AlertType.NONE);
@@ -177,7 +193,7 @@ public class LoginController implements Initializable {
                } catch (SQLException ex) {
                    System.out.print(ex.toString());
                }
-               
+               */
            }else{
                 Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR!!");
@@ -186,17 +202,11 @@ public class LoginController implements Initializable {
                 alert.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-               
-                
-                
+   
            }  
            
        }       
-       
-      
+    
 }
-    
-   
-    
- 
+
 }

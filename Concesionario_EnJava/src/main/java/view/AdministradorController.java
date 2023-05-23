@@ -1,26 +1,55 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
-package view;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
-
-/**
- * FXML Controller class
- *
- * @author Mr. Nicolas
- */
-public class AdministradorController implements Initializable {
-
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
     
+    package view;
+import modelo.Persona;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.Separator;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
+
+public class AdministradorController {
+
+    @FXML
+    private TextField BarraCC;
+
+    @FXML
+    private TextField BarraNombre;
+
+    @FXML
+    private Button BotonReportes;
+
+    @FXML
+    private Rectangle FondoRojo;
+
+    @FXML
+    private ImageView ImagenPerfil;
+
+    @FXML
+    private Separator Separador;
+
+    @FXML
+    private Text administrador;
+
+    @FXML
+    private Label textoCorreo;
+
+    @FXML
+    private Label textoDocumento;
+
+    @FXML
+    private Label textoNombre;
+
 }
+    
+
+     
+   
+    
+       
+    
+    
+
