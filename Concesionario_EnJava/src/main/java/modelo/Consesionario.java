@@ -5,11 +5,13 @@ import java.util.ArrayList;
 public class Consesionario {
 
     //listas necessarias para guardar la información
-    private static ArrayList<Administrador> listaAdministradores;
-    private static ArrayList<Empleado> listaEmpleado;
-    private static ArrayList <Vehiculo> listaVehiculos;
+    private  ArrayList<Administrador> listaAdministradores;
+    private  ArrayList<Empleado> listaEmpleado;
+    private  ArrayList <Vehiculo> listaVehiculos;
 
     private ArrayList <Cliente> listaCliente;
+
+    //constructor del concesionario
 
     public Consesionario() {
         listaAdministradores = new ArrayList<>();
@@ -20,11 +22,11 @@ public class Consesionario {
     }
 
     //metodos get para las listas
-    public static ArrayList<Administrador> getListaAdministradores() {
+    public  ArrayList<Administrador> getListaAdministradores() {
         return listaAdministradores;
     }
 
-    public static ArrayList<Empleado> getListaEmpleado() {
+    public  ArrayList<Empleado> getListaEmpleado() {
         return listaEmpleado;
     }
 
@@ -37,23 +39,20 @@ public class Consesionario {
         return listaCliente;
     }
 
-    //metodos para añadir a las listas
-
-    public void añadirCliente(Cliente cliente){
+    //metodos para añadir objetos a las listas
+    public void addCliente(Cliente cliente){
         listaCliente.add(cliente);
     }
 
-    public static void añadirVehiculo(Vehiculo vehiculo){
+    public  void addVehiculo(Vehiculo vehiculo){
         listaVehiculos.add(vehiculo);
     }
 
-    public void añadirEmpleado(Empleado empleado){
+    public void addEmpleado(Empleado empleado){
         listaEmpleado.add(empleado);
     }
 
-
-    //metodo para agregar un administrador a una lista de administradores
-    public  static void añadirAdministrador(Administrador administrador){
+    public void addAministrador(Administrador administrador){
         listaAdministradores.add(administrador);
     }
 
@@ -61,7 +60,7 @@ public class Consesionario {
     public  boolean verificarAdm(String correo){
         boolean x=false;
         for(int i=0; i<listaAdministradores.size(); i++){
-            if (getListaAdministradores().get(i).getCorreo()==correo){
+            if (listaAdministradores.get(i).getCorreo()==correo){
                 x=true;
             }
         }
@@ -69,9 +68,17 @@ public class Consesionario {
     }
 
     //metodo para sacar un empleado de la lista de empleado
-    public static Empleado buscarEmpleado(String correo){
-        Empleado empleado= (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getCorreo()==correo);
-        return  empleado;
+    public  Empleado buscarEmpleado(String correo){
+        return (Empleado) listaEmpleado
+                .stream()
+                .filter(Empleado->Empleado.getCorreo()==correo);
+    }
+
+    //metodo para retornar un administrador de la lista de administrador
+
+    public Administrador buscarAdm(String correo){
+        Administrador administrador= (Administrador) listaAdministradores.stream().filter(Administrador->Administrador.getCorreo()==correo);
+        return administrador;
     }
 
     //metodo que utiliza el metodo para verificar que sea administrador y compara su contraseña de serlo y
@@ -89,14 +96,11 @@ public class Consesionario {
                     .stream()
                     .filter(Empleado->Empleado.getClave()==contraseña);
             return empleado.getClave().equals(contraseña);
-
         }
-
     }
 
-
     //Metodo para eliminar empleado de la lista
-    public void eliminarEmpleado(int cc) {
+    public void eliminarEmpleado(String cc) {
         for (int i=0;i<listaEmpleado.size();i++){
             if(listaCliente.get(i).getCc()==cc){
                 Persona persona= listaCliente.get(i);
@@ -105,10 +109,6 @@ public class Consesionario {
         }
     }
 
-    //metodo para añadir empleado
-    public static void addEmpleado( Empleado empleado) {
-       listaEmpleado.add(empleado);
-    }
 
 
 

@@ -130,37 +130,51 @@ public class LoginController implements Initializable {
     //valida que los datos esten correctos y genera la siguiente interfaz
     @FXML
     private void EventoValidacion(ActionEvent event) throws IOException {
-
-
         correoUsuario = BloqueUsuario.getText();
         contraseñaUsuario = BloqueContraseña.getText();
         if(INSTANCE.getConsesionario().verificarAdm(correoUsuario)==true){
             if(INSTANCE.getConsesionario().validarContraseña(contraseñaUsuario,correoUsuario)==true){
                 FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
                 Parent root = carros.load();
-                CarrosController controller = carros.getController();
                 Scene scene = new Scene(root);
                 Stage stage = new Stage();
                 stage.setScene(scene);
                 stage.show();
                 this.stageLogin.close();
-                controller.init(stage, empleadoListLogin, administradorListLogin, correoUsuario);
             }
             else{
+                Alert alert = new Alert(Alert.AlertType.NONE);
+                alert.setTitle("ERROR");
+                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert.showAndWait();
+                BloqueUsuario.setText("");
 
             }
         }
-
-
-
-
-
-
-       // }
-       // else{
-
-        //}
-
+        else{
+            if(INSTANCE.getConsesionario().validarContraseña(contraseñaUsuario,correoUsuario)==true){
+                FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
+                Parent root = carros.load();
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.show();
+                this.stageLogin.close();
+            }
+            else {
+                Alert alert = new Alert(Alert.AlertType.NONE);
+                alert.setTitle("ERROR");
+                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert.showAndWait();
+                BloqueUsuario.setText("");
+            }
+        }
     }
 }
 

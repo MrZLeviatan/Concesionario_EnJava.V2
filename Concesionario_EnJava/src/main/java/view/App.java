@@ -6,11 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import modelo.Administrador;
-import modelo.Empleado;
 import modelo.Genero;
-
-import java.util.ArrayList;
-import java.util.List;
+import static view.consecionarioInstance.INSTANCE;
 
 /**
  * JavaFX App
@@ -22,13 +19,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,25693,Genero.MASCULINO,"admin123","admintotal");
-        List<Empleado>empleadoList= new ArrayList<>();
-        List<Administrador>administradorList= new ArrayList<>();
-        administradorList.add(adm);
+        final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,"25693",Genero.MASCULINO,"admin123","admintotal");
+        INSTANCE.getConsesionario().addAministrador(adm);
         FXMLLoader login= new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root=login.load();
-        LoginController controller= login.getController();
         Scene loginScene=new Scene(root);
         stage.setScene(loginScene);
         stage.show();
