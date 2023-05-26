@@ -6,8 +6,8 @@ import modelo.Persona;
 import java.util.function.Predicate;
 
 public class PersonaUtil {
-    public static Predicate<Persona> buscarPorCc(String cc) {
-        return persona -> persona.getCc().equals(cc);
+    public static Predicate<Persona> buscarPorCc(int cc) {
+        return persona -> persona.getCc()==(cc);
     }
 
     public static Predicate<Persona> buscarPorCorreo(String correo) {
@@ -27,9 +27,9 @@ public class PersonaUtil {
 
 
 
-    public static Predicate<Persona>buscarDatosPersona(String cc,String correo,String nombre,Genero genero){
+    public static Predicate<Persona>buscarDatosPersona(int cc,String correo,String nombre,Genero genero){
         Predicate<Persona> predicado= persona -> true;
-        if(cc != null && !cc.isEmpty()){
+        if(cc!=0){
             predicado.and(buscarPorCc(cc));
         }
         if(correo != null && !correo.isEmpty()){

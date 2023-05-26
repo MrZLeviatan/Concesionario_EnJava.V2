@@ -11,7 +11,7 @@ public class PruebaList {
     public void test01() throws Exception {
 
         INSTANCE.getConsesionario().getListaAdministradores();
-        Administrador amd= new Administrador("juan","admin@gmail.com",18,"12345", Genero.MASCULINO,"admin123","lolsito");
+        Administrador amd= new Administrador("juan","admin@gmail.com",18,12345, Genero.MASCULINO,"admin123","lolsito");
         INSTANCE.getConsesionario().addAministrador(amd);
        INSTANCE.getConsesionario().getListaAdministradores().forEach(Administrador->System.out.println(Administrador.getNombre()));
 

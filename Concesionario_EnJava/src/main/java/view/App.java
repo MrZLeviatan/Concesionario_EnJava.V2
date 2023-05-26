@@ -19,7 +19,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,"25693",Genero.MASCULINO,"admin123","admintotal");
+        final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,25693,Genero.MASCULINO,"admin123","admintotal");
         INSTANCE.getConsesionario().addAministrador(adm);
         FXMLLoader login= new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root=login.load();

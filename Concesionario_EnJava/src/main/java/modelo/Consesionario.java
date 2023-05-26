@@ -100,9 +100,9 @@ public class Consesionario {
     }
 
     //Metodo para eliminar empleado de la lista
-    public void eliminarEmpleado(String cc) {
+    public void eliminarEmpleado(int cc) {
         for (int i=0;i<listaEmpleado.size();i++){
-            if(listaCliente.get(i).getCc()==cc){
+            if(listaEmpleado.get(i).getCc() == cc){
                 Persona persona= listaCliente.get(i);
                 listaCliente.remove(persona);
             }

@@ -3,11 +3,12 @@ package modelo;
 import java.util.Objects;
 
 public class Persona {
-    private String nombre,correo,cc;
+    private String nombre,correo;
+    private int cc;
     private int edad;
     private Genero genero;
 
-    public Persona(String nombre, String correo, int edad,String cc, Genero genero)throws Exception{
+    public Persona(String nombre, String correo, int edad,int cc, Genero genero)throws Exception{
         this.nombre = Objects.requireNonNull(nombre,"El nombre es requerido");
         if( nombre.isBlank() ){
             throw new RuntimeException("El nombre es requerido");
@@ -25,7 +26,7 @@ public class Persona {
     public Genero getGenero() {
         return genero;
     }
-    public String getCc() {
+    public int getCc() {
         return cc;
     }
     public String getNombre() {
