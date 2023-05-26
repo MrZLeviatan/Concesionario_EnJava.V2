@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="&#10;load">
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/execciones/PersonaExisteExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/execciones/PersonaNoExisteExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/PadreUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/PersonaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/VehiculoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Padre.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Padre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java" afterDir="false" />
-    </list>
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="trate de realizar pruebas unitarias con las listas pero me da un fallo to feo ajajajja , esto es pregunta para el profesor para saber si los metodos me funcionan" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +157,7 @@
       <workItem from="1684682323392" duration="10300000" />
       <workItem from="1684817227202" duration="12526000" />
       <workItem from="1684990492092" duration="10159000" />
-      <workItem from="1685074915854" duration="7456000" />
+      <workItem from="1685074915854" duration="7799000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -314,7 +299,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685062376112</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Agrege el paquete util para dentro de el creal los predicados utilzados para los filtros al momento de buscar los vehiculos, ando en pruebas">
+      <created>1685082572766</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685082572766</updated>
+    </task>
+    <task id="LOCAL-00022" summary="realize los cambios y utilize el metodo, habilidad INSTANCE para llamar las listas del concesionario y sus metodos y acomodo el codigo de consecionario para cumplir con las normas">
+      <created>1685082644112</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685082644112</updated>
+    </task>
+    <task id="LOCAL-00023" summary="trate de realizar pruebas unitarias con las listas pero me da un fallo to feo ajajajja , esto es pregunta para el profesor para saber si los metodos me funcionan">
+      <created>1685082686205</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685082686205</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +355,10 @@
     <MESSAGE value="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas" />
     <MESSAGE value="load" />
     <MESSAGE value="&#10;load" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;load" />
+    <MESSAGE value="Agrege el paquete util para dentro de el creal los predicados utilzados para los filtros al momento de buscar los vehiculos, ando en pruebas" />
+    <MESSAGE value="realize los cambios y utilize el metodo, habilidad INSTANCE para llamar las listas del concesionario y sus metodos y acomodo el codigo de consecionario para cumplir con las normas" />
+    <MESSAGE value="trate de realizar pruebas unitarias con las listas pero me da un fallo to feo ajajajja , esto es pregunta para el profesor para saber si los metodos me funcionan" />
+    <option name="LAST_COMMIT_MESSAGE" value="trate de realizar pruebas unitarias con las listas pero me da un fallo to feo ajajajja , esto es pregunta para el profesor para saber si los metodos me funcionan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
