@@ -32,7 +32,6 @@ public class App extends Application {
         Scene loginScene=new Scene(root);
         stage.setScene(loginScene);
         stage.show();
-        controller.init( );
     }
 
 

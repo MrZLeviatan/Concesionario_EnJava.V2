@@ -15,7 +15,7 @@ public class PruebaList {
 
         List<Administrador>administradorList= new ArrayList<>();
         Administrador amd= new Administrador("juan","admin@gmail.com",18,12345, Genero.MASCULINO,"admin123","lolsito");
-        administradorList=modelo.Consesionario.añadirAdministrador(amd,administradorList);
+        //administradorList=modelo.Consesionario.añadirAdministrador(amd);
         administradorList.forEach(Administrador->System.out.println(Administrador.getCorreo()));
 
     }
@@ -26,7 +26,7 @@ public class PruebaList {
         List<Administrador>administradorList= new ArrayList<>();
         Administrador amd= new Administrador("juan","admin@gmail.com",18,12345, Genero.MASCULINO,"admin123","lolsito");
         String correo=amd.getCorreo();
-        if (Consesionario.verificarAdm(correo,administradorList)==true){
+        if (verificarAdm(correo,administradorList)==true){
             administradorList.forEach(Administrador->System.out.println(Administrador.getCorreo()));
         }
 

@@ -47,7 +47,7 @@ public class AceptarCerrarController {
         Stage stage= new Stage();
         stage.setScene(loginScene);
         stage.show();
-        controller.init(stage,empleadoListAceptarCerrar,administradorListAceptarCerrar);
+        controller.init(stage);
         stageCarro1.close();
 
     }

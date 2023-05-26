@@ -26,6 +26,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import static view.consecionarioInstance.INSTANCE;
+
 
 /**
  * FXML Controller class
@@ -56,10 +58,8 @@ public class LoginController implements Initializable {
 
     //metodo para inicializar las variable y guardarlas
 
-    public void init(Stage stage, List<Empleado> empleadoList, List<Administrador> administradorList) {
+    public void init(Stage stage) {
         stageLogin = stage;
-        empleadoListLogin = empleadoList;
-        administradorListLogin = administradorList;
     }
 
 
@@ -134,18 +134,26 @@ public class LoginController implements Initializable {
 
         correoUsuario = BloqueUsuario.getText();
         contraseñaUsuario = BloqueContraseña.getText();
+        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario)==true){
+            if(INSTANCE.getConsesionario().validarContraseña(contraseñaUsuario,correoUsuario)==true){
+                FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
+                Parent root = carros.load();
+                CarrosController controller = carros.getController();
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.show();
+                this.stageLogin.close();
+                controller.init(stage, empleadoListLogin, administradorListLogin, correoUsuario);
+            }
+            else{
 
-        //if (
+            }
+        }
 
-            FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
-            Parent root = carros.load();
-            CarrosController controller = carros.getController();
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
-            this.stageLogin.close();
-            controller.init(stage, empleadoListLogin, administradorListLogin, correoUsuario);
+
+
+
 
 
        // }
