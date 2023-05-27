@@ -27,6 +27,8 @@ public class App extends Application {
         FXMLLoader login= new FXMLLoader(getClass().getResource("Administrador.fxml"));
         Parent root=login.load();
         Scene loginScene=new Scene(root);
+
+
         stage.initStyle(UNDECORATED);
         stage.setScene(loginScene);
         stage.show();

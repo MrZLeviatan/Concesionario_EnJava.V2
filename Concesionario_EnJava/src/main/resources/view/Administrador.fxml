@@ -51,7 +51,7 @@
             <Image url="@../imagenes/ImagenPerfil.png" />
          </image>
       </ImageView>
-      <Separator fx:id="Separador" layoutX="353.0" orientation="VERTICAL" prefHeight="487.0" prefWidth="12.0" style="-fx-background-color: black;" />
+      <Separator fx:id="Separador" layoutX="353.0" orientation="VERTICAL" prefHeight="487.0" prefWidth="0.0" style="-fx-background-color: black;" />
       <Label fx:id="TextoNombre" layoutX="21.0" layoutY="298.0" text="NOMBRE:" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="14.0" />
@@ -67,17 +67,17 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="BloqueNombre" cacheShape="false" centerShape="false" editable="false" layoutX="118.0" layoutY="293.0" opacity="0.48" prefHeight="25.0" prefWidth="211.0">
+      <TextField fx:id="BloqueNombre" cacheShape="false" centerShape="false" editable="false" layoutX="118.0" layoutY="293.0" opacity="0.48" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #FFFFFF;">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="BloqueCedula" editable="false" layoutX="118.0" layoutY="337.0" opacity="0.48" prefHeight="25.0" prefWidth="211.0">
+      <TextField fx:id="BloqueCedula" editable="false" layoutX="118.0" layoutY="337.0" opacity="0.48" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #FFFFFF;">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="BloqueCorreo" editable="false" layoutX="118.0" layoutY="384.0" opacity="0.48" prefHeight="25.0" prefWidth="211.0">
+      <TextField fx:id="BloqueCorreo" editable="false" layoutX="118.0" layoutY="384.0" opacity="0.48" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #FFFFFF;">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
@@ -87,11 +87,11 @@
         <items>
             <MenuItem fx:id="BotonCuotaEmpleado" disable="true" mnemonicParsing="false" text="CuotaEmpleado" />
             <MenuItem fx:id="BotonActualizarEmpleado" mnemonicParsing="false" text="ActualizarEmpleado" />
-          <MenuItem fx:id="BotonRegistrarEmpleado" text="RegistrarEmpleado" />
+          <MenuItem fx:id="BotonRegistrarEmpleado" onAction="#EventoRegistrar" text="RegistrarEmpleado" />
           <MenuItem fx:id="BotonEliminarEmpleado" mnemonicParsing="false" text="EliminarEmpleados" />
         </items>
          <font>
-            <Font name="Arial Bold" size="14.0" />
+            <Font name="Arial Bold Italic" size="14.0" />
          </font>
          <effect>
             <Blend />
@@ -111,7 +111,7 @@
             <Font name="System Bold Italic" size="34.0" />
          </font>
       </Label>
-      <Button fx:id="BotonGerencia" alignment="CENTER" layoutX="377.0" layoutY="350.0" mnemonicParsing="false" opacity="0.71" prefHeight="41.0" prefWidth="323.0" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="GERENCIA" textFill="WHITE" wrapText="true">
+      <Button fx:id="BotonGerencia" alignment="CENTER" layoutX="377.0" layoutY="350.0" mnemonicParsing="false" onAction="#EventoTroll" opacity="0.71" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="GERENCIA" textFill="WHITE" wrapText="true">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
@@ -121,9 +121,9 @@
             <Font name="Arial Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="Volver" layoutX="14.0" layoutY="457.0" text="" textFill="WHITE">
+      <Label fx:id="Volver" layoutX="14.0" layoutY="431.0" onDragDetected="#EventoVolver" onMousePressed="#EventoVolver" prefHeight="21.0" prefWidth="30.0" styleClass="X2" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="«" textFill="WHITE">
          <font>
-            <Font name="System Bold Italic" size="20.0" />
+            <Font name="System Bold Italic" size="39.0" />
          </font>
       </Label>
       <ImageView fx:id="LogoLetras" fitHeight="111.0" fitWidth="242.0" layoutX="418.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
