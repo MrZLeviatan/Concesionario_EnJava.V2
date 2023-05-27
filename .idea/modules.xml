@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" filepath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Concesionario_EnJava.V2.iml" filepath="$PROJECT_DIR$/.idea/Concesionario_EnJava.V2.iml" />
     </modules>
   </component>
