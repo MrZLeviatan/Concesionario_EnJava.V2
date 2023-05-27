@@ -5,15 +5,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="tambien agrege el paquete Exepciones para crear exepciones que se puedan dar">
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/EmpleadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Empleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jms_javax_jms_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_5_0_b01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/Concesionario_EnJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/execciones/PersonaExisteExeption.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/execciones/PersonaExisteExeption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/execciones/PersonaNoExisteExeption.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/execciones/PersonaNoExisteExeption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Buses.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Camiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Camiones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Combustible.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Combustible.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Deportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Deportivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/EstadoUso.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/EstadoUso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Genero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Moto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Nivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Nivel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Padre.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Padre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/PickUps.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/PickUps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Poseer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Poseer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/RecuperarCorreo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/RecuperarCorreo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Sedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Sedan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/TipoCamion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/TipoCamion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/TipoTransaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/TipoTransaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Transaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Transaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Transmision.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Transmision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vans.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/PadreUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/PadreUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/PersonaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/PersonaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/VehiculoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/util/VehiculoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AceptarCerrarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AdministradorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/consecionarioInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/HojasEstilo/HojaEstiloBotones.css" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/HojasEstilo/HojaEstiloBotones.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Carros.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RecuperarContraseña.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RecuperarContraseña.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/aceptarCerrar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/aceptarCerrar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaPersonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaPersonas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaVehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/test/java/PruebaVehiculos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +88,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
         <option value="Enum" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -45,28 +107,39 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="openjdk-20" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Q4lpFZwkEhul5MR4q8aDd9IyoB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/equipo/copiaSeguridadProyecto/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/equipo/OneDrive/Documentos/GitHub/202301P2/javafx/ejemplo14&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/maria/OneDrive/Documentos/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
+    "last_opened_file_path": "C:/Users/equipo/OneDrive/Documentos/GitHub/202301P2/javafx/ejemplo14",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35977012",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\equipo\copiaSeguridadProyecto\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\resources\imagenes" />
