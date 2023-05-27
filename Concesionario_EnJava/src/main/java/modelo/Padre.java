@@ -17,4 +17,23 @@ public class Padre extends Vehiculo {
         this.numeroBolsaAire=numeroBolsaAire;
     }
 
+    public int getNumeroPasajeros() {
+        return numeroPasajeros;
+    }
+
+    public int getNumeroBolsaAire() {
+        return numeroBolsaAire;
+    }
+
+    public Poseer getCamaraReserva() {
+        return camaraReserva;
+    }
+
+    public int getNumeroPuertas() {
+        return numeroPuertas;
+    }
+
+    public Poseer getAireAcondicionado() {
+        return aireAcondicionado;
+    }
 }

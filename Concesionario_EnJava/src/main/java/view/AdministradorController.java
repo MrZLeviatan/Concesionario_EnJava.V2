@@ -1,26 +1,43 @@
 
-    
-    package view;
-import modelo.Persona;
+package view;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
 
 public class AdministradorController {
 
     @FXML
-    private TextField BarraCC;
+    private TextField BloqueCedula;
 
     @FXML
-    private TextField BarraNombre;
+    private TextField BloqueCorreo;
 
     @FXML
-    private Button BotonReportes;
+    private TextField BloqueNombre;
+
+    @FXML
+    private MenuItem BotonActualizarEmpleado;
+
+    @FXML
+    private MenuItem BotonCuotaEmpleado;
+
+    @FXML
+    private MenuItem BotonEliminarEmpleado;
+
+    @FXML
+    private Button BotonGerencia;
+
+    @FXML
+    private MenuItem BotonRegistrarEmpleado;
 
     @FXML
     private Rectangle FondoRojo;
@@ -29,27 +46,42 @@ public class AdministradorController {
     private ImageView ImagenPerfil;
 
     @FXML
+    private ImageView LogoLetras;
+
+    @FXML
+    private MenuButton MenuBotonEmpleado;
+
+    @FXML
+    private MenuButton MenuBotonRegistro;
+
+    @FXML
+    private AnchorPane Panel;
+
+    @FXML
     private Separator Separador;
 
     @FXML
-    private Text administrador;
+    private Separator SeparadorBlanco;
 
     @FXML
-    private Label textoCorreo;
+    private Label TextoAdministrador;
 
     @FXML
-    private Label textoDocumento;
+    private Label TextoCedula;
 
     @FXML
-    private Label textoNombre;
+    private Label TextoCorreo;
+
+    @FXML
+    private Label TextoNombre;
+
+    @FXML
+    private Label Volver;
+
+    @FXML
+    private Label X;
+
+    @FXML
+    void labCerrar(MouseEvent event) {System.exit(0);}
 
 }
-    
-
-     
-   
-    
-       
-    
-    
-
