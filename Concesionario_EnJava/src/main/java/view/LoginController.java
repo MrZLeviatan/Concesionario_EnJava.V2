@@ -117,9 +117,7 @@ public class LoginController implements Initializable {
     private void EventoRecuperar(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/RecuperarContraseña.fxml"));
         Parent root = loader.load();
-        RecuperarContraseñaController controller = loader.getController();
         Scene scene = new Scene(root);
-
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.initStyle(StageStyle.UNDECORATED);
@@ -132,30 +130,19 @@ public class LoginController implements Initializable {
     private void EventoValidacion(ActionEvent event) throws IOException {
         correoUsuario = BloqueUsuario.getText();
         contraseñaUsuario = BloqueContraseña.getText();
-        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario)==true){
-            if(INSTANCE.getConsesionario().validarContraseña(contraseñaUsuario,correoUsuario)==true){
-                FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
-                Parent root = carros.load();
-                Scene scene = new Scene(root);
-                Stage stage = new Stage();
-                stage.setScene(scene);
-                stage.show();
-                this.stageLogin.close();
-            }
-            else{
-                Alert alert = new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
-                BloqueUsuario.setText("");
 
-            }
+        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)==true) {
+
+            FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
+            Parent root = carros.load();
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+            this.stageLogin.close();
         }
         else{
-            if(INSTANCE.getConsesionario().validarContraseña(contraseñaUsuario,correoUsuario)==true){
+            if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)==true){
                 FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
                 Parent root = carros.load();
                 Scene scene = new Scene(root);
@@ -163,19 +150,23 @@ public class LoginController implements Initializable {
                 stage.setScene(scene);
                 stage.show();
                 this.stageLogin.close();
+
             }
-            else {
-                Alert alert = new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
-                BloqueUsuario.setText("");
+            else{
+                FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
+                Parent root = carros.load();
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.show();
+
             }
+
+
         }
+
     }
+
 }
 
 

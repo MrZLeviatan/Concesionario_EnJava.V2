@@ -1,32 +1,43 @@
 package modelo;
 
+import execciones.ValorRequeridoException;
+
 import java.util.Objects;
 
 public class Persona {
-    private String nombre,correo;
-    private int cc;
+    private String nombre,correo,cc;
     private int edad;
     private Genero genero;
 
-    public Persona(String nombre, String correo, int edad,int cc, Genero genero)throws Exception{
-        this.nombre = Objects.requireNonNull(nombre,"El nombre es requerido");
-        if( nombre.isBlank() ){
-            throw new RuntimeException("El nombre es requerido");
-        }
-
-        this.correo = Objects.requireNonNull(nombre,"El correo es requerido");
-        if( correo.isBlank() ){
-            throw new RuntimeException("El correo es requerido");
-        }
-
-        this.cc = Objects.requireNonNull(cc,"La cédula es requirida");
-        this.edad=Objects.requireNonNull(edad,"la edad es requerida");
+    public Persona(String nombre, String correo, int edad,String cc, Genero genero)throws Exception{
+        this.nombre=nombre;
+        this.correo=correo;
+        this.edad=edad;
+        this.cc=cc;
         this.genero=genero;
     }
+
+    public static Persona of(String nombre,String correo,int edad,String cc, Genero genero) throws Exception {
+        if(Objects.requireNonNull(nombre,"el nombre es requerido").isEmpty()){
+            throw new ValorRequeridoException("nombre");
+        }
+        if(Objects.requireNonNull(correo,"el correo es requerido").isEmpty()){
+            throw new ValorRequeridoException("correo");
+        }
+        if(Objects.requireNonNull(cc,"La cédula es requirida").isEmpty()){
+            throw new ValorRequeridoException("cc");
+        }
+        Objects.requireNonNull(genero,"el genero es requerido");
+        Objects.requireNonNull(edad,"la edad es er requerida");
+        return  new Persona(nombre,correo,edad,cc,genero);
+
+    }
+
+
     public Genero getGenero() {
         return genero;
     }
-    public int getCc() {
+    public String getCc() {
         return cc;
     }
     public String getNombre() {

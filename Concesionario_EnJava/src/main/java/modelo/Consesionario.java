@@ -6,7 +6,7 @@ public class Consesionario {
 
     //listas necessarias para guardar la información
     private  ArrayList<Administrador> listaAdministradores;
-    private  ArrayList<Empleado> listaEmpleado;
+    private  ArrayList<Empleado> listaEmpleado ;
     private  ArrayList <Vehiculo> listaVehiculos;
 
     private ArrayList <Cliente> listaCliente;
@@ -25,6 +25,8 @@ public class Consesionario {
     public  ArrayList<Administrador> getListaAdministradores() {
         return listaAdministradores;
     }
+
+
 
     public  ArrayList<Empleado> getListaEmpleado() {
         return listaEmpleado;
@@ -56,61 +58,82 @@ public class Consesionario {
         listaAdministradores.add(administrador);
     }
 
-    //verifica que el correo que fue enviado sea de un administrador
-    public  boolean verificarAdm(String correo){
+    //verifica que existan en las listas correspondientes
+    public boolean contenerListaAdmin(String correo){
         boolean x=false;
-        for(int i=0; i<listaAdministradores.size(); i++){
-            if (listaAdministradores.get(i).getCorreo()==correo){
+        for(int i=0; i<listaAdministradores.size();i++){
+            if(listaAdministradores.get(i).getCorreo()==correo){
                 x=true;
+                i=listaEmpleado.size()+1;
             }
         }
         return x;
     }
 
-    //metodo para sacar un empleado de la lista de empleado
-    public  Empleado buscarEmpleado(String correo){
-        return (Empleado) listaEmpleado
-                .stream()
-                .filter(Empleado->Empleado.getCorreo()==correo);
+    public boolean contenerListaEmpleado(String correo){
+        boolean x=false;
+        for(int i=0; i<listaEmpleado.size();i++){
+            if(listaEmpleado.get(i).getCorreo().contains(correo)){
+                x=true;
+                i=listaEmpleado.size()+1;
+            }
+        }
+        return x;
     }
 
-    //metodo para retornar un administrador de la lista de administrador
+    //verifica que el correo que fue enviado sea de un administrador
+    public  boolean verificarAdm(String correo,String contraseña){
+        if(contenerListaAdmin(correo)==true){
+            Administrador administrador= buscarAdm(correo);
+            return validarContraseñaADM(contraseña,correo);
+        }
+        else {
+            return false;
+        }
+    }
+    public boolean verificarEmpleado(String correo, String contraseña) {
+        if(contenerListaEmpleado(correo)==true){
+            Empleado empleado= buscarEmpleadoCorreo(correo);
+            return validaCotraseña(contraseña,correo);
+        }
+        else {
+            return false;
+        }
+    }
 
+    // metodos para buscar Personas en las listas
+    public  Empleado buscarEmpleadoCorreo(String correo){
+        Empleado empleado= (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getCorreo()==correo);
+        return empleado;
+    }
+    public  Empleado buscarEmpleadoCC(String cc){
+        Empleado empleado= (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getCc()==cc);
+        return empleado;
+    }
     public Administrador buscarAdm(String correo){
         Administrador administrador= (Administrador) listaAdministradores.stream().filter(Administrador->Administrador.getCorreo()==correo);
         return administrador;
     }
 
-    //metodo que utiliza el metodo para verificar que sea administrador y compara su contraseña de serlo y
-    //de no serlo valida en la lista de empleados
-    public boolean validarContraseña(String contraseña,String correo){
 
-        if(verificarAdm(correo)==true){
-            Administrador adm= (Administrador) listaAdministradores
-                    .stream()
-                    .filter(Administrador->Administrador.getClave()==contraseña);
-            return adm.getClave().contains(contraseña);
-        }
-        else{
-            Empleado empleado= (Empleado) listaEmpleado
-                    .stream()
-                    .filter(Empleado->Empleado.getClave()==contraseña);
-            return empleado.getClave().equals(contraseña);
-        }
+    // metodo para validar contraseñas
+    public boolean validarContraseñaADM(String contraseña,String correo){
+      Administrador administrador= buscarAdm(correo);
+      return administrador.getClave().equals(contraseña);
     }
+
+    public boolean validaCotraseña(String contraseña,String correo){
+        Empleado empleado= buscarEmpleadoCorreo(correo);
+        return empleado.getClave().equals(contraseña);
+    }
+
+
 
     //Metodo para eliminar empleado de la lista
-    public void eliminarEmpleado(int cc) {
-        for (int i=0;i<listaEmpleado.size();i++){
-            if(listaEmpleado.get(i).getCc() == cc){
-                Persona persona= listaCliente.get(i);
-                listaCliente.remove(persona);
-            }
-        }
+    public void eliminarEmpleado(String cc) {
+      Empleado empleado= buscarEmpleadoCC(cc);
+      listaEmpleado.remove(empleado);
     }
-
-
-
 
 
 

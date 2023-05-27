@@ -7,7 +7,7 @@ public class Empleado extends Seguridad{
     private Estado estado;
     private Nivel nivel;
 
-    public Empleado(String nombre, String correo, int edad, int cc, Genero genero, String clave, String palabraSecreta,Estado estado, Nivel nivel) throws Exception {
+    public Empleado(String nombre, String correo, int edad, String cc, Genero genero, String clave, String palabraSecreta,Estado estado, Nivel nivel) throws Exception {
         super(nombre, correo, edad, cc, genero, clave, palabraSecreta);
         this.estado=estado;
         this.nivel=Nivel.INFERIOR;
