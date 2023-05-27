@@ -1,26 +1,125 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package view;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author Mr. Nicolas
- */
-public class AdministradorController implements Initializable {
+import java.io.IOException;
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+import static javafx.stage.StageStyle.UNDECORATED;
+
+public class AdministradorController {
+
+    @FXML
+    private TextField BloqueCedula;
+
+    @FXML
+    private TextField BloqueCorreo;
+
+    @FXML
+    private TextField BloqueNombre;
+
+    @FXML
+    private MenuItem BotonActualizarEmpleado;
+
+    @FXML
+    private MenuItem BotonCuotaEmpleado;
+
+    @FXML
+    private MenuItem BotonEliminarEmpleado;
+
+    @FXML
+    private Button BotonGerencia;
+
+    @FXML
+    private MenuItem BotonRegistrarEmpleado;
+
+    @FXML
+    private Rectangle FondoRojo;
+
+    @FXML
+    private ImageView ImagenPerfil;
+
+    @FXML
+    private ImageView LogoLetras;
+
+    @FXML
+    private MenuButton MenuBotonEmpleado;
+
+    @FXML
+    private MenuButton MenuBotonRegistro;
+
+    @FXML
+    private AnchorPane Panel;
+
+    @FXML
+    private Separator Separador;
+
+    @FXML
+    private Separator SeparadorBlanco;
+
+    @FXML
+    private Label TextoAdministrador;
+
+    @FXML
+    private Label TextoCedula;
+
+    @FXML
+    private Label TextoCorreo;
+
+    @FXML
+    private Label TextoNombre;
+
+    @FXML
+    private Label Volver;
+
+    @FXML
+    private Label X;
+
+    @FXML
+    void labCerrar(MouseEvent event) {System.exit(0);}
+
+
+    @FXML
+
+    public void EventoVolver (MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        Parent root= loader.load();
+        Stage stage = new Stage();
+        stage.initStyle(UNDECORATED);
+        stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.close();
+        stage.show();
+    }
+
+    public void EventoTroll (ActionEvent event){
+        Alert alert = new Alert(Alert.AlertType.NONE);
+        alert.setTitle("ERROR!!!");
+        alert.setContentText("EN PROCESO DE CONSTRUCCION...");
+        alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenDisculpa.png").toString()));
+        alert.setHeaderText("HEY, QUE HACES AQUI???");
+        alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+        alert.showAndWait();
+    }
+
+    public void EventoRegistrar (ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegistrarEmpleado.fxml"));
+        Parent root= loader.load();
+        Stage stage = new Stage();
+        stage.initStyle(UNDECORATED);
+        stage.setScene(new Scene(root));
+        stage.show();
+
+    }
 }

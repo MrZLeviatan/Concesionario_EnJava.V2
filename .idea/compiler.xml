@@ -9,5 +9,8 @@
         <module name="Concesionario_EnJava" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Concesionario_EnJava" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
