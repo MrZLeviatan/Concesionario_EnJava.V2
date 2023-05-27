@@ -86,9 +86,9 @@
       <MenuButton fx:id="MenuBotonEmpleado" alignment="CENTER" layoutX="377.0" layoutY="203.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="EMPLEADOS" textFill="WHITE">
         <items>
             <MenuItem fx:id="BotonCuotaEmpleado" disable="true" mnemonicParsing="false" text="CuotaEmpleado" />
-            <MenuItem fx:id="BotonActualizarEmpleado" mnemonicParsing="false" text="ActualizarEmpleado" />
+            <MenuItem fx:id="BotonActualizarEmpleado" mnemonicParsing="false" onAction="#EventoBuscarEmpleado" text="ActualizarEmpleado" />
           <MenuItem fx:id="BotonRegistrarEmpleado" onAction="#EventoRegistrar" text="RegistrarEmpleado" />
-          <MenuItem fx:id="BotonEliminarEmpleado" mnemonicParsing="false" text="EliminarEmpleados" />
+          <MenuItem fx:id="BotonEliminarEmpleado" mnemonicParsing="false" onAction="#EventoBuscarEmpleado" text="EliminarEmpleados" />
         </items>
          <font>
             <Font name="Arial Bold Italic" size="14.0" />

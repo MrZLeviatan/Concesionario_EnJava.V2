@@ -21,9 +21,6 @@ import java.util.ResourceBundle;
 
 
 
-
-
-
 public class RecuperarContraseñaController implements Initializable {
 
  @FXML
@@ -57,13 +54,12 @@ public class RecuperarContraseñaController implements Initializable {
         if(evt.equals(BloqueContraseña)){
             if (event.getCharacter().equals(" ")){ 
                Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR!!!");
-                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
+                alert.setTitle("ERROR");
+                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
                 alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
+                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-                BloqueContraseña.setText("");
             }
    
         }
@@ -83,14 +79,13 @@ public class RecuperarContraseñaController implements Initializable {
                
            }else{
                 Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert.setTitle("ERROR!!!");
+                alert.setContentText("POR FAVOR LLENAR LOS ESPACIOS EN BLANCO");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenLlenar.png").toString()));
+                alert.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-               
-                
+
                 
            }  
            

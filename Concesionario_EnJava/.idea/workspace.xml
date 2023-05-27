@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd786a28-9c3f-4835-97a7-f14edd81a238" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/wallpaperbetter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseñaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseñaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/ImagenLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/resources/view",
+    "last_directory_selection": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
     "last_opened_file_path": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo14",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -99,7 +96,7 @@
       <workItem from="1685161411484" duration="793000" />
       <workItem from="1685162281633" duration="548000" />
       <workItem from="1685162886158" duration="1239000" />
-      <workItem from="1685164142042" duration="8264000" />
+      <workItem from="1685164142042" duration="12882000" />
     </task>
     <servers />
   </component>
