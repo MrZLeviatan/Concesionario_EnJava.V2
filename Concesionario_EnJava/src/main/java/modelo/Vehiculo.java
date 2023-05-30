@@ -56,4 +56,7 @@ public class Vehiculo extends Serializar {
     }
 
 
+    public String getFoto() {
+        return foto;
+    }
 }

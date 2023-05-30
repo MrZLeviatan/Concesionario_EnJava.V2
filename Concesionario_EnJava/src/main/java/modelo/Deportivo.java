@@ -5,8 +5,8 @@ public class Deportivo extends  Vehiculo{
     private float tiempo100k;
 
 
-    public Deportivo(float tiempo100k, int matricula,int numeroPuertas,int numeroPasajeros,int caballosFuerza, int numeroBolsas ,String marca, int modelo, int cilindraje, EstadoUso estadoUso, Combustible combustible, int velocidadMax, int cambios, Transmision transmision) {
-        super(matricula, marca, modelo, cilindraje, estadoUso, combustible, velocidadMax, cambios, transmision);
+    public Deportivo(String foto,float tiempo100k, int matricula,int numeroPuertas,int numeroPasajeros,int caballosFuerza, int numeroBolsas ,String marca, int modelo, int cilindraje, EstadoUso estadoUso, Combustible combustible, int velocidadMax, int cambios, Transmision transmision) {
+        super(foto,matricula, marca, modelo, cilindraje, estadoUso, combustible, velocidadMax, cambios, transmision);
         this.numeroPuertas=numeroPuertas;
         this.numeroPasajeros=numeroPasajeros;
         this.caballosFuerza=caballosFuerza;

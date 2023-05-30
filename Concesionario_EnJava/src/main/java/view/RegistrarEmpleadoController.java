@@ -2,21 +2,23 @@ package view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.Separator;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class RegistrarEmpleadoController {
 
     @FXML
-    private TextField BloqueContraseña;
+    private TextField BloqueCedula;
 
     @FXML
-    private TextField BloqueCedula;
+    private TextField BloqueContraseña;
 
     @FXML
     private TextField BloqueCorreo;
@@ -75,36 +77,20 @@ public class RegistrarEmpleadoController {
     @FXML
     private Text TextoRegistro;
 
-
-
     @FXML
-    private void Eventocancelar (ActionEvent event){
-
-        Stage stage= (Stage) this.BotonCancelar.getScene().getWindow();
-        stage.close();
+    void EventoAgregar(ActionEvent event) {
 
     }
+
     @FXML
-    private void eventEspaciosBlancos (ActionEvent event) throws IOException {
+    void Eventocancelar(MouseEvent event) {
 
-       String nombre = BloqueNombre.getText();
-      String cedula = BloqueCedula.getText();
-        // String genero
-        int edad= Integer.parseInt(BloqueEdad.getText());
-        String correo= BloqueCorreo.getText();
-        String contraseña = BloqueContraseña.getText();
+    }
+
+    @FXML
+    void eventEspaciosBlancos(MouseEvent event) {
 
 
-        if(nombre.isEmpty() && cedula.isEmpty() && edad==0 && correo.isEmpty() && contraseña.isEmpty()){
-                Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR!!!");
-                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
+    }
 
-            }
-
-        }
 }

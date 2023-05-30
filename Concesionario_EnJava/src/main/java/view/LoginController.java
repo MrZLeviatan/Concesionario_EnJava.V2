@@ -17,16 +17,11 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import modelo.Administrador;
-import modelo.Empleado;
-
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
-
 import static view.consecionarioInstance.INSTANCE;
+
 
 
 /**
@@ -35,11 +30,6 @@ import static view.consecionarioInstance.INSTANCE;
  * @author Mr. Nicolas
  */
 public class LoginController implements Initializable {
-    private Stage stageLogin;
-
-    private List<Empleado> empleadoListLogin = new ArrayList<>();
-    private List<Administrador> administradorListLogin = new ArrayList<>();
-
     @FXML
     private TextField BloqueUsuario;
 
@@ -54,14 +44,6 @@ public class LoginController implements Initializable {
 
     @FXML
     private Button BotonRecuperar;
-
-
-    //metodo para inicializar las variable y guardarlas
-
-    public void init(Stage stage) {
-        stageLogin = stage;
-    }
-
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -97,13 +79,13 @@ public class LoginController implements Initializable {
 
 
             if (event.getCharacter().equals(" ")) {
-                Alert alert = new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR");
-                alert.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("AH OCURRIDO UN ERROR!!");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
+                Alert alert1= new Alert(Alert.AlertType.NONE);
+                alert1.setTitle("ERROR");
+                alert1.setContentText("NO SE PERMITEN ESPACIOS EN BLANCO");
+                alert1.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
+                alert1.setHeaderText("AH OCURRIDO UN ERROR!!");
+                alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert1.showAndWait();
                 BloqueContraseña.setText("");
 
             }
@@ -128,43 +110,29 @@ public class LoginController implements Initializable {
     //valida que los datos esten correctos y genera la siguiente interfaz
     @FXML
     private void EventoValidacion(ActionEvent event) throws IOException {
-        correoUsuario = BloqueUsuario.getText();
+        correoUsuario= BloqueUsuario.getText();
         contraseñaUsuario = BloqueContraseña.getText();
+        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)==true){
+            FXMLLoader administrador= new FXMLLoader(getClass().getResource("Administrador.fxml"));
+            Parent root= administrador.load();
+            Scene scene= new Scene(root);
+            Stage stage= new Stage();
+            stage.setScene(scene);
+            stage.show();
+        }
 
-        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)==true) {
-
-            FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
-            Parent root = carros.load();
-            Scene scene = new Scene(root);
+        if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)==true){
+            FXMLLoader empleado= new FXMLLoader(getClass().getResource("Empleado.fxml"));
+            Parent root1= empleado.load();
+            Scene scene= new Scene(root1);
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.show();
-            this.stageLogin.close();
         }
         else{
-            if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)==true){
-                FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
-                Parent root = carros.load();
-                Scene scene = new Scene(root);
-                Stage stage = new Stage();
-                stage.setScene(scene);
-                stage.show();
-                this.stageLogin.close();
-
-            }
-            else{
-                FXMLLoader carros = new FXMLLoader(getClass().getResource("Carros.fxml"));
-                Parent root = carros.load();
-                Scene scene = new Scene(root);
-                Stage stage = new Stage();
-                stage.setScene(scene);
-                stage.show();
-
-            }
-
+            //
 
         }
-
     }
 
 }
