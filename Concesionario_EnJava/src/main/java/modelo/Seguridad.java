@@ -7,7 +7,7 @@ public class Seguridad extends Persona{
     public Seguridad(String nombre, String correo, int edad, String cc, Genero genero, String clave, String palabraSecreta) throws Exception {
         super(nombre, correo, edad, cc, genero);
 
-        this.clave= Objects.requireNonNull(nombre,"la clave es requerida");
+        this.clave= Objects.requireNonNull(clave,"la clave es requerida");
         if(clave.isBlank()){
             throw new RuntimeException("la clave es requerida");
         }

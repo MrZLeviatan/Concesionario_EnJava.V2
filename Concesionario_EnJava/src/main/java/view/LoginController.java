@@ -17,9 +17,11 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import static view.consecionarioInstance.INSTANCE;
 
 
@@ -109,28 +111,29 @@ public class LoginController implements Initializable {
 
     //valida que los datos esten correctos y genera la siguiente interfaz
     @FXML
-    private void EventoValidacion(ActionEvent event) throws IOException {
+    public void eventoValidacion(ActionEvent event) throws Exception {
+
         correoUsuario= BloqueUsuario.getText();
         contraseñaUsuario = BloqueContraseña.getText();
-        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)==true){
+        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)){
             FXMLLoader administrador= new FXMLLoader(getClass().getResource("Administrador.fxml"));
+            Object controller= administrador.getController();
             Parent root= administrador.load();
             Scene scene= new Scene(root);
             Stage stage= new Stage();
             stage.setScene(scene);
             stage.show();
-        }
 
-        if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)==true){
+        } else if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)){
             FXMLLoader empleado= new FXMLLoader(getClass().getResource("Empleado.fxml"));
             Parent root1= empleado.load();
             Scene scene= new Scene(root1);
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.show();
-        }
-        else{
-            //
+        } else{
+           //
+
 
         }
     }

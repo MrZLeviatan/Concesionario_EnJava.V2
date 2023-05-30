@@ -69,7 +69,7 @@ public class Consesionario {
     public  boolean verificarAdm(String correo,String contraseña){
         boolean x= false;
         for (Administrador administrador:listaAdministradores) {
-            if(administrador.getCorreo().equals(correo)&&administrador.getClave().equals(contraseña)){
+            if(administrador.getCorreo().equalsIgnoreCase(correo)&&administrador.getClave().equals(contraseña)){
                 x= true;
                 break ;
             }
