@@ -9,11 +9,11 @@ import java.util.Properties;
 public class Consesionario {
 
     //listas necessarias para guardar la información
-    private  ArrayList<Administrador> listaAdministradores;
-    private  ArrayList<Empleado> listaEmpleado ;
-    private  ArrayList <Vehiculo> listaVehiculos;
+    private final ArrayList<Administrador> listaAdministradores;
+    private final   ArrayList<Empleado> listaEmpleado ;
+    private final ArrayList <Vehiculo> listaVehiculos;
 
-    private ArrayList <Cliente> listaCliente;
+    private final ArrayList <Cliente> listaCliente;
 
     //constructor del concesionario
 
@@ -69,7 +69,7 @@ public class Consesionario {
     public  boolean verificarAdm(String correo,String contraseña){
         boolean x= false;
         for (Administrador administrador:listaAdministradores) {
-            if(administrador.getCorreo()==correo&&administrador.getClave()==contraseña){
+            if(administrador.getCorreo().equals(correo)&&administrador.getClave().equals(contraseña)){
                 x= true;
                 break ;
             }
@@ -79,7 +79,7 @@ public class Consesionario {
     public boolean verificarEmpleado(String correo, String contraseña) {
         boolean x= false;
         for (Empleado empleado:listaEmpleado) {
-            if(empleado.getCorreo()==correo&&empleado.getClave()==contraseña){
+            if(empleado.getCorreo().equals(correo)&&empleado.getClave().equals(contraseña)){
                 x= true;
                 break ;
             }
@@ -100,20 +100,6 @@ public class Consesionario {
         Administrador administrador= (Administrador) listaAdministradores.stream().filter(Administrador->Administrador.getCorreo()==correo);
         return administrador;
     }
-
-
-    // metodo para validar contraseñas
-    public boolean validarContraseñaADM(String contraseña,String correo){
-      Administrador administrador= buscarAdm(correo);
-      return administrador.getClave().equals(contraseña);
-    }
-
-    public boolean validaCotraseña(String contraseña,String correo){
-        Empleado empleado= buscarEmpleadoCorreo(correo);
-        return empleado.getClave().equals(contraseña);
-    }
-
-
 
     //Metodo para eliminar empleado de la lista
     public void eliminarEmpleado(String cc) {

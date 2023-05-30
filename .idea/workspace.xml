@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="load">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Camiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Camiones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Deportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Deportivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/PickUps.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/PickUps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Sedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Sedan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/SendMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vans.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/CarrosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AceptarCerrarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +172,7 @@
       <workItem from="1685417869167" duration="3936000" />
       <workItem from="1685422974404" duration="93000" />
       <workItem from="1685423165042" duration="515000" />
-      <workItem from="1685423701975" duration="688000" />
+      <workItem from="1685423701975" duration="1184000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -363,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685213197540</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="load">
+      <created>1685424398556</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685424398556</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
