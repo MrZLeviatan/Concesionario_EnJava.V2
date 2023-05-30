@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="load">
+    <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="&#10;load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Seguridad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/consecionarioInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,7 @@
       <workItem from="1685422974404" duration="93000" />
       <workItem from="1685423165042" duration="515000" />
       <workItem from="1685423701975" duration="2415000" />
-      <workItem from="1685485168851" duration="2751000" />
+      <workItem from="1685485168851" duration="3841000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -370,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685425176758</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="&#10;load">
+      <created>1685488587653</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1685488587653</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,13 +407,13 @@
     <MESSAGE value="agrege la clase para enviar correos(&quot;todavia no esta terminada tengo problemas con la cuenta que no me da &quot;la clave para aplicaciones&quot;)" />
     <MESSAGE value="loader" />
     <MESSAGE value="agrge las relaciones entre las siguientes interfaces enviando información atravez de ellas" />
-    <MESSAGE value="&#10;load" />
     <MESSAGE value="Agrege el paquete util para dentro de el creal los predicados utilzados para los filtros al momento de buscar los vehiculos, ando en pruebas" />
     <MESSAGE value="realize los cambios y utilize el metodo, habilidad INSTANCE para llamar las listas del concesionario y sus metodos y acomodo el codigo de consecionario para cumplir con las normas" />
     <MESSAGE value="trate de realizar pruebas unitarias con las listas pero me da un fallo to feo ajajajja , esto es pregunta para el profesor para saber si los metodos me funcionan" />
     <MESSAGE value="tambien agrege el paquete Exepciones para crear exepciones que se puedan dar" />
     <MESSAGE value="load" />
-    <option name="LAST_COMMIT_MESSAGE" value="load" />
+    <MESSAGE value="&#10;load" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;load" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,6 +436,16 @@
           <url>file://$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java</url>
           <line>19</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Bus.java</url>

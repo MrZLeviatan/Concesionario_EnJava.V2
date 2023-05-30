@@ -117,12 +117,16 @@ public class LoginController implements Initializable {
         contraseñaUsuario = BloqueContraseña.getText();
         if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)){
             FXMLLoader administrador= new FXMLLoader(getClass().getResource("Administrador.fxml"));
-            Object controller= administrador.getController();
+            AdministradorController controller= administrador.getController();
             Parent root= administrador.load();
             Scene scene= new Scene(root);
             Stage stage= new Stage();
             stage.setScene(scene);
             stage.show();
+
+            //metodo init
+            controller.init(INSTANCE.getConsesionario().buscarAdm(correoUsuario));
+
 
         } else if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)){
             FXMLLoader empleado= new FXMLLoader(getClass().getResource("Empleado.fxml"));

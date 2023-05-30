@@ -93,12 +93,10 @@ public class Consesionario {
         return empleado;
     }
     public  Empleado buscarEmpleadoCC(String cc){
-        Empleado empleado= (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getCc()==cc);
-        return empleado;
+      return (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getClave().equalsIgnoreCase(cc));
     }
     public Administrador buscarAdm(String correo){
-        Administrador administrador= (Administrador) listaAdministradores.stream().filter(Administrador->Administrador.getCorreo()==correo);
-        return administrador;
+        return (Administrador) listaAdministradores.stream().filter(Administrador->Administrador.getCorreo().equalsIgnoreCase(correo));
     }
 
     //Metodo para eliminar empleado de la lista

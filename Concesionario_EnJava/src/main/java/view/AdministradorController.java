@@ -12,12 +12,15 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import modelo.Administrador;
 
 import java.io.IOException;
+
 
 import static javafx.stage.StageStyle.UNDECORATED;
 
 public class AdministradorController {
+    private Administrador administradorC;
 
     @FXML
     private TextField BloqueCedula;
@@ -85,6 +88,14 @@ public class AdministradorController {
     @FXML
     private Label X;
 
+    public void init(Administrador administrador){
+        BloqueCorreo.setText(administrador.getCorreo());
+        BloqueCedula.setText(administrador.getClave());
+        BloqueNombre.setText(administrador.getNombre());
+    }
+
+
+
     @FXML
     void labCerrar(MouseEvent event) {System.exit(0);}
 
@@ -122,5 +133,6 @@ public class AdministradorController {
         stage.show();
 
     }
+
 
 }
