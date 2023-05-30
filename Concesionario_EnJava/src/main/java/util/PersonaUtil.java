@@ -1,7 +1,7 @@
 package util;
 
-import modelo.Genero;
-import modelo.Persona;
+import Modelo.Genero;
+import Modelo.Persona;
 
 import java.util.function.Predicate;
 

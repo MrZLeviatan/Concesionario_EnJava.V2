@@ -1,0 +1,33 @@
+
+x	java:S116"WRename this field "BloqueCedula" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ζ‘€ϊÿÿÿÿ8ΐξω…1
+x	java:S116"WRename this field "BloqueCorreo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Π…ρψÿÿÿÿ8Αξω…1
+x	java:S116"WRename this field "BloqueNombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Μ ­Πωÿÿÿÿ8Αξω…1
+ƒ	java:S116!"bRename this field "BotonActualizarEmpleado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(μ³—αώÿÿÿÿ8Αξω…1
+~	java:S116$"]Rename this field "BotonCuotaEmpleado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(υ›Βωÿÿÿÿ8Αξω…1
+|	java:S116'"`Rename this field "BotonEliminarEmpleado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ψ·›8Αξω…1
+s	java:S116*"XRename this field "BotonGerencia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(έΪ―8Αξω…1
+‚	java:S116-"aRename this field "BotonRegistrarEmpleado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ιο²Ρϊÿÿÿÿ8Αξω…1
+u	java:S1160"TRename this field "FondoRojo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—’κύÿÿÿÿ8Αξω…1
+x	java:S1163"WRename this field "ImagenPerfil" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²άά¤ϋÿÿÿÿ8Αξω…1
+q	java:S1166"URename this field "LogoLetras" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µνώ8Αξω…1
+x	java:S1169"\Rename this field "MenuBotonEmpleado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(΅βέΨ8Βξω…1
+x	java:S116<"\Rename this field "MenuBotonRegistro" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½›8Βξω…1
+q	java:S116?"PRename this field "Panel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¥Μτψÿÿÿÿ8Βξω…1
+p	java:S116B"TRename this field "Separador" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΛΩ8Βξω…1
+{	java:S116E"ZRename this field "SeparadorBlanco" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨”οψÿÿÿÿ8Βξω…1
+~	java:S116H"]Rename this field "TextoAdministrador" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(λΪύΜόÿÿÿÿ8Βξω…1
+w	java:S116K"VRename this field "TextoCedula" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ώώÿÿÿÿ8Βξω…1
+q	java:S116N"VRename this field "TextoCorreo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(θ†Y8Βξω…1
+r	java:S116Q"VRename this field "TextoNombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§„Έχ8Βξω…1
+r	java:S116T"QRename this field "Volver" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(β£ρΒψÿÿÿÿ8Βξω…1
+m	java:S116W"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΈώΞϊÿÿÿÿ8Βξω…1
+j	java:S100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(α²Χώ8Κξω…1
+j	java:S100k"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†£…χ8ίξω…1
+I
+java:S1172k",Remove this unused method parameter "event".(†£…χ8ΰξω…1
+j	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ϊ‘χ©8εξω…1
+I
+java:S1172u",Remove this unused method parameter "event".(Ϊ‘χ©8ζξω…1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Σμχ8ιξω…1
+I
+java:S1172",Remove this unused method parameter "event".(¦Σμχ8κξω…1

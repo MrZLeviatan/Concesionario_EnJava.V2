@@ -1,0 +1,20 @@
+
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÚÅíâÿÿÿÿÿ
+…
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Û²ô
+†
+java:S1319!"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ò¿‹›
+‹
+java:S1319&"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºÄÿŒøÿÿÿÿ
+e	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰“Í}
+k	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸êÁìÿÿÿÿÿ
+k	java:S117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÈÊ­ÿÿÿÿÿ
+k	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËúùÿÿÿÿ
+k	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤¢¶Äüÿÿÿÿ
+€
+java:S1488P"eImmediately return this expression instead of assigning it to the temporary variable "administrador".(¸êÁìÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àÄ€ü
+h	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÈÊ­ÿÿÿÿÿ
+=
+java:S1125X"'Remove the unnecessary boolean literal.(ø÷ñ

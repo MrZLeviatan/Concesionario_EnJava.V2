@@ -1,0 +1,33 @@
+
+k
+java:S1192j"IDefine a constant instead of duplicating this literal "ERROR!!!" 3 times.(â’¹ıÿÿÿÿ8øÍıø…1
+L
+java:S1066s"/Merge this if statement with the enclosing one.(³ıÙõ8ùÍıø…1
+n	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èøñª8úÍıø…1
+}	java:S116"\Rename this field "BloqueContraseÃ±a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èû€Şúÿÿÿÿ8±Îıø…1
+x	java:S116"WRename this field "BloqueCedula" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÆ‘€úÿÿÿÿ8±Îıø…1
+x	java:S116"WRename this field "BloqueCorreo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ…ñˆøÿÿÿÿ8±Îıø…1
+q	java:S116"URename this field "BloqueEdad" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯²ö8±Îıø…1
+x	java:S116 "WRename this field "BloqueNombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì ­Ğùÿÿÿÿ8±Îıø…1
+y	java:S116#"XRename this field "BotonCancelar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıŒñìûÿÿÿÿ8±Îıø…1
+y	java:S116&"XRename this field "BotonFemenino" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ùŒªüÿÿÿÿ8±Îıø…1
+v	java:S116)"URename this field "BotonOtros" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûèŸçûÿÿÿÿ8±Îıø…1
+u	java:S116,"YRename this field "BotonRegistrar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ƒûó8±Îıø…1
+{	java:S116/"ZRename this field "ButtonMasculino" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÊÀ€üÿÿÿÿ8±Îıø…1
+u	java:S1162"TRename this field "FondoRojo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—’êıÿÿÿÿ8±Îıø…1
+q	java:S1165"URename this field "ImagenLogo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ıÓ8±Îıø…1
+r	java:S1168"VRename this field "ImagenLogo2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿàø8±Îıø…1
+p	java:S116;"TRename this field "Separador" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÙ8²Îıø…1
+w	java:S116>"VRename this field "TextoCedula" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş˜şÿÿÿÿ8²Îıø…1
+|	java:S116A"[Rename this field "TextoContraseÃ±a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äİ‚®ıÿÿÿÿ8²Îıø…1
+q	java:S116D"VRename this field "TextoCorreo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿè†Y8²Îıø…1
+u	java:S116G"TRename this field "TextoEdad" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÇ•îùÿÿÿÿ8²Îıø…1
+r	java:S116J"VRename this field "TextoGenero" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¤‚è8²Îıø…1
+r	java:S116M"VRename this field "TextoNombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§„¸÷8²Îıø…1
+t	java:S116P"XRename this field "TextoRegistro" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ãË©8²Îıø…1
+k	java:S116S"ORename this field "HBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÇşŠ8²Îıø…1
+x	java:S116V"WRename this field "TablaDeOrden" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê©¸²úÿÿÿÿ8²Îıø…1
+p	java:S100‚"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ£¾şÿÿÿÿ8ÃÎıø…1
+
+java:S1130‰"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¥àˆ‹ùÿÿÿÿ8ÆÎıø…1
+^	java:S125"<This block of commented-out lines of code should be removed.(Ÿ«…İüÿÿÿÿ8ÈÎıø…1

@@ -1,7 +1,7 @@
 package util;
 
-import modelo.Padre;
-import modelo.Poseer;
+import Modelo.Padre;
+import Modelo.Poseer;
 
 import java.util.function.Predicate;
 

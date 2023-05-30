@@ -1,4 +1,4 @@
-import modelo.*;
+import Modelo.*;
 import org.junit.jupiter.api.Test;
 
 import static view.consecionarioInstance.INSTANCE;

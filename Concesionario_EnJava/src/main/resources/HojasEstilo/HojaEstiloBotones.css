@@ -96,3 +96,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-background-color: black;
     -fx-text-fill: white;
 }
+
+.Imagen{
+
+    -fx-border-color: grey;
+    -fx-border-width: 8px;
+
+}
+.botonCambiar{
+    -fx-background-color: grey;
+
+}
+.botonCambiar:hover{
+
+    -fx-background-color:  #FF8888;
+
+}
+
+.botonCambiar:pressed {
+
+    -fx-background-color: white;
+
+}

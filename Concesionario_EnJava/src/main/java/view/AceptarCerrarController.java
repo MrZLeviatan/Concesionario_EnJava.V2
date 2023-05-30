@@ -7,8 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import modelo.Administrador;
-import modelo.Empleado;
+import Modelo.Administrador;
+import Modelo.Empleado;
 
 import java.io.IOException;
 import java.util.ArrayList;

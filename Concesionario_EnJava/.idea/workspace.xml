@@ -5,14 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd786a28-9c3f-4835-97a7-f14edd81a238" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarVehiculoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ListaVehiculos.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseñaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseñaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Camiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Camiones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Combustible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Combustible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Consesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Deportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Deportivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/EstadoUso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/EstadoUso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Genero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Moto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Nivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Nivel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Padre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Padre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/PickUps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/PickUps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Poseer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Poseer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/RecuperarCorreo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RecuperarCorreo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Sedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Sedan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/SendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SendMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/TipoCamion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/TipoCamion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/TipoTransaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/TipoTransaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Transaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Transaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Transmision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Transmision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Vans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Vans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/PadreUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/PadreUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/PersonaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/PersonaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/VehiculoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/VehiculoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/AceptarCerrarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CarrosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CarrosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/ImagenLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HojasEstilo/HojaEstiloBotones.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HojasEstilo/HojaEstiloBotones.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/PruebaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/PruebaList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/PruebaPersonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/PruebaPersonas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,24 +86,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
-    "last_opened_file_path": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo14",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.39926404",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo14&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39926404&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.App" />
@@ -96,7 +136,8 @@
       <workItem from="1685161411484" duration="793000" />
       <workItem from="1685162281633" duration="548000" />
       <workItem from="1685162886158" duration="1239000" />
-      <workItem from="1685164142042" duration="12882000" />
+      <workItem from="1685164142042" duration="24409000" />
+      <workItem from="1685481719184" duration="3901000" />
     </task>
     <servers />
   </component>

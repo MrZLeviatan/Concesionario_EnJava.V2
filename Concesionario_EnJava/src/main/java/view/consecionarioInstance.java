@@ -1,6 +1,6 @@
 package view;
 
-import modelo.Consesionario;
+import Modelo.Consesionario;
 
 public enum consecionarioInstance {
 

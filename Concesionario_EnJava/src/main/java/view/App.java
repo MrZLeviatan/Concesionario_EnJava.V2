@@ -5,9 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import modelo.Administrador;
-import modelo.Genero;
+import Modelo.Administrador;
+import Modelo.Genero;
 
 import static javafx.stage.StageStyle.UNDECORATED;
 //import static view.consecionarioInstance.INSTANCE;
@@ -24,7 +23,7 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,25693,Genero.MASCULINO,"admin123","admintotal");
        // INSTANCE.getConsesionario().addAministrador(adm);
-        FXMLLoader login= new FXMLLoader(getClass().getResource("Administrador.fxml"));
+        FXMLLoader login= new FXMLLoader(getClass().getResource("Empleado.fxml"));
         Parent root=login.load();
         Scene loginScene=new Scene(root);
 

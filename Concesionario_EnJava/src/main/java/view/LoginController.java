@@ -17,8 +17,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import modelo.Administrador;
-import modelo.Empleado;
+import Modelo.Administrador;
+import Modelo.Empleado;
 
 import java.io.IOException;
 import java.net.URL;
