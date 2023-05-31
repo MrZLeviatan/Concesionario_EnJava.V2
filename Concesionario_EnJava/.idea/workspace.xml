@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/CorreoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Registros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseña.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Correo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Empleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Empleado.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mr. Nicolas\OneDrive\Documentos\Programacion II\GitHub\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\java\modelo" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685492933128</updated>
-      <workItem from="1685492934778" duration="33862000" />
+      <workItem from="1685492934778" duration="35107000" />
     </task>
     <servers />
   </component>

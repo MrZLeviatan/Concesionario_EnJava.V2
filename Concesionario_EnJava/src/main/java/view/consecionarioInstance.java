@@ -20,6 +20,8 @@ public enum consecionarioInstance {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+
+        consesionario.addRegistro(new Registros("12", "juan","vendi un carro cacorro hpta"));
     }
 
     public Consesionario getConsesionario() {

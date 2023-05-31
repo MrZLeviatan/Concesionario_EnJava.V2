@@ -18,7 +18,7 @@
 
 <AnchorPane prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EmpleadoController">
    <children>
-      <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="492.0" stroke="BLACK" strokeType="INSIDE" width="360.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="492.0" stroke="BLACK" strokeType="INSIDE" width="360.0">
          <fill>
             <LinearGradient endX="1.0" endY="0.39810426540284366" startY="1.0">
                <stops>
@@ -36,7 +36,7 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <ImageView fx:id="ImagenPerfil" fitHeight="175.0" fitWidth="170.0" layoutX="95.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="175.0" fitWidth="170.0" layoutX="95.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/ImagenPerfil.png" />
          </image>
@@ -54,52 +54,52 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label fx:id="textoNombre" text="NOMBRE:" textFill="WHITE" wrapText="true">
+            <Label text="NOMBRE:" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="textoCedula" text="CEDULA:" textFill="WHITE" GridPane.rowIndex="1">
+            <Label text="CEDULA:" textFill="WHITE" GridPane.rowIndex="1">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="textoCorreo" text="CORREO:" textFill="#f8f8f8" GridPane.rowIndex="2">
+            <Label text="CORREO:" textFill="#f8f8f8" GridPane.rowIndex="2">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="BloqueNombre" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" />
-            <TextField fx:id="BloqueCedula" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="BloqueCorreo" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="bloqueNombre" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" />
+            <TextField fx:id="bloqueCedula" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="bloqueCorreo" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <Button fx:id="generarReporteEmpleado" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="302.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="GENERAR REPORTE" textFill="#eeecec" textOverrun="CLIP">
+      <Button fx:id="botonReportes" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="302.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="GENERAR REPORTE" textFill="#eeecec" textOverrun="CLIP">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="X" layoutX="680.0" onMousePressed="#labCerrar" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X">
+      <Label layoutX="680.0" onMousePressed="#labCerrar" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" fx:id="x">
          <font>
             <Font name="System Bold Italic" size="34.0" />
          </font>
       </Label>
-      <Label fx:id="NombreEmpleado" alignment="CENTER" layoutX="116.0" layoutY="212.0" prefHeight="21.0" prefWidth="128.0" text="EMPLEADO" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="116.0" layoutY="212.0" prefHeight="21.0" prefWidth="128.0" text="EMPLEADO" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="18.0" />
          </font>
       </Label>
-      <ImageView fx:id="Imagen" fitHeight="111.0" fitWidth="242.0" layoutX="415.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="111.0" fitWidth="242.0" layoutX="415.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/LogoLetras.png" />
          </image>
       </ImageView>
-      <Label fx:id="Volver" layoutX="16.0" layoutY="436.0" onMousePressed="#EventoVolver" prefHeight="41.0" prefWidth="20.0" text="«" textFill="WHITE">
+      <Label fx:id="volver" layoutX="16.0" layoutY="436.0" onMousePressed="#eventoVolver" prefHeight="41.0" prefWidth="20.0" text="«" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="39.0" />
          </font>
       </Label>
-      <Button fx:id="Carros" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="226.0" mnemonicParsing="false" onAction="#EventoListaVehiculos" onMouseClicked="#EventoListaVehiculos" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="CARROS" textFill="#eeecec" textOverrun="CLIP">
+      <Button fx:id="botonCarros" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="226.0" mnemonicParsing="false" onAction="#eventoListaVehiculos" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="CARROS" textFill="#eeecec" textOverrun="CLIP">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>

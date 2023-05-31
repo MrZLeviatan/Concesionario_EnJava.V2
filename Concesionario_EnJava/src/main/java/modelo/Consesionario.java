@@ -5,10 +5,7 @@ import util.PersonaUtil;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Properties;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Consesionario {
@@ -19,6 +16,8 @@ public class Consesionario {
     private final ArrayList<Administrador> listaAdministradores;
     private final   ArrayList<Empleado> listaEmpleado ;
     private final ArrayList <Vehiculo> listaVehiculos;
+
+    private final ArrayList <Registros> listaRegistros;
 
     private final ArrayList <Cliente> listaCliente;
 
@@ -31,6 +30,7 @@ public class Consesionario {
         listaEmpleado=new ArrayList<>();
         listaVehiculos=new ArrayList<>();
         listaCliente= new ArrayList<>();
+        listaRegistros= new ArrayList<>();
 
     }
 
@@ -131,6 +131,21 @@ public class Consesionario {
             return null;
         }
     }
+    public void addRegistro(Registros registros){listaRegistros.add(registros);}
+
+    public Registros buscarRegistro(String id){
+        return listaRegistros.stream().filter(Registros->Registros.getId().equals(id)).findFirst().get();
+    }
+    public void eliminarRegistro(String id){
+        Registros registros= buscarRegistro(id);
+        listaRegistros.remove(registros);
+
+    }
+
+
+
+
+
 
 
     public void enviarCorreo(String correo, String contraseña) {

@@ -23,33 +23,25 @@ import static javafx.stage.StageStyle.UNDECORATED;
 public class EmpleadoController {
 
     @FXML
-    private TextField BloqueCedula;
+    private TextField bloqueCedula;
+
     @FXML
-    private TextField BloqueCorreo;
+    private TextField bloqueCorreo;
+
     @FXML
-    private TextField BloqueNombre;
+    private TextField bloqueNombre;
+
     @FXML
-    private Rectangle FondoRojo;
+    private Button botonCarros;
+
     @FXML
-    private ImageView Imagen;
+    private Button botonReportes;
+
     @FXML
-    private ImageView ImagenPerfil;
+    private Label volver;
+
     @FXML
-    private Label NombreEmpleado;
-    @FXML
-    private Label Volver;
-    @FXML
-    private Label X;
-    @FXML
-    private Button generarReporteEmpleado;
-    @FXML
-    private Label textoCedula;
-    @FXML
-    private Label textoCorreo;
-    @FXML
-    private Label textoNombre;
-    @FXML
-    private Button Carros;
+    private Label x;
 
     @FXML
     void labCerrar(MouseEvent event) throws IOException {
@@ -67,7 +59,7 @@ public class EmpleadoController {
 
     @FXML
 
-    public void EventoVolver (MouseEvent event) throws IOException {
+    public void eventoVolver (MouseEvent event) throws IOException {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root= loader.load();
@@ -80,7 +72,7 @@ public class EmpleadoController {
         stage.show();
     }
 
-    public void EventoListaVehiculos (ActionEvent event) throws IOException {
+    public void eventoListaVehiculos (ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ListaVehiculos.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
