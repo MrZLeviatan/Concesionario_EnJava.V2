@@ -8,13 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import view.AdministradorController;
+
 import java.io.IOException;
 
 import static javafx.stage.StageStyle.UNDECORATED;
@@ -57,7 +56,7 @@ public class EmpleadoController {
 
     public void EventoVolver (MouseEvent event) throws IOException {
 
-       FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
         stage.initStyle(UNDECORATED);
@@ -80,6 +79,4 @@ public class EmpleadoController {
         stage.show();
     }
 
-
-
-     }
+}

@@ -1,4 +1,3 @@
-
 package view;
 
 import javafx.event.ActionEvent;
@@ -13,12 +12,15 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import modelo.Administrador;
 
 import java.io.IOException;
+
 
 import static javafx.stage.StageStyle.UNDECORATED;
 
 public class AdministradorController {
+    private Administrador administradorC;
 
     @FXML
     private TextField BloqueCedula;
@@ -54,10 +56,10 @@ public class AdministradorController {
     private ImageView LogoLetras;
 
     @FXML
-    private MenuButton MenuBotonEmpleado;
+    private Button botonEmpleado;
 
     @FXML
-    private MenuButton MenuBotonRegistro;
+    private Button botonRegistro;
 
     @FXML
     private AnchorPane Panel;
@@ -86,6 +88,8 @@ public class AdministradorController {
     @FXML
     private Label X;
 
+
+
     @FXML
     void labCerrar(MouseEvent event) {System.exit(0);}
 
@@ -100,7 +104,7 @@ public class AdministradorController {
         stage.setScene(new Scene(root));
         Node source = (Node) event.getSource();
         Stage stage2 = (Stage) source.getScene().getWindow();
-        stage2.close();
+        stage2.hide();
         stage.show();
     }
 
@@ -115,21 +119,16 @@ public class AdministradorController {
     }
 
     public void EventoRegistrar (ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegistrarEmpleado.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("OpcionesEmpleados.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
         stage.initStyle(UNDECORATED);
         stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.hide();
         stage.show();
 
     }
 
-    public void EventoBuscarEmpleado (ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("BuscadorEmpleado.fxml"));
-        Parent root= loader.load();
-        Stage stage = new Stage();
-        stage.initStyle(UNDECORATED);
-        stage.setScene(new Scene(root));
-        stage.show();
-}
 }

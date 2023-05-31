@@ -2,11 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +16,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="Panel" prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdministradorController">
+<AnchorPane fx:id="Panel" prefHeight="477.0" prefWidth="717.0" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdministradorController">
    <children>
       <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="487.0" stroke="BLACK" strokeType="INSIDE" width="360.0">
          <fill>
@@ -56,15 +53,15 @@
       </ImageView>
       <Separator fx:id="Separador" layoutX="353.0" orientation="VERTICAL" prefHeight="487.0" prefWidth="0.0" style="-fx-background-color: black;" />
       <GridPane layoutX="27.0" layoutY="258.0" prefHeight="170.0" prefWidth="306.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="88.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="218.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="88.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="218.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
          <children>
             <Label fx:id="TextoNombre" text="NOMBRE:" textFill="WHITE">
                <font>
@@ -99,29 +96,6 @@
          </children>
       </GridPane>
       <Separator fx:id="SeparadorBlanco" layoutX="50.0" layoutY="240.0" prefHeight="0.0" prefWidth="260.0" />
-      <MenuButton fx:id="MenuBotonEmpleado" alignment="CENTER" layoutX="377.0" layoutY="203.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="EMPLEADOS" textFill="WHITE">
-        <items>
-            <MenuItem fx:id="BotonCuotaEmpleado" disable="true" mnemonicParsing="false" text="CuotaEmpleado" />
-            <MenuItem fx:id="BotonActualizarEmpleado" mnemonicParsing="false" onAction="#EventoBuscarEmpleado" text="ActualizarEmpleado" />
-          <MenuItem fx:id="BotonRegistrarEmpleado" onAction="#EventoRegistrar" text="RegistrarEmpleado" />
-          <MenuItem fx:id="BotonEliminarEmpleado" mnemonicParsing="false" onAction="#EventoBuscarEmpleado" text="EliminarEmpleados" />
-        </items>
-         <font>
-            <Font name="Arial Bold Italic" size="14.0" />
-         </font>
-         <effect>
-            <Blend />
-         </effect>
-      </MenuButton>
-      <MenuButton fx:id="MenuBotonRegistro" alignment="CENTER" layoutX="377.0" layoutY="278.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="REPORTES" textFill="WHITE">
-        <items>
-          <MenuItem mnemonicParsing="false" text="VerReportes" />
-          <MenuItem mnemonicParsing="false" text="EliminarReportes" />
-        </items>
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </MenuButton>
       <Label fx:id="X" alignment="CENTER" layoutX="666.0" onMousePressed="#labCerrar" prefHeight="50.0" prefWidth="53.0" styleClass="X2" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X">
          <font>
             <Font name="System Bold Italic" size="34.0" />
@@ -147,5 +121,15 @@
             <Image url="@../imagenes/LogoLetras.png" />
          </image>
       </ImageView>
+      <Button fx:id="botonEmpleado" layoutX="378.0" layoutY="203.0" mnemonicParsing="false" onAction="#EventoRegistrar" onMouseClicked="#EventoRegistrar" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="EMPLEADOS" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonRegistro" layoutX="377.0" layoutY="274.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="REGISTRO" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

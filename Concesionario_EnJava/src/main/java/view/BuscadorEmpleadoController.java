@@ -20,6 +20,7 @@ public class BuscadorEmpleadoController {
 
     @FXML
     private Label TextoBuscar;
+
     @FXML
     private Button X;
 

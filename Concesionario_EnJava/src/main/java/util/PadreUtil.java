@@ -1,7 +1,7 @@
 package util;
 
-import Modelo.Padre;
-import Modelo.Poseer;
+import modelo.Padre;
+import modelo.Poseer;
 
 import java.util.function.Predicate;
 
@@ -22,6 +22,6 @@ public class PadreUtil extends PersonaUtil{
         return padre -> padre.getNumeroBolsaAire()==numeroBolsaDeAire;
     }
 
-
+   /// public static Predicate<Padre>BuscarPorTodoPadre(){}
 
 }

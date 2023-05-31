@@ -1,10 +1,0 @@
-
-x	java:S116"WRename this field "BloqueCedula" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÆ‘€úÿÿÿÿ8ÕËÙù…1
-w	java:S116"VRename this field "BotonBuscar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÏğ·ıÿÿÿÿ8ÖËÙù…1
-u	java:S116"TRename this field "FondoRojo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—’êıÿÿÿÿ8ÖËÙù…1
-w	java:S116"VRename this field "TextoBuscar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çêğşıÿÿÿÿ8ÖËÙù…1
-m	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¬¼‘úÿÿÿÿ8ÖËÙù…1
-W
-java:S1854-":Remove this useless assignment to local variable "cedula".(Õä†8ƒ±ßù…1
-H
-java:S1481-"+Remove this unused "cedula" local variable.(Õä†8ˆ±ßù…1

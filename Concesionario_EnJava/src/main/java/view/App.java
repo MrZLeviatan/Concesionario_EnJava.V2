@@ -5,37 +5,30 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import Modelo.Administrador;
-import Modelo.Genero;
+import modelo.Administrador;
+import modelo.Genero;
 
 import static javafx.stage.StageStyle.UNDECORATED;
-//import static view.consecionarioInstance.INSTANCE;
+import static view.consecionarioInstance.INSTANCE;
 
 /**
  * JavaFX App
  */
-public class App extends Application {
 
+public class App extends Application {
 
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws Exception {
-        final Administrador adm= new Administrador("JEFE","admintucarro@gmail.com",19,25693,Genero.MASCULINO,"admin123","admintotal");
-       // INSTANCE.getConsesionario().addAministrador(adm);
-        FXMLLoader login= new FXMLLoader(getClass().getResource("Empleado.fxml"));
+        INSTANCE.getConsesionario().addAministrador(new Administrador("juan","123",12,"123", Genero.MASCULINO,"123","lolsito"));
+        FXMLLoader login= new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root=login.load();
         Scene loginScene=new Scene(root);
-
-
         stage.initStyle(UNDECORATED);
         stage.setScene(loginScene);
         stage.show();
     }
-
-
-
-
 
     public static void main(String[] args) {
         launch();

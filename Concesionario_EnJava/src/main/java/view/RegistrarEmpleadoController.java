@@ -2,25 +2,33 @@ package view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import Modelo.Genero;
+import modelo.Empleado;
+import modelo.Estado;
+import modelo.Genero;
 
 import java.io.IOException;
+
+import static javafx.stage.StageStyle.UNDECORATED;
+import static view.consecionarioInstance.INSTANCE;
 
 public class RegistrarEmpleadoController {
 
     @FXML
-    private TextField BloqueContraseña;
+    private TextField BloqueCedula;
 
     @FXML
-    private TextField BloqueCedula;
+    private TextField BloqueContraseña;
 
     @FXML
     private TextField BloqueCorreo;
@@ -30,6 +38,9 @@ public class RegistrarEmpleadoController {
 
     @FXML
     private TextField BloqueNombre;
+
+    @FXML
+    private TextField bloquePalabraSecreta;
 
     @FXML
     private Button BotonCancelar;
@@ -80,26 +91,72 @@ public class RegistrarEmpleadoController {
     private Text TextoRegistro;
 
     @FXML
-    private HBox HBox;
-
-    @FXML
-    private GridPane TablaDeOrden;
-
-    @FXML
     private ToggleGroup genero;
 
     @FXML
-    private Genero obtenerGenero() {
-        RadioButton radioButton = (RadioButton) genero.getSelectedToggle();
-        if (radioButton != null){
-            return Genero.valueOf(radioButton.getText().toUpperCase());
-        }
-        return null;
-    }
+    void EventoAgregar(ActionEvent event) throws Exception {
 
+        String nombre = BloqueNombre.getText();
+        String contraseña = BloqueContraseña.getText();
+        String correo = BloqueCorreo.getText();
+        String edad=BloqueEdad.getText();
+        String cedula= BloqueCedula.getText();
+        String palabraSecreta = bloquePalabraSecreta.getText();
+
+
+        if (nombre.isEmpty() && contraseña.isEmpty() && correo.isEmpty() && edad.isEmpty()
+                            && cedula.isEmpty() && palabraSecreta.isEmpty()) {
+
+            Alert alert1 = new Alert(Alert.AlertType.NONE);
+            alert1.setTitle("ERROR!!!");
+            alert1.setContentText("POR FAVOR LLENAR LOS BLOQUES VACIOS...");
+            alert1.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenLlenarEspacios .png").toString()));
+            alert1.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO");
+            alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+            alert1.showAndWait();
+            BloqueContraseña.setText("");
+            bloquePalabraSecreta.setText("");
+
+
+
+        }else {
+
+            Estado estado = Estado.ACTIVO;
+            Empleado empleado = new Empleado(BloqueNombre.getText(), BloqueCorreo.getText(), Integer.parseInt(BloqueEdad.getText()), BloqueCedula.getText(), obtenerGenero(), BloqueContraseña.getText(), bloquePalabraSecreta.getText(), estado);
+            INSTANCE.getConsesionario().addEmpleado(empleado);
+
+            Alert alert1 = new Alert(Alert.AlertType.NONE);
+            alert1.setTitle("REGISTRO COMPLETO");
+            alert1.setContentText("EMPLEADO REGISTRADO");
+            alert1.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenBienvenidoLogo.png").toString()));
+            alert1.setHeaderText("BIENVENIDO A HELL TAKER CONCESIONARIO");
+            alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+            alert1.showAndWait();
+            BloqueNombre.setText("");
+            BloqueContraseña.setText("");
+            BloqueEdad.setText("");
+            BloqueCedula.setText("");
+            BloqueCorreo.setText("");
+            bloquePalabraSecreta.setText("");
+        }
+
+
+    }
+    @FXML
+        void Eventocancelar(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("OpcionesEmpleados.fxml"));
+        Parent root= loader.load();
+        Stage stage = new Stage();
+        stage.initStyle(UNDECORATED);
+        stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.hide();
+        stage.show();
+    }
     @FXML
 
-    private void restriccionEdad (KeyEvent event){
+    private void restriccionTeclas (KeyEvent event){
         if(event.getTarget()== BloqueEdad ){
             if(!Character.isDigit(event.getCharacter().charAt(0))){
                 Alert alert = new Alert(Alert.AlertType.NONE);
@@ -126,34 +183,14 @@ public class RegistrarEmpleadoController {
         }
     }
 
-    @FXML
-    private void Eventocancelar (ActionEvent event){
-
-        Stage stage= (Stage) this.BotonCancelar.getScene().getWindow();
-        stage.close();
-
-    }
-    @FXML
-    private void eventEspaciosBlancos (ActionEvent event) throws IOException {
-
-        String nombre = BloqueNombre.getText();
-        String cedula = BloqueCedula.getText();
-
-        // int edad= Integer.parseInt(BloqueEdad.getText());
-        String correo= BloqueCorreo.getText();
-        String contraseña = BloqueContraseña.getText();
-
-
-        if(nombre.isEmpty() && cedula.isEmpty()  && correo.isEmpty() && contraseña.isEmpty()){
-                Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR!!!");
-                alert.setContentText("POR FAVOR LLENAR LOS ESPACIOS VACIOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenLlenar.png").toString()));
-                alert.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO...");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
-
-            }
-
+    private Genero obtenerGenero(){
+        RadioButton radioButton = (RadioButton) genero.getSelectedToggle();
+        if( radioButton != null ){
+            return Genero.valueOf( radioButton.getText().toUpperCase() );
         }
+        return null;
+    }
+
+
+
 }

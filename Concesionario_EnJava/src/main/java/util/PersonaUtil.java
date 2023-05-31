@@ -1,12 +1,12 @@
 package util;
 
-import Modelo.Genero;
-import Modelo.Persona;
+import modelo.Genero;
+import modelo.Persona;
 
 import java.util.function.Predicate;
 
 public class PersonaUtil {
-    public static Predicate<Persona> buscarPorCc(int cc) {
+    public static Predicate<Persona> buscarPorCc(String cc) {
         return persona -> persona.getCc()==(cc);
     }
 
@@ -27,9 +27,9 @@ public class PersonaUtil {
 
 
 
-    public static Predicate<Persona>buscarDatosPersona(int cc,String correo,String nombre,Genero genero){
+    public static Predicate<Persona>buscarDatosPersona(String cc,String correo,String nombre,Genero genero){
         Predicate<Persona> predicado= persona -> true;
-        if(cc!=0){
+        if(cc != null && !cc.isEmpty()){
             predicado.and(buscarPorCc(cc));
         }
         if(correo != null && !correo.isEmpty()){

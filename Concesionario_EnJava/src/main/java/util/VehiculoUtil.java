@@ -1,9 +1,9 @@
 package util;
 
-import Modelo.Combustible;
-import Modelo.EstadoUso;
-import Modelo.Transmision;
-import Modelo.Vehiculo;
+import modelo.Combustible;
+import modelo.EstadoUso;
+import modelo.Transmision;
+import modelo.Vehiculo;
 
 import java.util.function.Predicate;
 

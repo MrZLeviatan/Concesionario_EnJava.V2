@@ -28,7 +28,7 @@ public class ListaVehiculosController {
 
         //SE CREA LA ESCENA DE VOLVER
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Empleado.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../../../../../../Downloads/Empleado.fxml"));
         Parent root= loader.load();
 
         //SE CREA STAGE QUE SON LOS CONTROLADORES DE LA ESCENA
