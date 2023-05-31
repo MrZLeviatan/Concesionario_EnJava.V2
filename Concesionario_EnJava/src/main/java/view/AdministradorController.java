@@ -12,13 +12,15 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import modelo.Administrador;
 
 import java.io.IOException;
 
+
 import static javafx.stage.StageStyle.UNDECORATED;
-import static view.consecionarioInstance.INSTANCE;
 
 public class AdministradorController {
+    private Administrador administradorC;
 
     @FXML
     private TextField BloqueCedula;
@@ -54,10 +56,10 @@ public class AdministradorController {
     private ImageView LogoLetras;
 
     @FXML
-    private MenuButton MenuBotonEmpleado;
+    private Button botonEmpleado;
 
     @FXML
-    private MenuButton MenuBotonRegistro;
+    private Button botonRegistro;
 
     @FXML
     private AnchorPane Panel;
@@ -91,12 +93,6 @@ public class AdministradorController {
     @FXML
     void labCerrar(MouseEvent event) {System.exit(0);}
 
-    public  void iniciarlizarLabels(){
-        TextoCorreo.setText(INSTANCE.getConsesionario().getPersonaverificada().getCorreo());
-        TextoNombre.setText(INSTANCE.getConsesionario().getPersonaverificada().getNombre());
-        TextoCedula.setText(INSTANCE.getConsesionario().getPersonaverificada().getCc());
-    }
-
 
     @FXML
 
@@ -108,7 +104,7 @@ public class AdministradorController {
         stage.setScene(new Scene(root));
         Node source = (Node) event.getSource();
         Stage stage2 = (Stage) source.getScene().getWindow();
-        stage2.close();
+        stage2.hide();
         stage.show();
     }
 
@@ -123,16 +119,16 @@ public class AdministradorController {
     }
 
     public void EventoRegistrar (ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegistrarEmpleado.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("OpcionesEmpleados.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
         stage.initStyle(UNDECORATED);
         stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.hide();
         stage.show();
 
     }
 
-
-    public void EventoBuscarEmpleado(ActionEvent actionEvent) {
-    }
 }

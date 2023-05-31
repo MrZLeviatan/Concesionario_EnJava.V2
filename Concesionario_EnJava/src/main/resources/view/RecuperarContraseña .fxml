@@ -36,7 +36,7 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="bloqueCorreo" layoutX="325.0" layoutY="105.0" onKeyTyped="#eventEspaciosBlancos" prefHeight="25.0" prefWidth="159.0" promptText="CORREO" />
+      <TextField fx:id="BloqueContraseña" layoutX="325.0" layoutY="105.0" onKeyTyped="#eventEspaciosBlancos" prefHeight="25.0" prefWidth="159.0" promptText="CORREO" />
       <Button fx:id="BotonRecuperar" layoutX="328.0" layoutY="188.0" mnemonicParsing="false" onAction="#eventoValidacion" onMouseClicked="#eventoValidacion" prefHeight="48.0" prefWidth="144.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="RECUPERAR" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="16.0" />
