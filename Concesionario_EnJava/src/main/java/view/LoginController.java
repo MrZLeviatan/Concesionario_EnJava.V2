@@ -99,7 +99,7 @@ public class LoginController implements Initializable {
     //abre ventana para recuperar contraseña
     @FXML
     private void EventoRecuperar(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/RecuperarContraseña.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("RecuperarContraseña.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();

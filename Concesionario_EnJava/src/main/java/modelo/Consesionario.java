@@ -110,28 +110,48 @@ public class Consesionario {
       Empleado empleado= buscarEmpleadoCC(cc);
       listaEmpleado.remove(empleado);
     }
-    //enviar correo
+    //busca contraseñas de los empleados y administradores
+    public String buscarContraseñaAdm(String correo){
+        return listaAdministradores.stream().filter(Administrador->Administrador.getCorreo().equals(correo)).findFirst().get().getClave();
+    }
+    public String buscarContraseñaEmpleado(String correo){
+        return listaEmpleado.stream().filter(Empleado->Empleado.getCorreo().equals(correo)).findFirst().get().getClave();
+    }
+    public  String obtenerContraseña(String correo){
+        if(buscarContraseñaAdm(correo)!=null){
+            return buscarContraseñaAdm(correo);
+        }
+       else if ( buscarContraseñaEmpleado(correo)!=null){
+           return buscarContraseñaEmpleado(correo);
+       }else {
+           return null;
+        }
+    }
 
-    public static void enviarCorreo(String correo, String contraseña) {
+
+    public void enviarCorreo(String correo, String contraseña) {
         // Información de autenticación
         final String username = "soportetucarrouniquindio@gmail.com";
-        final String password = "123456Tucarro$";
+        final String password = "xvdmiwqzecyphxtc";
 
         // Información del correo electrónico
 
         //destinatario llega por el metodo recuperar
         String to = correo;
-        // lo que vamos a realizar
         String subject = "Recuperacion de la contraseña";
-        //aca adjuntamos la contraseña que vamos a enviar
         String body = "Su contraseña es " + contraseña;
 
         // Configuración de la conexión SMTP
         Properties props = new Properties();
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+        props.setProperty("mail.smtp.starttls.enable","true");
+        props.setProperty("mail.smtp.port", "587");
+        props.setProperty("mail.smtp.user",username);
+        props.setProperty("mail.smtp.ssl.protocols", "TLSvi.2");
+        props.setProperty("mail.smtp.auth", "true");
+
+
 
         // Creación de la sesión SMTP
         Session session = Session.getInstance(props, new Authenticator() {
@@ -147,11 +167,9 @@ public class Consesionario {
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
             message.setSubject(subject);
             message.setText(body);
-
             // Envío del mensaje
             Transport.send(message);
 
-            System.out.println("El mensaje se ha enviado exitosamente.");
         } catch (MessagingException e) {
             e.printStackTrace();
         }

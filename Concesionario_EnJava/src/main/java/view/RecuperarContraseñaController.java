@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static view.consecionarioInstance.INSTANCE;
 
 
 public class RecuperarContraseñaController implements Initializable {
@@ -31,7 +32,7 @@ public class RecuperarContraseñaController implements Initializable {
  private Button X;
  
  @FXML
- private TextField BloqueContraseña;
+ private TextField bloqueCorreo;
   
     
     @Override
@@ -51,7 +52,7 @@ public class RecuperarContraseñaController implements Initializable {
         
        Object evt =event.getSource();
         
-        if(evt.equals(BloqueContraseña)){
+        if(evt.equals(bloqueCorreo)){
             if (event.getCharacter().equals(" ")){ 
                Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR");
@@ -68,29 +69,9 @@ public class RecuperarContraseñaController implements Initializable {
     
     @FXML
     private void eventoValidacion (ActionEvent event){
-        
-        Object evt=event.getSource();
-        
-         if(evt.equals(BotonRecuperar)){
-           
-           if(!BloqueContraseña.getText().isEmpty()){
-               
-               String pass= BloqueContraseña.getText();
-               
-           }else{
-                Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR!!!");
-                alert.setContentText("POR FAVOR LLENAR LOS ESPACIOS EN BLANCO");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenLlenar.png").toString()));
-                alert.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO...");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
+       //INSTANCE.getConsesionario().enviarCorreo(bloqueCorreo.getText(),INSTANCE.getConsesionario().obtenerContraseña(bloqueCorreo.getText()));
+        INSTANCE.getConsesionario().enviarCorreo("andrey3681.ay@gmail.com","123");
 
-                
-           }  
-           
-       }       
-       
     }
             
     
