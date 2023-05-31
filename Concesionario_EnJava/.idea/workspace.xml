@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/VistaReportesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/VistaReportes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/AceptarCerrarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/CarrosController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/aceptarCerrar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AceptarCerrar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
-    "last_opened_file_path": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo14",
+    "last_opened_file_path": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo12",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685492933128</updated>
-      <workItem from="1685492934778" duration="22502000" />
+      <workItem from="1685492934778" duration="28638000" />
     </task>
     <servers />
   </component>

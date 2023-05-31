@@ -1,11 +1,15 @@
 package modelo;
 
+import util.PersonaUtil;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.Properties;
+import java.util.stream.Collectors;
 
 public class Consesionario {
 
@@ -98,7 +102,7 @@ public class Consesionario {
         return empleado;
     }
     public  Empleado buscarEmpleadoCC(String cc){
-        return (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getClave().equalsIgnoreCase(cc));
+        return (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getClave().equalsIgnoreCase(cc)).findFirst().get();
     }
     public Administrador buscarAdm(String correo){
         Optional<Administrador> administrador=listaAdministradores.stream().filter(Administrador->Administrador.getCorreo().equalsIgnoreCase(correo)).findFirst();
@@ -175,7 +179,11 @@ public class Consesionario {
         }
     }
 
+public List <Empleado> buscar (String nombre, String cedula, String correo, String contraseña){
 
+        return listaEmpleado.stream().filter(PersonaUtil.buscarDatosPersona(cedula,correo,nombre,null))
+                .collect(Collectors.toUnmodifiableList());
+}
 
 
 }

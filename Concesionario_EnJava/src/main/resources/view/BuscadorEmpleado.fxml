@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="243.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BuscadorEmpleadoController">
+<AnchorPane prefHeight="243.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BuscadorEmpleadoController">
    <children>
       <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="243.0" stroke="BLACK" strokeType="INSIDE" width="257.0">
          <fill>
@@ -31,12 +26,12 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Label fx:id="TextoBuscar" layoutX="276.0" layoutY="100.0" text="CORREO:" textFill="#b20a0a">
+      <Label fx:id="TextoBuscar" layoutX="276.0" layoutY="100.0" text="CEDULA:" textFill="#b20a0a">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="BloqueCedula" layoutX="348.0" layoutY="95.0" prefHeight="25.0" prefWidth="228.0" promptText="INGRESE CORREO" />
+      <TextField fx:id="BloqueCedula" layoutX="348.0" layoutY="95.0" prefHeight="25.0" prefWidth="228.0" promptText="INGRESE CEDULA" />
       <Button fx:id="BotonBuscar" layoutX="440.0" layoutY="155.0" mnemonicParsing="false" onAction="#eventoValidacion" prefHeight="54.0" prefWidth="136.0" style="-fx-background-radius: 12PX;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="SELECCIONAR" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="14.0" />

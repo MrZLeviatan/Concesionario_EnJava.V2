@@ -6,7 +6,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-
+import static view.consecionarioInstance.INSTANCE;
 public class BuscadorEmpleadoController {
 
     @FXML
@@ -42,8 +42,18 @@ public class BuscadorEmpleadoController {
 
             if(!BloqueCedula.getText().isEmpty()){
 
+                INSTANCE.getConsesionario().eliminarEmpleado(BloqueCedula.getText());
 
-                String cedula= BloqueCedula.getText();
+                Alert alert= new Alert(Alert.AlertType.NONE);
+                alert.setTitle("AVISO!!!");
+                alert.setContentText("EMPLEADO ELIMINADO");
+                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenBienvenidoLogo.png").toString()));
+                alert.setHeaderText("ACTION COMPLETADA...");
+                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+                alert.showAndWait();
+
+
+
 
             }else{
                 Alert alert= new Alert(Alert.AlertType.NONE);

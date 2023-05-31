@@ -7,7 +7,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -22,22 +24,27 @@ public class ListaVehiculosController {
     private Label X;
 
     @FXML
-    void labCerrar(MouseEvent event) {System.exit(0);}
+    void labCerrar(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AceptarCerrar.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(scene);
+        stage.showAndWait();
+    }
 
     public void EventoVolver (MouseEvent event) throws IOException {
 
-        //SE CREA LA ESCENA DE VOLVER
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../../../../../../../Downloads/Empleado.fxml"));
         Parent root= loader.load();
-
-        //SE CREA STAGE QUE SON LOS CONTROLADORES DE LA ESCENA
         Stage stage = new Stage();
         stage.initStyle(UNDECORATED);
         stage.setScene(new Scene(root));
         Node source = (Node) event.getSource();
         Stage stage2 = (Stage) source.getScene().getWindow();
-        stage2.close();
+        stage2.hide();
         stage.show();
     }
 }
