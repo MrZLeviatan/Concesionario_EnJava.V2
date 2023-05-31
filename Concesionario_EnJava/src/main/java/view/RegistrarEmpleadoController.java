@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -46,16 +45,16 @@ public class RegistrarEmpleadoController {
     private Button BotonCancelar;
 
     @FXML
-    private RadioButton BotonFemenino;
+    private RadioButton botonFemenino;
 
     @FXML
-    private RadioButton BotonOtros;
+    private RadioButton botonOtros;
 
     @FXML
     private Button BotonRegistrar;
 
     @FXML
-    private RadioButton ButtonMasculino;
+    private RadioButton botonMasculino;
 
     @FXML
     private Rectangle FondoRojo;
@@ -122,14 +121,15 @@ public class RegistrarEmpleadoController {
         }else {
 
             Estado estado = Estado.ACTIVO;
-            Empleado empleado = new Empleado(BloqueNombre.getText(), BloqueCorreo.getText(), Integer.parseInt(BloqueEdad.getText()), BloqueCedula.getText(), obtenerGenero(), BloqueContraseña.getText(), bloquePalabraSecreta.getText(), estado);
+            Genero genero = obtenerGenero();
+            Empleado empleado = new Empleado(BloqueNombre.getText(), BloqueCorreo.getText(), Integer.parseInt(BloqueEdad.getText()), BloqueCedula.getText(), genero, BloqueContraseña.getText(), bloquePalabraSecreta.getText(), estado);
             INSTANCE.getConsesionario().addEmpleado(empleado);
 
             Alert alert1 = new Alert(Alert.AlertType.NONE);
             alert1.setTitle("REGISTRO COMPLETO");
-            alert1.setContentText("EMPLEADO REGISTRADO");
+            alert1.setContentText("EMPLEADO REGISTRADO :D");
             alert1.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenBienvenidoLogo.png").toString()));
-            alert1.setHeaderText("BIENVENIDO A HELL TAKER CONCESIONARIO");
+            alert1.setHeaderText("BIENVENIDO A HELL TAKER CONCESIONARIO...");
             alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
             alert1.showAndWait();
             BloqueNombre.setText("");
@@ -184,9 +184,15 @@ public class RegistrarEmpleadoController {
     }
 
     private Genero obtenerGenero(){
-        RadioButton radioButton = (RadioButton) genero.getSelectedToggle();
-        if( radioButton != null ){
-            return Genero.valueOf( radioButton.getText().toUpperCase() );
+
+        if(botonMasculino.isSelected()){
+            return Genero.MASCULINO;
+        }
+        else if (botonFemenino.isSelected()){
+            return Genero.FEMENINO;
+        }
+        else if (botonOtros.isSelected()){
+            return Genero.OTROS;
         }
         return null;
     }

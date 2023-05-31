@@ -48,8 +48,15 @@ public class LoginController implements Initializable {
         // TODO
     }
     @FXML
-    private void labCerrar(MouseEvent event) {
-        System.exit(0);
+    private void labCerrar(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AceptarCerrar.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(scene);
+        stage.showAndWait();
     }
 
     @FXML

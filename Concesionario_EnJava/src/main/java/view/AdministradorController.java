@@ -11,7 +11,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import modelo.Administrador;
 
 import java.io.IOException;
@@ -91,7 +93,18 @@ public class AdministradorController {
 
 
     @FXML
-    void labCerrar(MouseEvent event) {System.exit(0);}
+    void labCerrar(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AceptarCerrar.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(scene);
+        stage.showAndWait();
+
+
+    }
 
 
     @FXML
@@ -130,5 +143,16 @@ public class AdministradorController {
         stage.show();
 
     }
+    public void EventoReportes (ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("VistaReportes.fxml"));
+        Parent root= loader.load();
+        Stage stage = new Stage();
+        stage.initStyle(UNDECORATED);
+        stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.hide();
+        stage.show();
 
+}
 }

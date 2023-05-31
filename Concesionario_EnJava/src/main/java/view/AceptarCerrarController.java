@@ -3,6 +3,7 @@ package view;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -20,18 +21,14 @@ public class AceptarCerrarController {
 
     @FXML
     void aceptarCerrar(ActionEvent event) throws IOException {
-        FXMLLoader login= new FXMLLoader(getClass().getResource("Login.fxml"));
-        Parent root=login.load();
-        LoginController controller= login.getController();
-        Scene loginScene=new Scene(root);
-        Stage stage= new Stage();
-        stage.setScene(loginScene);
-        stage.show();
+        System.exit(0);
     }
 
     @FXML
     void cancelarCerrar(ActionEvent event) {
-
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.close();
 
 
     }

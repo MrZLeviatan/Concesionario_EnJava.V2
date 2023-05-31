@@ -97,12 +97,12 @@
             <TextField fx:id="BloqueContraseña" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <HBox fx:id="hbox" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <RadioButton fx:id="ButtonMasculino" mnemonicParsing="false" text=" Maculino    " textFill="#b20a0a">
+                  <RadioButton fx:id="botonMasculino" mnemonicParsing="false" text=" Maculino    " textFill="#b20a0a">
                      <toggleGroup>
                         <ToggleGroup fx:id="genero" />
                      </toggleGroup></RadioButton>
-                  <RadioButton fx:id="BotonFemenino" mnemonicParsing="false" text="Femenino  " textFill="#b20a0a" toggleGroup="$genero" />
-                  <RadioButton fx:id="BotonOtros" mnemonicParsing="false" text="Otros" textFill="#b20a0a" toggleGroup="$genero" />
+                  <RadioButton fx:id="botonFemenino" mnemonicParsing="false" text="Femenino  " textFill="#b20a0a" toggleGroup="$genero" />
+                  <RadioButton fx:id="botonOtros" mnemonicParsing="false" text="Otros" textFill="#b20a0a" toggleGroup="$genero" />
                </children>
             </HBox>
             <Label fx:id="TextoContraseña1" layoutX="10.0" layoutY="167.0" prefHeight="38.0" prefWidth="116.0" text="PALABRA SECRETA:" textFill="#b20a0a" wrapText="true" GridPane.rowIndex="6">

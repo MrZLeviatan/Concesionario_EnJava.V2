@@ -5,102 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Concesionario_EnJava.V2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Concesionario_EnJava.V2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/0617d0a9bfb9eb76c813e943d8ae36e2725893cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c4017ce751e4db973e5ea72479e081da9532014" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2d987bb4e0b6a64dea7b229e24aa15daaf7210" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1292218d830211731a2f68a6c4a834b1f7c438a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/465ba949ce8d5a9c5ff0386c412e88eba1f57242" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562b8c1e5869d4fcf1d5ec6ce864e92ceb7afe4b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f419b1fd260180b8e4ee3208b05c8f913bbd14e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/addf5ac9de3f2275292beb890c2f6dc7a7f2d380" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2eac7e1ecac381cdbf79026bcddd7bcfc894d02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b98dfdd151ba2e11f56006a46e8a42018022ecda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e89623cbb2c95123a4d125b1a1452075dba83588" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ecbac7cb61bcaa03719c43c3ffd501782d04d3a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f61f4f91b2f6490731b901c0224acfcd2c9cfb42" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8e2cd7b5fb0c24e4f8286015bfc61a4424f25c8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/6/0617d0a9bfb9eb76c813e943d8ae36e2725893cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0c4017ce751e4db973e5ea72479e081da9532014" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/d/0d2d987bb4e0b6a64dea7b229e24aa15daaf7210" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/2/1292218d830211731a2f68a6c4a834b1f7c438a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/6/465ba949ce8d5a9c5ff0386c412e88eba1f57242" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/562b8c1e5869d4fcf1d5ec6ce864e92ceb7afe4b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/f/5f419b1fd260180b8e4ee3208b05c8f913bbd14e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/d/addf5ac9de3f2275292beb890c2f6dc7a7f2d380" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/2/b2eac7e1ecac381cdbf79026bcddd7bcfc894d02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/9/b98dfdd151ba2e11f56006a46e8a42018022ecda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e89623cbb2c95123a4d125b1a1452075dba83588" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/c/ecbac7cb61bcaa03719c43c3ffd501782d04d3a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/6/f61f4f91b2f6490731b901c0224acfcd2c9cfb42" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/8/f8e2cd7b5fb0c24e4f8286015bfc61a4424f25c8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/VistaReportesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/VistaReportes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Camiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Camiones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Combustible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Combustible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Deportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Deportivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Estado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/EstadoUso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/EstadoUso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Nivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Nivel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Padre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Padre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/PickUps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/PickUps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Poseer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Poseer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RecuperarCorreo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/RecuperarCorreo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Sedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Sedan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Seguridad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SendMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/TipoCamion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/TipoCamion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/TipoTransaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/TipoTransaccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Transaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Transaccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Transmision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Transmision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Vans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Vans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/PadreUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/PadreUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/PersonaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/PersonaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/VehiculoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/VehiculoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/AceptarCerrarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AceptarCerrarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/CarrosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CarrosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CarrosController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarVehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RegistrarVehiculoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/HojasEstilo/HojaEstiloBotones.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HojasEstilo/HojaEstiloBotones.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/ImagenLlenar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/ImagenesCarros/197174acd123bcd6b580137238ce80a7.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Empleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Empleado.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/PruebaList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/PruebaPersonas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/PruebaVehiculos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/aceptarCerrar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AceptarCerrar.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685492933128</updated>
-      <workItem from="1685492934778" duration="17570000" />
+      <workItem from="1685492934778" duration="22502000" />
     </task>
     <servers />
   </component>
