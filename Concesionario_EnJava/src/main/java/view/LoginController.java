@@ -122,7 +122,9 @@ public class LoginController implements Initializable {
             Stage stage= new Stage();
             stage.setScene(scene);
             stage.show();
-            //metodo init
+            INSTANCE.getConsesionario().verificarExistencia(INSTANCE.getConsesionario().buscarAdm(correoUsuario));
+
+
 
 
         } else if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)){
@@ -132,6 +134,9 @@ public class LoginController implements Initializable {
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.show();
+
+            INSTANCE.getConsesionario().verificarExistencia(INSTANCE.getConsesionario().buscarEmpleadoCorreo(correoUsuario));
+
         } else{
            //
 

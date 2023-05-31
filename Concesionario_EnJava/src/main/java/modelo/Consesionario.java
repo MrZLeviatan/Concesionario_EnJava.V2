@@ -4,9 +4,12 @@ import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.Properties;
 
 public class Consesionario {
+
+
 
     //listas necessarias para guardar la información
     private final ArrayList<Administrador> listaAdministradores;
@@ -15,6 +18,8 @@ public class Consesionario {
 
     private final ArrayList <Cliente> listaCliente;
 
+    // variable para agregar el empleado o administrador existente
+    private  Persona personaverificada;
     //constructor del concesionario
 
     public Consesionario() {
@@ -25,44 +30,37 @@ public class Consesionario {
 
     }
 
-    //metodos get para las listas
+
+    //metodos get para las listas y variables
     public  ArrayList<Administrador> getListaAdministradores() {
         return listaAdministradores;
     }
-
-
-
     public  ArrayList<Empleado> getListaEmpleado() {
         return listaEmpleado;
     }
-
     public ArrayList<Vehiculo> getListaVehiculos() {
         return listaVehiculos;
     }
-
-
     public ArrayList<Cliente> getListaCliente() {
         return listaCliente;
     }
+
+    public Persona getPersonaverificada() {return personaverificada;}
+
 
     //metodos para añadir objetos a las listas
     public void addCliente(Cliente cliente){
         listaCliente.add(cliente);
     }
-
     public  void addVehiculo(Vehiculo vehiculo){
         listaVehiculos.add(vehiculo);
     }
-
     public void addEmpleado(Empleado empleado){
         listaEmpleado.add(empleado);
     }
-
     public void addAministrador(Administrador administrador){
         listaAdministradores.add(administrador);
     }
-
-
 
 
     //verifica que el correo que fue enviado sea de un administrador
@@ -87,6 +85,13 @@ public class Consesionario {
         return x;
     }
 
+
+
+    //añadirExistencia
+    public void verificarExistencia(Persona persona){
+        personaverificada=persona;
+    }
+
     // metodos para buscar Personas en las listas
     public  Empleado buscarEmpleadoCorreo(String correo){
         Empleado empleado= (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getCorreo()==correo);
@@ -96,7 +101,8 @@ public class Consesionario {
       return (Empleado) listaEmpleado.stream().filter(Empleado->Empleado.getClave().equalsIgnoreCase(cc));
     }
     public Administrador buscarAdm(String correo){
-        return (Administrador) listaAdministradores.stream().filter(Administrador->Administrador.getCorreo().equalsIgnoreCase(correo));
+        Optional<Administrador> administrador=listaAdministradores.stream().filter(Administrador->Administrador.getCorreo().equalsIgnoreCase(correo)).findFirst();
+        return administrador.get();
     }
 
     //Metodo para eliminar empleado de la lista
