@@ -88,12 +88,6 @@ public class AdministradorController {
     @FXML
     private Label X;
 
-    public void init(Administrador administrador){
-        BloqueCorreo.setText(administrador.getCorreo());
-        BloqueCedula.setText(administrador.getClave());
-        BloqueNombre.setText(administrador.getNombre());
-    }
-
 
 
     @FXML
@@ -135,4 +129,6 @@ public class AdministradorController {
     }
 
 
+    public void EventoBuscarEmpleado(ActionEvent actionEvent) {
+    }
 }

@@ -2,13 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -17,7 +18,7 @@
 
 <AnchorPane prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EmpleadoController">
    <children>
-      <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="477.0" stroke="BLACK" strokeType="INSIDE" width="364.0">
+      <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="492.0" stroke="BLACK" strokeType="INSIDE" width="360.0">
          <fill>
             <LinearGradient endX="1.0" endY="0.39810426540284366" startY="1.0">
                <stops>
@@ -35,60 +36,73 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <ImageView fx:id="ImagenPer" fitHeight="157.0" fitWidth="160.0" layoutX="103.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="ImagenPerfil" fitHeight="175.0" fitWidth="170.0" layoutX="95.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/ImagenPerfil.png" />
          </image>
       </ImageView>
-      <Separator layoutX="364.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="6.0" />
-      <Separator layoutX="72.0" layoutY="220.0" prefHeight="12.0" prefWidth="220.0" />
-      <Label fx:id="textoNombre" layoutX="31.0" layoutY="275.0" text="NOMBRE:" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="textoCedula" layoutX="33.0" layoutY="314.0" text="CEDULA:" textFill="WHITE">
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="textoCorreo" layoutX="31.0" layoutY="355.0" text="CORREO:" textFill="#f8f8f8">
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="bloqueCorreoEmpleado" layoutX="125.0" layoutY="351.0" opacity="0.48" prefHeight="6.0" prefWidth="204.0" />
-      <TextField fx:id="bloqueCedulaEmpleado" layoutX="125.0" layoutY="310.0" opacity="0.48" prefHeight="6.0" prefWidth="204.0" />
-      <TextField fx:id="bloqueNombreEmpleado" layoutX="125.0" layoutY="263.0" opacity="0.48" prefHeight="6.0" prefWidth="204.0" />
-      <MenuButton alignment="CENTER" layoutX="399.0" layoutY="209.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="300.0" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="CARROS" textAlignment="CENTER" textFill="#fcf9f9">
-        <items>
-          <MenuItem fx:id="VenderVehiculoEmpleado" mnemonicParsing="false" text="VENDER CARRO" />
-          <MenuItem fx:id="agregarVehiculos" mnemonicParsing="false" text="AGREGAR VEHICULOS" />
-            <MenuItem fx:id="listaVehiculos" mnemonicParsing="false" text="LISTA VEHICULOS" />
-        </items>
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </MenuButton>
-      <Button fx:id="generarReporteEmpleado" alignment="CENTER" contentDisplay="CENTER" layoutX="395.0" layoutY="301.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="300.0" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="GENERAR REPORTE" textFill="#eeecec" textOverrun="CLIP">
+      <Separator layoutX="353.0" orientation="VERTICAL" prefHeight="492.0" prefWidth="0.0" style="-fx-background-color: bLACK;" />
+      <Separator layoutX="50.0" layoutY="232.0" prefHeight="0.0" prefWidth="260.0" />
+      <GridPane layoutX="27.0" layoutY="258.0" prefHeight="170.0" prefWidth="306.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="91.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="215.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="textoNombre" text="NOMBRE:" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textoCedula" text="CEDULA:" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textoCorreo" text="CORREO:" textFill="#f8f8f8" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="BloqueNombre" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" />
+            <TextField fx:id="BloqueCedula" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="BloqueCorreo" editable="false" opacity="0.48" prefHeight="6.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="generarReporteEmpleado" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="302.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="GENERAR REPORTE" textFill="#eeecec" textOverrun="CLIP">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="cerrarModuloEmpleado" layoutX="680.0" layoutY="14.0" text="X">
+      <Label fx:id="X" layoutX="680.0" onMousePressed="#labCerrar" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X">
          <font>
             <Font name="System Bold Italic" size="34.0" />
          </font>
       </Label>
-      <Label fx:id="NombreEmpleado" alignment="CENTER" layoutX="118.0" layoutY="199.0" prefHeight="21.0" prefWidth="128.0" text="EMPLEADO" textFill="#fcfcfc">
+      <Label fx:id="NombreEmpleado" alignment="CENTER" layoutX="116.0" layoutY="212.0" prefHeight="21.0" prefWidth="128.0" text="EMPLEADO" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="deVolverEmpleado" layoutX="31.0" layoutY="433.0" text="&lt;--" textFill="#f8f8f8">
+      <ImageView fx:id="Imagen" fitHeight="111.0" fitWidth="242.0" layoutX="415.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/LogoLetras.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Volver" layoutX="16.0" layoutY="436.0" onMousePressed="#EventoVolver" prefHeight="41.0" prefWidth="20.0" text="«" textFill="WHITE">
          <font>
-            <Font name="System Bold Italic" size="20.0" />
+            <Font name="System Bold Italic" size="39.0" />
          </font>
       </Label>
+      <Button fx:id="Carros" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="226.0" mnemonicParsing="false" onAction="#EventoListaVehiculos" onMouseClicked="#EventoListaVehiculos" prefHeight="41.0" prefWidth="323.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="CARROS" textFill="#eeecec" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
