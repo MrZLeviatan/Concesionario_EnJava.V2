@@ -2,17 +2,21 @@ package view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import modelo.Empleado;
+import modelo.Estado;
+import modelo.Genero;
+
+import static view.consecionarioInstance.INSTANCE;
 
 public class RegistrarEmpleadoController {
+    private Estado estado;
 
     @FXML
     private TextField BloqueCedula;
@@ -78,7 +82,28 @@ public class RegistrarEmpleadoController {
     private Text TextoRegistro;
 
     @FXML
-    void EventoAgregar(ActionEvent event) {
+    private HBox hbox;
+
+    @FXML
+    private GridPane tablaorden;
+
+    @FXML
+    private ToggleGroup genero;
+   // @FXML
+
+    //private Genero obtenerGenero() {
+
+     //   RadioButton radioButton = (RadioButton) genero.getSelectedToggle();
+      //  if (radioButton != null) {
+       //     return Genero.valueOf(radioButton.getText().toUpperCase());
+      //  }
+       // return null;
+   // }
+    @FXML
+    void EventoAgregar(ActionEvent event) throws Exception {
+        estado=Estado.ACTIVO;
+        Empleado empleado = new Empleado(BloqueNombre.getText(),BloqueCorreo.getText(),Integer.parseInt(BloqueEdad.getText()),BloqueCedula.getText(),Genero.MASCULINO,BloqueContraseña.getText(),"LOLSITO", estado);
+        INSTANCE.getConsesionario().addEmpleado(empleado);
 
     }
 

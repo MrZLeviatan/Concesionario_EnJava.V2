@@ -16,11 +16,12 @@ public enum consecionarioInstance {
         }
 
         try {
-            consesionario.addEmpleado(new Empleado("juan","1234",23,"1234",Genero.MASCULINO,"123","lolsito", Estado.ACTIVO,Nivel.INFERIOR));
+            consesionario.addEmpleado(new Empleado("juan","1234",23,"1234",Genero.MASCULINO,"123","lolsito", Estado.ACTIVO));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
+
 
     public Consesionario getConsesionario() {
         return consesionario;

@@ -13,7 +13,7 @@ import static view.consecionarioInstance.INSTANCE;
 /**
  * JavaFX App
  */
-public class App extends Application {
+ public class App extends Application {
 
 
     private static Scene scene;

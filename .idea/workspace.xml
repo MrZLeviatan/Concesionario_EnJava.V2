@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9262dd5-6b4f-4cc6-b4ee-1d70967fa36b" name="Changes" comment="&#10;load">
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/ListaVehiculosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RecuperarContraseñaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarVehiculoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/ListaVehiculos.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RecuperarContraseña .fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RegistrarVehiculo.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/AdministradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/modelo/Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/ControllerMetodosRecuperar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Empleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/Empleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/metodosRecuperar.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarEmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarVehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/RegistrarVehiculoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/java/view/consecionarioInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Concesionario_EnJava/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +179,7 @@
       <workItem from="1685423165042" duration="515000" />
       <workItem from="1685423701975" duration="2415000" />
       <workItem from="1685485168851" duration="4985000" />
-      <workItem from="1685490840631" duration="422000" />
+      <workItem from="1685490840631" duration="5302000" />
     </task>
     <task id="LOCAL-00001" summary="agrege la clase seguridad para ponercelas a empleado y administrador para que tengan los atributos extras que los diferencie de los clientes">
       <created>1684646014443</created>
@@ -394,11 +384,29 @@
       <option name="project" value="LOCAL" />
       <updated>1685489770370</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="&#10;load">
+      <created>1685491410354</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1685491410354</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
