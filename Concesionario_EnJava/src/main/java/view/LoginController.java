@@ -102,7 +102,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private void eventoRecuperar(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/RecuperarContraseña.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Correo.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();

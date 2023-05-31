@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseña.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/CorreoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña .fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/VistaReportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/VistaReportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseña.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Correo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685492933128</updated>
-      <workItem from="1685492934778" duration="32736000" />
+      <workItem from="1685492934778" duration="33862000" />
     </task>
     <servers />
   </component>
