@@ -33,16 +33,25 @@ import static view.consecionarioInstance.INSTANCE;
  */
 public class LoginController implements Initializable {
     @FXML
-    private TextField BloqueUsuario;
-    @FXML
-    private PasswordField BloqueContraseña;
-    private String correoUsuario;
-    private String contraseñaUsuario;
-    @FXML
-    private Button BotonIngrese;
-    @FXML
-    private Button BotonRecuperar;
+    private PasswordField bloqueContraseña;
 
+    @FXML
+    private TextField bloqueUsuario;
+
+    @FXML
+    private Button botonIngreso;
+
+    @FXML
+    private Button botonRecuperar;
+
+    @FXML
+    private Label textoContraseña;
+
+    @FXML
+    private Label textoUsuario;
+
+    @FXML
+    private Label x;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -64,7 +73,7 @@ public class LoginController implements Initializable {
 
         Object evt = event.getSource();
 
-        if (evt.equals(BloqueUsuario)) {
+        if (evt.equals(bloqueUsuario)) {
             if (event.getCharacter().equals(" ")) {
                 Alert alert = new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR!!!");
@@ -73,9 +82,9 @@ public class LoginController implements Initializable {
                 alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-                BloqueUsuario.setText("");
+                bloqueUsuario.setText("");
             }
-        } else if (evt.equals(BloqueContraseña)) {
+        } else if (evt.equals(bloqueContraseña)) {
             if (event.getCharacter().equals(" ")) {
                 Alert alert1= new Alert(Alert.AlertType.NONE);
                 alert1.setTitle("ERROR!!!");
@@ -84,7 +93,7 @@ public class LoginController implements Initializable {
                 alert1.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
                 alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert1.showAndWait();
-                BloqueContraseña.setText("");
+                bloqueContraseña.setText("");
             }
 
         }
@@ -92,7 +101,7 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void EventoRecuperar(ActionEvent event) throws IOException {
+    private void eventoRecuperar(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/RecuperarContraseña.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
@@ -106,9 +115,8 @@ public class LoginController implements Initializable {
     @FXML
     public void eventoValidacion(ActionEvent event) throws Exception {
 
-        correoUsuario= BloqueUsuario.getText();
-        contraseñaUsuario = BloqueContraseña.getText();
-        if(INSTANCE.getConsesionario().verificarAdm(correoUsuario,contraseñaUsuario)){
+
+        if(INSTANCE.getConsesionario().verificarAdm(bloqueUsuario.getText(),bloqueContraseña.getText())){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Administrador.fxml"));
             Parent root= loader.load();
             Stage stage = new Stage();
@@ -119,7 +127,7 @@ public class LoginController implements Initializable {
             stage2.close();
             stage.show();
 
-        } else if(INSTANCE.getConsesionario().verificarEmpleado(correoUsuario,contraseñaUsuario)){
+        } else if(INSTANCE.getConsesionario().verificarEmpleado(bloqueUsuario.getText(),bloqueContraseña.getText())){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Empleado.fxml"));
             Parent root= loader.load();
             Stage stage = new Stage();
@@ -139,7 +147,7 @@ public class LoginController implements Initializable {
             alert1.setHeaderText("PARECE QUE NO TE ENCONTRAMOS...");
             alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
             alert1.showAndWait();
-            BloqueContraseña.setText("");
+            bloqueContraseña.setText("");
 
 
         }

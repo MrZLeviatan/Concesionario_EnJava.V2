@@ -22,7 +22,7 @@
 
 <AnchorPane prefHeight="477.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegistrarEmpleadoController">
    <children>
-      <Rectangle fx:id="FondoRojo" arcHeight="5.0" arcWidth="5.0" height="478.0" layoutX="372.0" stroke="BLACK" strokeType="INSIDE" width="345.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="478.0" layoutX="372.0" stroke="BLACK" strokeType="INSIDE" width="345.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -60,41 +60,41 @@
           <RowConstraints maxHeight="147.19998779296876" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="TextoNombre" prefHeight="38.0" prefWidth="93.0" text="NOMBRE:" textFill="#b20a0a">
+            <Label prefHeight="38.0" prefWidth="93.0" text="NOMBRE:" textFill="#b20a0a">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="TextoCedula" prefHeight="38.0" prefWidth="93.0" text="CEDULA:" textFill="#b20a0a" GridPane.rowIndex="1">
+            <Label prefHeight="38.0" prefWidth="93.0" text="CEDULA:" textFill="#b20a0a" GridPane.rowIndex="1">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="TextoGenero" prefHeight="38.0" prefWidth="93.0" text="GENERO:" textFill="#b20a0a" GridPane.rowIndex="2">
+            <Label prefHeight="38.0" prefWidth="93.0" text="GENERO:" textFill="#b20a0a" GridPane.rowIndex="2">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="TextoEdad" prefHeight="38.0" prefWidth="93.0" text="EDAD:" textFill="#b20a0a" GridPane.rowIndex="3">
+            <Label prefHeight="38.0" prefWidth="93.0" text="EDAD:" textFill="#b20a0a" GridPane.rowIndex="3">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="TextoCorreo" prefHeight="38.0" prefWidth="93.0" text="CORREO:" textFill="#b20a0a" GridPane.rowIndex="4">
+            <Label prefHeight="38.0" prefWidth="93.0" text="CORREO:" textFill="#b20a0a" GridPane.rowIndex="4">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="TextoContraseña" prefHeight="38.0" prefWidth="116.0" text="CONTRASEÑA:" textFill="#b20a0a" GridPane.rowIndex="5">
+            <Label prefHeight="38.0" prefWidth="116.0" text="CONTRASEÑA:" textFill="#b20a0a" GridPane.rowIndex="5">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="BloqueNombre" prefHeight="25.0" prefWidth="214.0" GridPane.columnIndex="1" />
-            <TextField fx:id="BloqueCedula" onKeyTyped="#restriccionTeclas" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="BloqueEdad" onKeyTyped="#restriccionTeclas" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="BloqueCorreo" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="BloqueContraseña" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="bloqueNombre" prefHeight="25.0" prefWidth="214.0" GridPane.columnIndex="1" />
+            <TextField fx:id="bloqueCedula" onKeyTyped="#restriccionTeclas" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="bloqueEdad" onKeyTyped="#restriccionTeclas" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="bloqueCorreo" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="bloqueContraseña" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <HBox fx:id="hbox" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <RadioButton fx:id="botonMasculino" mnemonicParsing="false" text=" Maculino    " textFill="#b20a0a">
@@ -105,7 +105,7 @@
                   <RadioButton fx:id="botonOtros" mnemonicParsing="false" text="Otros" textFill="#b20a0a" toggleGroup="$genero" />
                </children>
             </HBox>
-            <Label fx:id="TextoContraseña1" layoutX="10.0" layoutY="167.0" prefHeight="38.0" prefWidth="116.0" text="PALABRA SECRETA:" textFill="#b20a0a" wrapText="true" GridPane.rowIndex="6">
+            <Label layoutX="10.0" layoutY="167.0" prefHeight="38.0" prefWidth="116.0" text="PALABRA SECRETA:" textFill="#b20a0a" wrapText="true" GridPane.rowIndex="6">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -113,17 +113,17 @@
             <TextField fx:id="bloquePalabraSecreta" GridPane.columnIndex="1" GridPane.rowIndex="6" />
          </children>
       </GridPane>
-      <Button fx:id="BotonRegistrar" layoutX="216.0" layoutY="386.0" mnemonicParsing="false" onAction="#EventoAgregar" prefHeight="45.0" prefWidth="124.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="REGISTRAR" textFill="WHITE">
+      <Button fx:id="botonRegistro" layoutX="216.0" layoutY="386.0" mnemonicParsing="false" onAction="#eventoAgregar" prefHeight="45.0" prefWidth="124.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="REGISTRAR" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="BotonCancelar" layoutX="39.0" layoutY="386.0" mnemonicParsing="false" onAction="#Eventocancelar" onMouseClicked="#Eventocancelar" prefHeight="45.0" prefWidth="124.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="CANCELAR " textFill="WHITE">
+      <Button fx:id="botonCancelar" layoutX="39.0" layoutY="386.0" mnemonicParsing="false" onAction="#eventocancelar" prefHeight="45.0" prefWidth="124.0" style="-fx-background-radius: 12px;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="CANCELAR " textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="14.0" />
          </font>
       </Button>
-      <Text fx:id="TextoRegistro" fontSmoothingType="LCD" layoutX="97.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRO" textAlignment="CENTER">
+      <Text fontSmoothingType="LCD" layoutX="97.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRO" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="36.0" />
          </font>
@@ -149,13 +149,13 @@
             </LinearGradient>
          </fill>
       </Text>
-      <Separator fx:id="Separador" layoutX="367.0" orientation="VERTICAL" prefHeight="478.0" prefWidth="10.0" style="-fx-background-color: BLACK;" />
-      <ImageView fx:id="ImagenLogo" fitHeight="363.0" fitWidth="330.0" layoutX="380.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+      <Separator layoutX="367.0" orientation="VERTICAL" prefHeight="478.0" prefWidth="10.0" style="-fx-background-color: BLACK;" />
+      <ImageView fitHeight="363.0" fitWidth="330.0" layoutX="380.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/ImagenLogo2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="ImagenLogo2" fitHeight="125.0" fitWidth="125.0" layoutX="482.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="482.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/ImagenBienvenido.png" />
          </image>

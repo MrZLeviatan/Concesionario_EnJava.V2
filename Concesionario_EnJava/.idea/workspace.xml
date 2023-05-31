@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/RecuperarContraseña.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdministradorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BuscadorEmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ListaVehiculosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/OpcionesEmpleadosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/RegistrarEmpleadoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Administrador.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/BuscadorEmpleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OpcionesEmpleados.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarVehiculo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RecuperarContraseña .fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegistrarEmpleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/VistaReportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/VistaReportes.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
-    "last_opened_file_path": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo12",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo12&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685492933128</updated>
-      <workItem from="1685492934778" duration="28638000" />
+      <workItem from="1685492934778" duration="32736000" />
     </task>
     <servers />
   </component>

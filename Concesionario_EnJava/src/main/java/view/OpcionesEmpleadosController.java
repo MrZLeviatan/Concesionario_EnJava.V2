@@ -72,7 +72,7 @@ public class OpcionesEmpleadosController {
         stage.showAndWait();
     }
 
-    public void EventoVolver (MouseEvent event) throws IOException {
+    public void eventoVolver (MouseEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Administrador.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
@@ -83,7 +83,7 @@ public class OpcionesEmpleadosController {
         stage2.hide();
         stage.show();
     }
-   public void EventoRegistro (ActionEvent event) throws IOException {
+   public void eventoRegistro (ActionEvent event) throws IOException {
        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegistrarEmpleado.fxml"));
        Parent root= loader.load();
        Stage stage = new Stage();
@@ -96,7 +96,7 @@ public class OpcionesEmpleadosController {
 
    }
 
-    public void EventoEliminar (ActionEvent event) throws IOException {
+    public void eventoEliminar (ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("BuscadorEmpleado.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();

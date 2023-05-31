@@ -22,75 +22,23 @@ import java.io.IOException;
 import static javafx.stage.StageStyle.UNDECORATED;
 
 public class AdministradorController {
-    private Administrador administradorC;
 
     @FXML
-    private TextField BloqueCedula;
-
+    private TextField bloqueCedula;
     @FXML
-    private TextField BloqueCorreo;
-
+    private TextField bloqueCorreo;
     @FXML
-    private TextField BloqueNombre;
-
-    @FXML
-    private MenuItem BotonActualizarEmpleado;
-
-    @FXML
-    private MenuItem BotonCuotaEmpleado;
-
-    @FXML
-    private MenuItem BotonEliminarEmpleado;
-
-    @FXML
-    private Button BotonGerencia;
-
-    @FXML
-    private MenuItem BotonRegistrarEmpleado;
-
-    @FXML
-    private Rectangle FondoRojo;
-
-    @FXML
-    private ImageView ImagenPerfil;
-
-    @FXML
-    private ImageView LogoLetras;
-
+    private TextField bloqueNombre;
     @FXML
     private Button botonEmpleado;
-
+    @FXML
+    private Button botonGerencia;
     @FXML
     private Button botonRegistro;
-
     @FXML
-    private AnchorPane Panel;
-
+    private Label volver;
     @FXML
-    private Separator Separador;
-
-    @FXML
-    private Separator SeparadorBlanco;
-
-    @FXML
-    private Label TextoAdministrador;
-
-    @FXML
-    private Label TextoCedula;
-
-    @FXML
-    private Label TextoCorreo;
-
-    @FXML
-    private Label TextoNombre;
-
-    @FXML
-    private Label Volver;
-
-    @FXML
-    private Label X;
-
-
+    private Label x;
 
     @FXML
     void labCerrar(MouseEvent event) throws IOException {
@@ -102,14 +50,10 @@ public class AdministradorController {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.showAndWait();
-
-
     }
-
-
     @FXML
 
-    public void EventoVolver (MouseEvent event) throws IOException {
+    public void eventoVolver (MouseEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
@@ -121,7 +65,7 @@ public class AdministradorController {
         stage.show();
     }
 
-    public void EventoTroll (ActionEvent event){
+    public void eventoTroll (ActionEvent event){
         Alert alert = new Alert(Alert.AlertType.NONE);
         alert.setTitle("ERROR!!!");
         alert.setContentText("EN PROCESO DE CONSTRUCCION...");
@@ -131,7 +75,7 @@ public class AdministradorController {
         alert.showAndWait();
     }
 
-    public void EventoRegistrar (ActionEvent event) throws IOException {
+    public void eventoEmpleados (ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("OpcionesEmpleados.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
@@ -143,7 +87,7 @@ public class AdministradorController {
         stage.show();
 
     }
-    public void EventoReportes (ActionEvent event) throws IOException {
+    public void eventoReportes (ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("VistaReportes.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();

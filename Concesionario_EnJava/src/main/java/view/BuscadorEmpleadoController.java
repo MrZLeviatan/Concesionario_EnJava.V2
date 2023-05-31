@@ -10,25 +10,19 @@ import static view.consecionarioInstance.INSTANCE;
 public class BuscadorEmpleadoController {
 
     @FXML
-    private TextField BloqueCedula;
+    private TextField bloqueCedula;
 
     @FXML
-    private Button BotonBuscar;
+    private Button botonBuscar;
 
     @FXML
-    private Rectangle FondoRojo;
-
-    @FXML
-    private Label TextoBuscar;
-
-    @FXML
-    private Button X;
+    private Button x;
 
 
     @FXML
     private void cerrarventa (ActionEvent event){
 
-        Stage stage= (Stage) this.X.getScene().getWindow();
+        Stage stage= (Stage) this.x.getScene().getWindow();
         stage.close();
 
     }
@@ -38,11 +32,11 @@ public class BuscadorEmpleadoController {
 
         Object evt=event.getSource();
 
-        if(evt.equals(BotonBuscar)){
+        if(evt.equals(botonBuscar)){
 
-            if(!BloqueCedula.getText().isEmpty()){
+            if(!bloqueCedula.getText().isEmpty()){
 
-                INSTANCE.getConsesionario().eliminarEmpleado(BloqueCedula.getText());
+                INSTANCE.getConsesionario().eliminarEmpleado(bloqueCedula.getText());
 
                 Alert alert= new Alert(Alert.AlertType.NONE);
                 alert.setTitle("AVISO!!!");
