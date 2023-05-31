@@ -11,7 +11,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CorreoController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="336.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="238.0">
@@ -43,7 +42,7 @@
             <Font name="Arial Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="botonCerrar" layoutX="269.0" layoutY="242.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="131.0" style="-fx-background-radius: 12PX;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="RECUPERAR" textFill="WHITE">
+      <Button fx:id="botonCerrar" layoutX="269.0" layoutY="242.0" mnemonicParsing="false" onAction="#eventoRecuperar" prefHeight="48.0" prefWidth="131.0" style="-fx-background-radius: 12PX;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="RECUPERAR" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="14.0" />
          </font>
@@ -54,8 +53,8 @@
          </font>
       </Button>
       <TextField fx:id="bloqueCorreo" layoutX="359.0" layoutY="97.0" prefHeight="25.0" prefWidth="222.0" promptText="INGRESE CORREO" />
-      <TextField fx:id="bloquePalabra" layoutX="411.0" layoutY="158.0" prefHeight="25.0" prefWidth="165.0" promptText="INGRESE PALABRA SECRETA" />
-      <Label layoutX="570.0" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" fx:id="x">
+      <TextField fx:id="bloquePalabra" layoutX="411.0" layoutY="158.0" onKeyPressed="#eventEspaciosBlancos" prefHeight="25.0" prefWidth="165.0" promptText="INGRESE PALABRA SECRETA" />
+      <Label layoutX="570.0" onMousePressed="#labCerrar" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" fx:id="x">
          <font>
             <Font name="System Bold Italic" size="34.0" />
          </font>

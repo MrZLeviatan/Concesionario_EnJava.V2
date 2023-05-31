@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Registros.java" afterDir="false" />
+    <list default="true" id="874c2aba-522d-4718-afc6-128040daa428" name="Changes" comment="load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Consesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/consecionarioInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Empleado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Empleado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CorreoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CorreoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Correo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Correo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo12&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/Concesionario_EnJava.V2/Concesionario_EnJava/src/main/java/view",
+    "last_opened_file_path": "C:/Users/Mr. Nicolas/OneDrive/Documentos/Programacion II/GitHub/202301P2/javafx/ejemplo12",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mr. Nicolas\OneDrive\Documentos\Programacion II\GitHub\Concesionario_EnJava.V2\Concesionario_EnJava\src\main\java\modelo" />
@@ -70,11 +68,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685492933128</updated>
-      <workItem from="1685492934778" duration="35107000" />
+      <workItem from="1685492934778" duration="36660000" />
     </task>
+    <task id="LOCAL-00001" summary="load">
+      <created>1685575858567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685575858567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="load" />
+    <option name="LAST_COMMIT_MESSAGE" value="load" />
   </component>
 </project>
