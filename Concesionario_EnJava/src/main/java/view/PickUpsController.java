@@ -6,15 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import modelo.Vehiculo;
+import modelo.*;
 
 import java.awt.*;
 import java.io.File;
@@ -25,7 +24,19 @@ import static javafx.stage.StageStyle.UNDECORATED;
 public class PickUpsController extends Component {
 
     @FXML
-    private TextField bloqueMatricula;
+    private ToggleGroup Combustible;
+
+    @FXML
+    private ToggleGroup Posesion;
+
+    @FXML
+    private ToggleGroup Posesion11;
+
+    @FXML
+    private ToggleGroup Trasmicion;
+
+    @FXML
+    private ToggleGroup Uso;
 
     @FXML
     private TextField bloqueBolsa;
@@ -43,10 +54,16 @@ public class PickUpsController extends Component {
     private TextField bloqueMarca;
 
     @FXML
+    private TextField bloqueMatricula;
+
+    @FXML
     private TextField bloqueModelo;
 
     @FXML
     private TextField bloquePasajeros;
+
+    @FXML
+    private TextField bloquePrecio;
 
     @FXML
     private TextField bloquePuertas;
@@ -55,10 +72,53 @@ public class PickUpsController extends Component {
     private TextField bloqueVelocidad;
 
     @FXML
+    private RadioButton botonAutomatica;
+
+    @FXML
     private Button botonCancelar;
 
     @FXML
+    private RadioButton botonDisiel;
+
+    @FXML
+    private RadioButton botonElectricos;
+
+    @FXML
+    private RadioButton botonGasolina;
+
+    @FXML
+    private RadioButton botonHibridos;
+
+    @FXML
+    private RadioButton botonManual;
+
+    @FXML
+    private RadioButton botonNoUsado;
+
+    @FXML
     private Button botonRegistro;
+
+    @FXML
+    private RadioButton botonUsado;
+
+    @FXML
+    private RadioButton noPosee4;
+
+    @FXML
+    private RadioButton noPoseeAco;
+
+    @FXML
+    private RadioButton noPoseeCam;
+
+    @FXML
+    private RadioButton posee4;
+
+    @FXML
+    private RadioButton poseeAco;
+
+    @FXML
+    private RadioButton poseeCam;
+
     
     final FileChooser fc = new FileChooser();
 
@@ -173,6 +233,8 @@ public class PickUpsController extends Component {
             }
         }
     }
+
+
     @FXML
     void eventoImagen (ActionEvent event){
 
@@ -184,5 +246,75 @@ public class PickUpsController extends Component {
         File file = fc.showOpenDialog(null);
 
         }
+    private EstadoUso obtenerPosesionUso(){
+
+        if(botonUsado.isSelected()){
+            return EstadoUso.USADO;
+        }
+        else if (botonNoUsado.isSelected()){
+            return EstadoUso.NOUSADO;
+        }
+        return null;
+    }
+    private Combustible obtenerPosesionCombustible (){
+        if(botonGasolina.isSelected()){
+            return modelo.Combustible.GASOLINA;
+        }
+        else if (botonDisiel.isSelected()){
+            return modelo.Combustible.DIESEL;
+
+        }else if (botonHibridos.isSelected()){
+            return modelo.Combustible.HIBRIDOS;
+
+        }else if (botonElectricos.isSelected()){
+            return modelo.Combustible.ELECTRICOS;
+        }
+        return null;
+
+    }
+
+    private Transmision obtenerPosesionTransimicion (){
+        if(botonManual.isSelected()){
+            return Transmision.MANUAL;
+        }
+        else if (botonAutomatica.isSelected()){
+            return Transmision.AUTOMATICA;
+        }
+        return null;
+
+    }
+    private Poseer obtenerCamara(){
+        if(noPoseeCam.isSelected()){
+            return Poseer.NOPOSEE;
+
+        }else if( poseeCam.isSelected()){
+            return Poseer.POSEER;
+
+        }
+        return null;
+    }
+    private Poseer obtenerAcondicionado(){
+        if(noPoseeAco.isSelected()){
+            return Poseer.NOPOSEE;
+
+        }else if( poseeAco.isSelected()){
+            return Poseer.POSEER;
+
+        }
+        return null;
+    }
+    private Poseer obtener4x4(){
+        if(noPosee4.isSelected()){
+            return Poseer.NOPOSEE;
+
+        }else if( poseeAco.isSelected()){
+            return Poseer.POSEER;
+
+        }
+        return null;
+    }
+
+
+
 
 }

@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="482.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegistrarVehiculoController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="483.0" stroke="BLACK" strokeType="INSIDE" width="218.0">
@@ -41,7 +40,7 @@
             <Font name="Arial Bold Italic" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="282.0" layoutY="101.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="123.0" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="BUSES" textFill="WHITE">
+      <Button fx:id="botonBuses" layoutX="282.0" layoutY="101.0" mnemonicParsing="false" onAction="#buses" prefHeight="42.0" prefWidth="123.0" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="BUSES" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>

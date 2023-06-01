@@ -135,9 +135,9 @@ public class OpcionesEmpleadosController {
         tCedula.setCellValueFactory(new PropertyValueFactory<>("cedula"));
         tCedula.setCellValueFactory(new PropertyValueFactory<>("correo"));
         tContraseña.setCellValueFactory(new PropertyValueFactory<>("contraseña"));
-
         tablaEmpleados.getSelectionModel()
                 .selectedItemProperty().addListener(( observable, oldValue,newValue)->llenarCampos(newValue));
+
 
     }
 

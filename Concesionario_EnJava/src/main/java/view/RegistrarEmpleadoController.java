@@ -67,6 +67,9 @@ public class RegistrarEmpleadoController {
 
     @FXML
     private GridPane tablaorden;
+
+
+
     @FXML
     void eventoAgregar(ActionEvent event) throws Exception {
 

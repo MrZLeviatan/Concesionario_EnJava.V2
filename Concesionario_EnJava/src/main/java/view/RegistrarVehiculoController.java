@@ -49,4 +49,19 @@ public class RegistrarVehiculoController {
         stage2.hide();
         stage.show();
 }
+    @FXML
+    void buses (ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Buses.fxml"));
+        Parent root= loader.load();
+        Stage stage = new Stage();
+        stage.initStyle(UNDECORATED);
+        stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.hide();
+        stage.show();
+    }
+
+
+
 }
