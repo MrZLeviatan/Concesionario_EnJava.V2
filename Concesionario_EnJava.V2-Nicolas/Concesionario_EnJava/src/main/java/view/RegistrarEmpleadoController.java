@@ -1,6 +1,5 @@
 package view;
 
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -19,7 +19,6 @@ import modelo.Estado;
 import modelo.Genero;
 
 import java.io.IOException;
-import java.util.List;
 
 import static javafx.stage.StageStyle.UNDECORATED;
 import static view.consecionarioInstance.INSTANCE;
@@ -27,87 +26,59 @@ import static view.consecionarioInstance.INSTANCE;
 public class RegistrarEmpleadoController {
 
     @FXML
-    private TextField BloqueCedula;
+    private TextField bloqueCedula;
 
     @FXML
-    private TextField BloqueContraseña;
+    private TextField bloqueContraseña;
 
     @FXML
-    private TextField BloqueCorreo;
+    private TextField bloqueCorreo;
 
     @FXML
-    private TextField BloqueEdad;
+    private TextField bloqueEdad;
 
     @FXML
-    private TextField BloqueNombre;
+    private TextField bloqueNombre;
 
     @FXML
     private TextField bloquePalabraSecreta;
 
     @FXML
-    private Button BotonCancelar;
+    private Button botonCancelar;
 
     @FXML
-    private RadioButton BotonFemenino;
+    private RadioButton botonFemenino;
 
     @FXML
-    private RadioButton BotonOtros;
+    private RadioButton botonMasculino;
 
     @FXML
-    private Button BotonRegistrar;
+    private RadioButton botonOtros;
 
     @FXML
-    private RadioButton ButtonMasculino;
-
-    @FXML
-    private Rectangle FondoRojo;
-
-    @FXML
-    private ImageView ImagenLogo;
-
-    @FXML
-    private ImageView ImagenLogo2;
-
-    @FXML
-    private Separator Separador;
-
-    @FXML
-    private Label TextoCedula;
-
-    @FXML
-    private Label TextoContraseña;
-
-    @FXML
-    private Label TextoCorreo;
-
-    @FXML
-    private Label TextoEdad;
-
-    @FXML
-    private Label TextoGenero;
-
-    @FXML
-    private Label TextoNombre;
-
-    @FXML
-    private Text TextoRegistro;
+    private Button botonRegistro;
 
     @FXML
     private ToggleGroup genero;
 
     @FXML
-    void EventoAgregar(ActionEvent event) throws Exception {
+    private HBox hbox;
 
-        String nombre = BloqueNombre.getText();
-        String contraseña = BloqueContraseña.getText();
-        String correo = BloqueCorreo.getText();
-        String edad=BloqueEdad.getText();
-        String cedula= BloqueCedula.getText();
+    @FXML
+    private GridPane tablaorden;
+    @FXML
+    void eventoAgregar(ActionEvent event) throws Exception {
+
+        String nombre = bloqueNombre.getText();
+        String contraseña = bloqueContraseña.getText();
+        String correo = bloqueCorreo.getText();
+        String edad=bloqueEdad.getText();
+        String cedula= bloqueCedula.getText();
         String palabraSecreta = bloquePalabraSecreta.getText();
 
 
         if (nombre.isEmpty() && contraseña.isEmpty() && correo.isEmpty() && edad.isEmpty()
-                && cedula.isEmpty() && palabraSecreta.isEmpty()) {
+                            && cedula.isEmpty() && palabraSecreta.isEmpty()) {
 
             Alert alert1 = new Alert(Alert.AlertType.NONE);
             alert1.setTitle("ERROR!!!");
@@ -116,7 +87,7 @@ public class RegistrarEmpleadoController {
             alert1.setHeaderText("UPS! PARECE QUE SE TE OLVIDO ALGO");
             alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
             alert1.showAndWait();
-            BloqueContraseña.setText("");
+            bloqueContraseña.setText("");
             bloquePalabraSecreta.setText("");
 
 
@@ -124,28 +95,29 @@ public class RegistrarEmpleadoController {
         }else {
 
             Estado estado = Estado.ACTIVO;
-            Empleado empleado = new Empleado(BloqueNombre.getText(), BloqueCorreo.getText(), Integer.parseInt(BloqueEdad.getText()), BloqueCedula.getText(), obtenerGenero(), BloqueContraseña.getText(), bloquePalabraSecreta.getText(), estado);
+            Genero genero = obtenerGenero();
+            Empleado empleado = new Empleado(bloqueNombre.getText(), bloqueCorreo.getText(), Integer.parseInt(bloqueEdad.getText()), bloqueCedula.getText(), genero, bloqueContraseña.getText(), bloquePalabraSecreta.getText(), estado);
             INSTANCE.getConsesionario().addEmpleado(empleado);
 
             Alert alert1 = new Alert(Alert.AlertType.NONE);
             alert1.setTitle("REGISTRO COMPLETO");
-            alert1.setContentText("EMPLEADO REGISTRADO");
+            alert1.setContentText("EMPLEADO REGISTRADO :D");
             alert1.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenBienvenidoLogo.png").toString()));
-            alert1.setHeaderText("BIENVENIDO A HELL TAKER CONCESIONARIO");
+            alert1.setHeaderText("BIENVENIDO A HELL TAKER CONCESIONARIO...");
             alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
             alert1.showAndWait();
-            BloqueNombre.setText("");
-            BloqueContraseña.setText("");
-            BloqueEdad.setText("");
-            BloqueCedula.setText("");
-            BloqueCorreo.setText("");
+            bloqueNombre.setText("");
+            bloqueContraseña.setText("");
+            bloqueEdad.setText("");
+            bloqueCedula.setText("");
+            bloqueCorreo.setText("");
             bloquePalabraSecreta.setText("");
         }
 
 
     }
     @FXML
-    void Eventocancelar(ActionEvent event) throws IOException {
+        void eventocancelar(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("OpcionesEmpleados.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
@@ -159,7 +131,7 @@ public class RegistrarEmpleadoController {
     @FXML
 
     private void restriccionTeclas (KeyEvent event){
-        if(event.getTarget()== BloqueEdad ){
+        if(event.getTarget()== bloqueEdad ){
             if(!Character.isDigit(event.getCharacter().charAt(0))){
                 Alert alert = new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR!!!");
@@ -168,9 +140,9 @@ public class RegistrarEmpleadoController {
                 alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-                BloqueEdad.setText("");
+                bloqueEdad.setText("");
             }
-        }else if(event.getTarget()== BloqueCedula ) {
+        }else if(event.getTarget()== bloqueCedula ) {
             if (!Character.isDigit(event.getCharacter().charAt(0))) {
                 Alert alert = new Alert(Alert.AlertType.NONE);
                 alert.setTitle("ERROR!!!");
@@ -179,21 +151,26 @@ public class RegistrarEmpleadoController {
                 alert.setHeaderText("UPS! HA OCURRIDO UN ERROR...");
                 alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
                 alert.showAndWait();
-                BloqueCedula.setText("");
+                bloqueCedula.setText("");
 
             }
         }
     }
 
     private Genero obtenerGenero(){
-        RadioButton radioButton = (RadioButton) genero.getSelectedToggle();
-        if( radioButton != null ){
-            return Genero.valueOf( radioButton.getText().toUpperCase() );
+
+        if(botonMasculino.isSelected()){
+            return Genero.MASCULINO;
+        }
+        else if (botonFemenino.isSelected()){
+            return Genero.FEMENINO;
+        }
+        else if (botonOtros.isSelected()){
+            return Genero.OTROS;
         }
         return null;
     }
 
 
-    public void eventEspaciosBlancos(MouseEvent mouseEvent) {
-    }
+
 }
