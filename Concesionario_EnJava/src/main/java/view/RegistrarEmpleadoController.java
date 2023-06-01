@@ -17,7 +17,8 @@ import javafx.stage.Stage;
 import modelo.Empleado;
 import modelo.Estado;
 import modelo.Genero;
-
+import modelo.Consesionario;
+import java.io.File;
 import java.io.IOException;
 
 import static javafx.stage.StageStyle.UNDECORATED;
@@ -106,6 +107,7 @@ public class RegistrarEmpleadoController {
             alert1.setHeaderText("BIENVENIDO A HELL TAKER CONCESIONARIO...");
             alert1.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
             alert1.showAndWait();
+
             bloqueNombre.setText("");
             bloqueContraseña.setText("");
             bloqueEdad.setText("");

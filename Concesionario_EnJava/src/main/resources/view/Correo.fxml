@@ -53,7 +53,7 @@
          </font>
       </Button>
       <TextField fx:id="bloqueCorreo" layoutX="359.0" layoutY="97.0" prefHeight="25.0" prefWidth="222.0" promptText="INGRESE CORREO" />
-      <TextField fx:id="bloquePalabra" layoutX="411.0" layoutY="158.0" onKeyPressed="#eventEspaciosBlancos" prefHeight="25.0" prefWidth="165.0" promptText="INGRESE PALABRA SECRETA" />
+      <TextField fx:id="bloquePalabra" layoutX="411.0" layoutY="158.0" prefHeight="25.0" prefWidth="165.0" promptText="INGRESE PALABRA SECRETA" />
       <Label layoutX="570.0" onMousePressed="#labCerrar" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" fx:id="x">
          <font>
             <Font name="System Bold Italic" size="34.0" />

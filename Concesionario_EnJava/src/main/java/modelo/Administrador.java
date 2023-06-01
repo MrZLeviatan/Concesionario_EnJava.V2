@@ -16,4 +16,5 @@ public class Administrador extends Seguridad {
         return this.nivel;
     }
 
+
 }

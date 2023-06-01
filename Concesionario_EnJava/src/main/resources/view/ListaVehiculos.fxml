@@ -46,17 +46,17 @@
             </ImageView>
          </children>
       </Pane>
-      <Button layoutX="92.0" layoutY="404.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="147.0" style="-fx-background-radius: 12PX;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="AGREGAR" textFill="WHITE">
+      <Button fx:id="botonAgregrar" layoutX="92.0" layoutY="404.0" mnemonicParsing="false" onAction="#eventoAgregar" prefHeight="52.0" prefWidth="147.0" style="-fx-background-radius: 12PX;" styleClass="botonIngrese" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="AGREGAR" textFill="WHITE">
          <font>
             <Font name="Arial Bold Italic" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="X" alignment="CENTER" layoutX="670.0" onMouseClicked="#labCerrar" prefHeight="52.0" prefWidth="41.0" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="670.0" onMouseClicked="#labCerrar" prefHeight="52.0" prefWidth="41.0" styleClass="X" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="X" textAlignment="CENTER" textFill="WHITE" fx:id="x">
          <font>
             <Font name="System Bold Italic" size="34.0" />
          </font>
       </Label>
-      <Label fx:id="Volver" alignment="CENTER" layoutX="6.0" layoutY="428.0" onMouseClicked="#EventoVolver" prefHeight="52.0" prefWidth="41.0" styleClass="X2" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="«">
+      <Label fx:id="volver" alignment="CENTER" layoutX="6.0" layoutY="428.0" onMouseClicked="#eventoVolver" prefHeight="52.0" prefWidth="41.0" styleClass="X2" stylesheets="@../HojasEstilo/HojaEstiloBotones.css" text="«">
          <font>
             <Font name="System Bold Italic" size="39.0" />
          </font>

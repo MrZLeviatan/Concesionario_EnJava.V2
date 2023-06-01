@@ -1,5 +1,6 @@
 package view;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -18,7 +19,7 @@ import static javafx.stage.StageStyle.UNDECORATED;
 public class ListaVehiculosController {
 
     @FXML
-    private Label Volver;
+    private Label volver;
 
     @FXML
     private Label X;
@@ -35,9 +36,9 @@ public class ListaVehiculosController {
         stage.showAndWait();
     }
 
-    public void EventoVolver (MouseEvent event) throws IOException {
+    public void eventoVolver (MouseEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../../../../../../Downloads/Empleado.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Empleado.fxml"));
         Parent root= loader.load();
         Stage stage = new Stage();
         stage.initStyle(UNDECORATED);
@@ -46,5 +47,18 @@ public class ListaVehiculosController {
         Stage stage2 = (Stage) source.getScene().getWindow();
         stage2.hide();
         stage.show();
+    }
+
+    public void eventoAgregar (ActionEvent event)throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegistrarVehiculo.fxml"));
+        Parent root= loader.load();
+        Stage stage = new Stage();
+        stage.initStyle(UNDECORATED);
+        stage.setScene(new Scene(root));
+        Node source = (Node) event.getSource();
+        Stage stage2 = (Stage) source.getScene().getWindow();
+        stage2.hide();
+        stage.show();
+
     }
 }

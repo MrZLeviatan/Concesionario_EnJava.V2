@@ -50,5 +50,23 @@ public class Persona {
         return edad;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public void setCc(String cc) {
+        this.cc = cc;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
 }

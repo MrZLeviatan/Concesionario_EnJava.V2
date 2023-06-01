@@ -10,10 +10,10 @@ public class Vehiculo extends Serializar {
     private int velocidadMax;
     private int cambios;
     private Transmision transmision;
-    private String foto;
+    private byte[] foto;
 
-    public Vehiculo(String foto,int matricula,String marca, int modelo, int cilindraje, EstadoUso estadoUso,Combustible combustible, int velocidadMax, int cambios, Transmision transmision) {
-        this.foto=foto;
+    public Vehiculo(byte[] foto,int matricula,String marca, int modelo, int cilindraje, EstadoUso estadoUso,Combustible combustible, int velocidadMax, int cambios, Transmision transmision) {
+        this.foto= foto;
         this.matricula= matricula;
         this.marca = marca;
         this.modelo= modelo;
@@ -56,7 +56,7 @@ public class Vehiculo extends Serializar {
     }
 
 
-    public String getFoto() {
+    public byte[] getFoto() {
         return foto;
     }
 }

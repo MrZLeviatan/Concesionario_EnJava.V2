@@ -8,7 +8,7 @@ public class Padre extends Vehiculo {
     private int numeroBolsaAire;
 
 
-    public Padre(String foto,int matricula, String marca, int modelo, int cilindraje, EstadoUso estadoUso, Combustible combustible, int velocidadMax, int cambios, Transmision transmision,int numeroPasajeros, int numeroPuertas,int numeroBolsaAire,Poseer poseer,Poseer camaraReserva, Poseer aireAcondicionado) {
+    public Padre(byte[]foto,int matricula, String marca, int modelo, int cilindraje, EstadoUso estadoUso, Combustible combustible, int velocidadMax, int cambios, Transmision transmision,int numeroPasajeros, int numeroPuertas,int numeroBolsaAire,Poseer poseer,Poseer camaraReserva, Poseer aireAcondicionado) {
         super(foto,matricula, marca, modelo, cilindraje, estadoUso, combustible, velocidadMax, cambios, transmision);
         this.aireAcondicionado=aireAcondicionado;
         this.numeroPasajeros=numeroPasajeros;

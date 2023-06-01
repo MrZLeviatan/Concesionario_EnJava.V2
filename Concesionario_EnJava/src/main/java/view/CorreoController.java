@@ -35,40 +35,14 @@ public class CorreoController {
 
     @FXML
     private void labCerrar(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AceptarCerrar.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.setScene(scene);
-        stage.showAndWait();
+        Stage stage= (Stage) this.x.getScene().getWindow();
+        stage.close();
     }
 
-    @FXML
-    private void eventEspaciosBlancos (KeyEvent event) throws IOException {
-
-        Object evt =event.getSource();
-
-        if(evt.equals(bloquePalabra)){
-            if (event.getCharacter().equals(" ")){
-                Alert alert= new Alert(Alert.AlertType.NONE);
-                alert.setTitle("ERROR!!!");
-                alert.setContentText("NO SE PERMITEN ESPACIOS BLANCOS");
-                alert.setGraphic(new ImageView(this.getClass().getResource("/imagenes/ImagenError.png").toString()));
-                alert.setHeaderText("UPS!! HA OCURRIDO UN ERROR...");
-                alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-                alert.showAndWait();
-                bloqueCorreo.setText("");
-            }
-
-
-    }
-        }
 
     @FXML
     private void eventoRecuperar (ActionEvent event) throws IOException {
-        if(bloquePalabra.getText().isEmpty()){
+        if(bloqueCorreo.getText().isEmpty()){
             Alert alert= new Alert(Alert.AlertType.NONE);
             alert.setTitle("ERROR!!!");
             alert.setContentText("POR FAVOR LLENAR LOS ESPACIOS VACIOS");

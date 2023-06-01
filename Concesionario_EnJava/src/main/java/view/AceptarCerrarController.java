@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.stage.StageStyle.UNDECORATED;
+
 public class AceptarCerrarController {
 
     @FXML
@@ -22,6 +24,7 @@ public class AceptarCerrarController {
     @FXML
     void aceptarCerrar(ActionEvent event) throws IOException {
         System.exit(0);
+
     }
 
     @FXML

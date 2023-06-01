@@ -1,10 +1,12 @@
 package modelo;
 
+import javafx.scene.control.Alert;
 import util.PersonaUtil;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -24,6 +26,54 @@ public class Consesionario {
     // variable para agregar el empleado o administrador existente
     private  Persona personaverificada;
     //constructor del concesionario
+
+    Empleado empleado;
+    Consesionario consesionario;
+
+    private String ruta_txt = "mi.txt";
+
+    public void cargar_txt() {
+        File ruta = new File(ruta_txt);
+        try {
+            FileReader fi = new FileReader(ruta);
+            BufferedReader bu = new BufferedReader(fi);
+
+            String linea = null;
+            while ((linea = bu.readLine()) != null) {
+                StringTokenizer st = new StringTokenizer(linea, ",");
+                empleado = new Empleado(null, null, 0, null, null, null, null, null);
+                empleado.setNombre(st.nextToken());
+                empleado.setCc(st.nextToken());
+                empleado.setCorreo(st.nextToken());
+                empleado.setEdad(Integer.parseInt(st.nextToken()));
+
+            }
+            bu.close();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    private void grabar_txt(){
+            FileWriter fw;
+            PrintWriter pw;
+            try{
+                fw = new FileWriter(ruta_txt);
+                pw = new PrintWriter(fw);
+
+
+                for( int i = 0; i< consesionario.listaEmpleado.size(); i++ ){
+                empleado = consesionario.obtenerRegistro(i);
+                pw.println(String.valueOf(empleado.getNombre()+","+empleado.getCc()+","+empleado.getCorreo()));
+
+                }
+                pw.close();
+            }catch (Exception ex){
+                System.out.println(ex.getMessage());
+            }
+
+        }
+
 
     public Consesionario() {
         listaAdministradores = new ArrayList<>();
@@ -200,5 +250,5 @@ public List <Empleado> buscar (String nombre, String cedula, String correo, Stri
                 .collect(Collectors.toUnmodifiableList());
 }
 
-
+public Empleado obtenerRegistro (int i) {return (Empleado)listaEmpleado.get(i);}
 }
